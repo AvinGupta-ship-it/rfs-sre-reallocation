@@ -10,6 +10,6 @@ from rfsrealloc.pipeline import main
 ROOT = Path(__file__).resolve().parents[1]
 
 if __name__ == "__main__":
-    names = sys.argv[1:] or ["paper", "sensitivity_uniform_revision", "sensitivity_independent_fuel_errors"]
+    names = sys.argv[1:] or ["sensitivity_uniform_revision", "sensitivity_independent_fuel_errors", "paper"]
     for name in names:
         main(["run", "--config", str(ROOT / "configs" / f"{name}.yaml")])

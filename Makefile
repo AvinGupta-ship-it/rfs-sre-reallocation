@@ -13,9 +13,9 @@ data:
 	$(PY) -m rfsrealloc.data.build
 
 results: data
-	$(PY) -m rfsrealloc.pipeline run --config $(CONFIG)
 	$(PY) -m rfsrealloc.pipeline run --config configs/sensitivity_uniform_revision.yaml
 	$(PY) -m rfsrealloc.pipeline run --config configs/sensitivity_independent_fuel_errors.yaml
+	$(PY) -m rfsrealloc.pipeline run --config $(CONFIG)
 
 quick: data
 	$(PY) -m rfsrealloc.pipeline run --config configs/quick.yaml

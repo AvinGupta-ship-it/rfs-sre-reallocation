@@ -27,6 +27,7 @@ from rfsrealloc import uncertainty as un
 from rfsrealloc.config import PipelineConfig, config_hash, load_config
 from rfsrealloc.data import PROCESSED
 from rfsrealloc.data import dashboard as dash
+from rfsrealloc.data.fr_tables import parse_all
 from rfsrealloc.inputs import (
     ENTRY_A,
     ENTRY_B,
@@ -157,6 +158,17 @@ class Pipeline:
             )
             or "none"
         )
+        # smallest unrounded exempted volume (billion gallons) that reproduces each mismatched cell
+        self.values["ervoMismatchMinVolumeBgal"] = (
+            round(
+                min(
+                    (float(str(r.published_mrins)) - 5) / float(str(r.standard_percent)) / 10 for r in mism.itertuples()
+                ),
+                4,
+            )
+            if len(mism)
+            else 0.0
+        )
 
         base = ra.set2_srerv(ervo_pub)
         base_nearest = {
@@ -251,6 +263,8 @@ class Pipeline:
         rule_date = dt.date.fromisoformat(text_value(self.df, "rule_dates", "publication_date", "2026"))
         later = un.later_decision_additions(decisions, dates, rule_date)
         self.save("e2_later_decisions", later)
+        l24 = later[later["year"] == 2024]
+        self.values["laterShare2024Pct"] = round(100 * float(l24["later_share"].iloc[0]), 1) if len(l24) else 0.0
 
         rvo1 = dash.rvo_table1()
         rule_dates = {
@@ -390,6 +404,19 @@ class Pipeline:
         self.values["stepSecondEqual"] = round(
             float(trade.loc[np.isclose(trade["w"], 0.5), "step_second_points"].iloc[0]), 3
         )
+        # the same steps expressed as obligation (billion RINs) at the projected obligated volumes
+        self.values["stepEqualBRinsFirst"] = round(
+            float(trade.loc[np.isclose(trade["w"], 0.5), "step_first_points"].iloc[0]) / 100 * den[self.first], 2
+        )
+        self.values["stepEqualBRinsSecond"] = round(
+            float(trade.loc[np.isclose(trade["w"], 0.5), "step_second_points"].iloc[0]) / 100 * den[self.second], 2
+        )
+        self.values["stepAllSecondBRinsSecond"] = round(
+            float(trade.loc[np.isclose(trade["w"], 0.0), "step_second_points"].iloc[0]) / 100 * den[self.second], 2
+        )
+        self.values["revisionMeanAbsBRinsSecondAllSecond"] = round(
+            pick("revision_second", 0.0, "mean_abs") / 100 * den[self.second], 2
+        )
 
         # Sobol indices for both alternatives (independent factors)
         sob = pd.concat(
@@ -436,6 +463,22 @@ class Pipeline:
         upd = pd.DataFrame(urows)
         self.save("e2_reported_basis_update", upd)
         self.values["nStandardsChangedByReportedBasis"] = int(upd["changed"].sum())
+        for alt, lab in (("equal", "Equal"), ("all2027", "AllSecond")):
+            rb = upd[(upd["alternative"] == alt) & (upd["year"] == self.second) & (upd["category"] == "RF")].iloc[0]
+            self.values[f"reportedBasisStdSecond{lab}"] = str(rb["standard_reported_basis"])
+        changed = upd[upd["changed"]]
+        self.values["reportedBasisMaxChangePoints"] = (
+            round(
+                float(
+                    (changed["standard_published"].astype(float) - changed["standard_reported_basis"].astype(float))
+                    .abs()
+                    .max()
+                ),
+                2,
+            )
+            if len(changed)
+            else 0.0
+        )
         self.values["additionalRFReportedBasis"] = float(add_rep["RF"])
 
     # ------------------------------------------------------------------ E5
@@ -517,6 +560,8 @@ class Pipeline:
         self.values["nLagPetitions"] = int(len(sel))
         l25 = lags[lags["year"] == 2025]
         self.values["lag2025MedianYears"] = round(float(l25["lag_years"].median()), 2)
+        l24 = lags[lags["year"] == 2024]
+        self.values["lag2024MedianYears"] = round(float(l24["lag_years"].median()), 2)
         pend = dash.pending_petitions(dash.sre_table3())
         self.values["nPending2025"] = int((pend["year"] == 2025).sum())
         self.values["nPending2026"] = int((pend["year"] == 2026).sum())
@@ -577,6 +622,18 @@ class Pipeline:
         self.values["drawdownTwoYearsAllSecond"] = round(bank0 - self.values["bankOutSecondAll2027"], 2)
         self.values["drawdownTwoYearsSet2"] = round(bank0 - self.values["bankOutSecondSet2"], 2)
         self.values["absorbableDrawdown"] = float(value(self.df, "set2_preamble", "absorbable_drawdown_total"))
+        self.values["newRinsFirstEqualMinusAllSecond"] = round(
+            self.values["newRinsFirstEqual"] - self.values["newRinsFirstAll2027"], 2
+        )
+        self.values["newRinsSecondAbsDiffEqualAllSecond"] = round(
+            abs(self.values["newRinsSecondEqual"] - self.values["newRinsSecondAll2027"]), 2
+        )
+        self.values["drawdownExcessOverAbsorbableEqual"] = round(
+            self.values["drawdownTwoYearsEqual"] - self.values["absorbableDrawdown"], 2
+        )
+        self.values["drawdownExcessOverAbsorbableAllSecond"] = round(
+            self.values["drawdownTwoYearsAllSecond"] - self.values["absorbableDrawdown"], 2
+        )
         self.values["capBindsAnywhere"] = bool((base["carryover_used_brins"] >= base["cap_brins"] - 1e-9).any())
         # deadlines
         current = deadline(self.df, "compliance_deadline_current", "2026")
@@ -670,6 +727,71 @@ class Pipeline:
             mism = reconcile(load_transcribed(ENTRY_A), load_wide(ENTRY_B))
             self.save("double_entry_mismatches", mism)
             self.values["nDoubleEntryMismatches"] = int(len(mism))
+        # hand transcription against the Federal Register tables parsed by code from the XML
+        parsed = parse_all()
+        parsed["category"] = parsed["category"].fillna("")
+        t = self.df[self.df["table"].isin(["past_rule_inputs", "past_rule_inputs_revised"])]
+        compared = 0
+        mismatched = 0
+        for r in t.itertuples():
+            if r.category == "SUPP":
+                continue
+            if r.table == "past_rule_inputs_revised":
+                sub = parsed[
+                    (parsed.document == "2022-12376")
+                    & (parsed.year == "2020")
+                    & (parsed.variable == r.variable)
+                    & (parsed.category == r.category)
+                ]
+            else:
+                sub = parsed[
+                    (parsed.year == r.year)
+                    & (parsed.variable == r.variable)
+                    & (parsed.category == r.category)
+                    & ~((parsed.document == "2022-12376") & (parsed.year == "2020"))
+                ]
+            if sub.empty or pd.isna(sub.value.iloc[0]):
+                continue
+            compared += 1
+            if abs(float(str(r.value)) - float(str(sub.value.iloc[0]))) >= 1e-9:
+                mismatched += 1
+        self.values["nFrParsedValuesCompared"] = compared
+        self.values["nFrParsedValuesMismatched"] = mismatched
+
+    # ------------------------------------------------------------------ sensitivity configurations
+    SENSITIVITY_RUNS: dict[str, str] = {
+        "sensitivity_uniform_revision": "Uniform",
+        "sensitivity_independent_fuel_errors": "IndependentFuel",
+    }
+
+    def sensitivity_summary(self) -> None:
+        """Macros comparing this run with the sensitivity configurations already run (if present).
+
+        Only the main configuration consumes these; the Makefile runs the sensitivity
+        configurations first so that the comparison is never stale."""
+        if self.cfg.name in self.SENSITIVITY_RUNS:
+            return
+        keys = (
+            "stdSdSecondAllSecond",
+            "revisionMeanAbsSecondAllSecond",
+            "stdSdFirstEqual",
+            "revisionMeanAbsFirstEqual",
+            "realizedMinusIntendedSdSecondAllSecond",
+            "realizedMinusIntendedSdSecondEqual",
+        )
+        for cfg_name, label in self.SENSITIVITY_RUNS.items():
+            path = ROOT / "results" / "summary" / f"values_{cfg_name}.json"
+            if not path.exists():
+                continue
+            other = json.loads(path.read_text())
+            for k in keys:
+                if k in other:
+                    self.values[f"sens{label}{k[0].upper()}{k[1:]}"] = other[k]
+                    base = float(self.values.get(k, 0.0))
+                    if base:
+                        self.values[f"sens{label}{k[0].upper()}{k[1:]}IncreasePct"] = round(
+                            100 * (float(other[k]) / base - 1), 1
+                        )
 
     # ------------------------------------------------------------------ run
     def run(self) -> None:
@@ -680,6 +802,7 @@ class Pipeline:
         self.costs()
         self.cross_check()
         self.double_entry()
+        self.sensitivity_summary()
         self.values["configName"] = self.cfg.name
         self.values["configHash"] = self.hash
         vpath = self.out / "values.json"

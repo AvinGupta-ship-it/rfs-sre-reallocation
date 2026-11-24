@@ -357,13 +357,13 @@ def si_distributions(results: Path, out: Path) -> None:
     ax = axes[1]
     nr = fuel[~fuel["retroactive"]]
     rt = fuel[fuel["retroactive"]]
-    ax.scatter(nr["lead_years"], 100 * (nr["ratio"] - 1), color=OKABE[0], label="prospective rules")
+    ax.scatter(nr["lead_years"], 100 * (nr["ratio"] - 1), color=OKABE[0], label="used")
     ax.scatter(
         rt["lead_years"],
         100 * (rt["ratio"] - 1),
         color=OKABE[1],
         marker="x",
-        label="retroactive or revised rules (excluded)",
+        label="excluded",
     )
     for _, r in fuel.iterrows():
         ax.annotate(
@@ -376,7 +376,7 @@ def si_distributions(results: Path, out: Path) -> None:
     ax.axhline(0, color="black", linewidth=0.8)
     ax.set_xlabel("Lead time from final rule to mid-year (years)")
     ax.set_ylabel("Reported minus projected volume (%)")
-    ax.legend(fontsize=6.5)
+    ax.legend(fontsize=6.5, loc="lower right")
     save(fig, out, "si_distributions", {"sources": ["e2_revision_pairs.csv", "e3_fuel_projection_errors.csv"]})
 
 

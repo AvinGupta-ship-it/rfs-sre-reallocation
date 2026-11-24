@@ -26,12 +26,15 @@ per billion RINs) and $\partial \mathrm{Std}/\partial V = -100\,(\mathrm{RFV}+\m
 ## 2. Exempted obligations and reallocation volumes
 
 For a compliance year $y$ with exempted fuel volume $F_y$ (gasoline plus diesel) the
-exempted RVO is $\mathrm{ERVO}_{X,y} = \mathrm{Std}_{X,y} F_y / 100$, rounded to the
-nearest 10 million RINs (91 FR 16439, Table IV.C-2). The Set 2 rule reallocates a share
+exempted RVO is $\mathrm{ERVO}_{X,y} = \mathrm{Std}_{X,y} F_y / 100$, printed to
+10 million RINs in Table IV.C-2 (91 FR 16439); nearest rounding reproduces 11 of the 12
+printed cells. The Set 2 rule reallocates a share
 $\alpha = 0.7$ with timing weights $\omega_{2023\to2026}=1$, $\omega_{2024\to2026}=\omega_{2024\to2027}=1/2$,
 $\omega_{2025\to2027}=1$ and rounds the 2026 volume *down* and the 2027 volume *up* to
-10 million RINs. The floor/ceiling convention reproduces all six published volumes;
-nearest rounding does not (see `tests/test_reproduction.py`).
+10 million RINs. The proposal's note to Table IV-1 (91 FR 65706) says that volumes
+ending in five were rounded down for 2026 and up for 2027; applied to the printed
+obligations that rule reproduces three of the six Set 2 volumes, whereas the
+floor/ceiling convention reproduces all six (see `tests/test_reproduction.py`).
 
 The additional 2025 exempted RVO is $A_X = \mathrm{round}_{10}(\mathrm{Std}_{X,2025} F^{\mathrm{act}}_{2025}/100) - \mathrm{ERVO}^{\mathrm{proj}}_{X,2025}$
 with $F^{\mathrm{act}}_{2025} = 13.38$ billion gallons, giving 180, 250 and 770 million RINs
@@ -63,7 +66,8 @@ Metrics as functions of $w$:
   $A_X(r) = r\,\mathrm{ERVO}^{\mathrm{act}}_{X,2025} - \mathrm{ERVO}^{\mathrm{proj}}_{X,2025}$.
   A uniform $\pm 20\%$ alternative is available as a labelled assumption.
 * **Fuel-use error** $e_i$: smoothed bootstrap of $\log(\text{reported}/\text{projected})$
-  non-renewable gasoline-plus-diesel volume for past prospective rules (dashboard RVO
+  non-renewable gasoline-plus-diesel volume for past rules in place by the middle of the
+  compliance year and not later revised (dashboard RVO
   Table 1), binned by lead time; the 2026 and 2027 draws share a configurable rank
   correlation. Realized RINs implied by a standard are $\mathrm{Std}\,V_i e^{e_i}/100$.
 * **Decision timing**: per-petition lags between the end of the compliance year and the

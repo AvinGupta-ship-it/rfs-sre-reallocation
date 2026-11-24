@@ -42,7 +42,7 @@ RIN cost table & \texttt{rfsrealloc.costs.total\_rin\_cost\_cents} \\
 
 \section{Verification levels}
 
-\textbf{Numerical correctness.} Unit tests reproduce every published standard, reallocation volume and RIN-cost row; property-based tests check positivity, monotonicity in the numerator and denominator, agreement of exact and floating-point evaluation, the rounding conventions, conservation of the additional volume under the timing rule, bounds and monotonicity of the retroactivity measure, and the carryover accounting identity. \textbf{Model verification.} The hand transcription of Federal Register input tables agrees with values parsed by code from the XML (156 values) and the transcribed standards agree with the eCFR table; the two transcription entries reconcile with \valnDoubleEntryMismatches{} mismatches; the Sobol decomposition is checked against the linearised variance share. \textbf{Empirical validity.} The uncertainty distributions are the historical distributions of EPA's record; no out-of-sample prediction of 2026--2027 outcomes is claimed. \textbf{Regulatory applicability.} Each result is mapped to solicitation C-1 (timing) or C-3 (effects) in the comment.
+\textbf{Numerical correctness.} Unit tests reproduce every published standard, reallocation volume and RIN-cost row; property-based tests check positivity, monotonicity in the numerator and denominator, agreement of exact and floating-point evaluation, the rounding conventions, conservation of the additional volume under the timing rule, bounds and monotonicity of the retroactivity measure, and the carryover accounting identity. \textbf{Model verification.} The hand transcription of Federal Register input tables agrees with values parsed by code from the XML (\valnFrParsedValuesCompared{} values, \valnFrParsedValuesMismatched{} mismatches) and the transcribed standards agree with the eCFR table; the two transcription entries reconcile with \valnDoubleEntryMismatches{} mismatches; the Sobol decomposition is checked against the linearised variance share. \textbf{Empirical validity.} The uncertainty distributions are the historical distributions of EPA's record; no out-of-sample prediction of 2026--2027 outcomes is claimed. \textbf{Regulatory applicability.} Each result is mapped to solicitation C-1 (timing) or C-3 (effects) in the comment.
 
 \section{Monte Carlo convergence}
 
@@ -57,7 +57,7 @@ The headline quantity (standard deviation of the 2027 standard) has a relative M
 \caption{Total-order Sobol indices with bootstrap intervals for the 2027 standard and the realized 2027 obligation, for both alternatives.}\end{figure}
 
 \begin{figure}[htbp]\centering\includegraphics[width=\textwidth]{si_distributions}
-\caption{Left: ratio of reported to petition-based exempted obligation by compliance year. Right: reported minus projected non-renewable gasoline-plus-diesel volume against lead time; crosses mark rules set or revised after the year had begun, which are excluded from the prospective sample.}\end{figure}
+\caption{Left: ratio of reported to petition-based exempted obligation by compliance year. Right: reported minus projected non-renewable gasoline-plus-diesel volume against lead time; crosses mark rules published after the middle of the compliance year or later revised, which are excluded.}\end{figure}
 
 \section{Cross-check against a secondary analysis}
 
@@ -65,7 +65,7 @@ As an independent check of derived quantities, the obligation that the additiona
 
 \section{Sensitivity configurations}
 
-Two additional configurations were run with identical seeds: a uniform $\pm 20$~percent revision distribution (an assumption, not data) and independent fuel-use errors for 2026 and 2027. The uniform assumption raises the standard deviation of the 2027 standard under the 2027 approach from \valstdSdSecondAllSecond{} to about 0.12 points and the expected absolute revision to about 0.10 points; independent fuel-use errors leave the single-year distributions unchanged. Results are in \texttt{results/sensitivity\_uniform\_revision} and \texttt{results/sensitivity\_independent\_fuel\_errors}.
+Two additional configurations were run with identical seeds: a uniform $\pm 20$~percent revision distribution (an assumption, not data) and independent fuel-use errors for 2026 and 2027. The uniform assumption raises the standard deviation of the 2027 standard under the 2027 approach from \valstdSdSecondAllSecond{} to \valsensUniformStdSdSecondAllSecond{} points and the expected absolute revision from \valrevisionMeanAbsSecondAllSecond{} to \valsensUniformRevisionMeanAbsSecondAllSecond{} points; independent fuel-use errors leave the single-year distributions essentially unchanged (standard deviation of the realized-minus-intended 2027 obligation \valsensIndependentFuelRealizedMinusIntendedSdSecondAllSecond{} against \valrealizedMinusIntendedSdSecondAllSecond{} billion RINs). Results are in \texttt{results/sensitivity\_uniform\_revision} and \texttt{results/sensitivity\_independent\_fuel\_errors}.
 
 \section{Full transcription}
 

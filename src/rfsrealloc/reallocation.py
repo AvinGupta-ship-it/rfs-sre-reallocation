@@ -1,15 +1,17 @@
 """Exempted obligations (ERVO), SRE reallocation volumes (SRERV), category splits and
 the family of timing rules.
 
-EPA's method (91 FR 16438-16440; 91 FR 65703):
+EPA's method (91 FR 16438-16440; 91 FR 65703-65706):
 
-* ERVO_X,y = Std_X,y * exempted fuel volume_y, rounded to the nearest 10 million RINs.
+* ERVO_X,y = Std_X,y * exempted fuel volume_y, printed to 10 million RINs (two decimals of
+  billion RINs) in Table IV.C-2; nearest rounding reproduces 11 of the 12 printed cells.
 * Reallocation share alpha applied to the (rounded) ERVOs; the 2026 volume is all of
   2023 plus half of 2024, the 2027 volume is the other half of 2024 plus all of 2025.
 * Results rounded to 10 million RINs, downward for the first year and upward for the
-  second year ("to avoid overestimating, volumes ending in five were rounded down for
-  2026 and rounded up for 2027").  Floor/ceiling reproduces every published value;
-  nearest-with-tie rules do not (see tests).
+  second year.  The proposal's note to Table IV-1 (91 FR 65706) states that "volumes
+  ending in five were rounded down for 2026 and rounded up for 2027"; applied to the
+  printed obligations that rule reproduces three of the six Set 2 volumes, whereas
+  floor/ceiling regardless of the final digit reproduces all six (see tests).
 * The additional 2025 exempted RVO is the difference between the actual (13.38 billion
   gallons of exempted fuel) and projected (7.55 billion gallons) ERVO for 2025.
 """
