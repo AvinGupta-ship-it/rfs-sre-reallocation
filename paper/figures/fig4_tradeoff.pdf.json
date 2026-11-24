@@ -1,0 +1,6 @@
+{
+  "sources": [
+    "e4_timing_tradeoff.csv"
+  ],
+  "basis": "deterministic steps; Monte Carlo revisions; hypothetical finalization scenarios"
+}

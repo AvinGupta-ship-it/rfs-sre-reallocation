@@ -1,0 +1,623 @@
+generated: '2026-11-24'
+note: Raw files are stored unmodified. Files marked 'browser' were retrieved through
+  an interactive browser session because the host returns HTTP 403 to non-browser
+  clients; their checksums are recorded here and verified by 'python scripts/fetch_data.py
+  --verify'.
+files:
+- path: federal_register_api/2026-21155.json
+  organization: Office of the Federal Register
+  description: Federal Register API record for the proposed rule (comment deadline,
+    docket, document ID)
+  url: https://www.federalregister.gov/api/v1/documents/2026-21155.json
+  retrieved: '2026-11-23'
+  method: http
+  query: {}
+  sha256: 452a813875274ba7515fd1b55263fa907f00c3642b947826deaea14fa9e6bad5
+  bytes: 6920
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: federal_register_api/2026-06275.json
+  organization: Office of the Federal Register
+  description: Federal Register API record for the Set 2 final rule
+  url: https://www.federalregister.gov/api/v1/documents/2026-06275.json
+  retrieved: '2026-11-23'
+  method: http
+  query: {}
+  sha256: f1873f5674cd1dc6ba52156125233d4a9b7c5ac9c71b73cb0308a9c607aa005a
+  bytes: 66511
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: federal_register/2026-21155.pdf
+  organization: Government Publishing Office
+  description: Proposed rule, 91 FR 65699 (Oct. 16, 2026), official PDF
+  url: https://www.govinfo.gov/content/pkg/FR-2026-10-16/pdf/2026-21155.pdf
+  retrieved: '2026-11-24'
+  method: http
+  query: {}
+  sha256: d121ec4318fb79ba615869f56be141436d0365640bb85131ead3156113e8ad50
+  bytes: 309322
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: federal_register/2026-21155.xml
+  organization: Office of the Federal Register
+  description: Proposed rule, 91 FR 65699, full-text XML
+  url: https://www.federalregister.gov/documents/full_text/xml/2026/10/16/2026-21155.xml
+  retrieved: '2026-11-24'
+  method: http
+  query: {}
+  sha256: b8db63652963cf07037163481dc8e1d3c763de6761be4a6a5c15ccefe325ed60
+  bytes: 120228
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: federal_register/2026-06275.pdf
+  organization: Government Publishing Office
+  description: Set 2 final rule, 91 FR 16388 (Apr. 1, 2026), official PDF
+  url: https://www.govinfo.gov/content/pkg/FR-2026-04-01/pdf/2026-06275.pdf
+  retrieved: '2026-11-24'
+  method: http
+  query: {}
+  sha256: 43b7113a459dd4f97e16e0ccb7c01caa6c7a7cbcbf92b60d40aa716423a3e7aa
+  bytes: 5064463
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: federal_register/2026-06275.xml
+  organization: Office of the Federal Register
+  description: Set 2 final rule, 91 FR 16388, full-text XML
+  url: https://www.federalregister.gov/documents/full_text/xml/2026/04/01/2026-06275.xml
+  retrieved: '2026-11-24'
+  method: http
+  query: {}
+  sha256: a2942bc18852e104c9ce16ac2c4ce43641220bc37f7ea81860ef653bc94716d8
+  bytes: 890716
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: federal_register/2010-30296.xml
+  organization: Office of the Federal Register
+  description: 2011 RFS standards, 75 FR 76790
+  url: https://www.federalregister.gov/documents/full_text/xml/2010/12/09/2010-30296.xml
+  retrieved: '2026-11-24'
+  method: http
+  query: {}
+  sha256: a8600b983ca51e7fe966d3c20cf311c6a17e9fc9d5ff7d25a81ebf26dafde885
+  bytes: 318784
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: federal_register/2011-33451.xml
+  organization: Office of the Federal Register
+  description: 2012 RFS standards, 77 FR 1320
+  url: https://www.federalregister.gov/documents/full_text/xml/2012/01/09/2011-33451.xml
+  retrieved: '2026-11-24'
+  method: http
+  query: {}
+  sha256: c07e023aad6d8c0084cd3a499dad77dacd341138e2ebab49cf2802412524a16c
+  bytes: 336531
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: federal_register/2013-19557.xml
+  organization: Office of the Federal Register
+  description: 2013 RFS standards, 78 FR 49794
+  url: https://www.federalregister.gov/documents/full_text/xml/2013/08/15/2013-19557.xml
+  retrieved: '2026-11-24'
+  method: http
+  query: {}
+  sha256: 5e759de262369f7ca2a111befa3e30655233987b8a9da2e5659bcce03b852242
+  bytes: 345608
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: federal_register/2015-30893.xml
+  organization: Office of the Federal Register
+  description: 2014-2016 RFS standards, 80 FR 77420
+  url: https://www.federalregister.gov/documents/full_text/xml/2015/12/14/2015-30893.xml
+  retrieved: '2026-11-24'
+  method: http
+  query: {}
+  sha256: a3d2b8b5a731b6047e41d3d039a7071bbbaf2a188603b382ccf5e4e7e6ada3f9
+  bytes: 832621
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: federal_register/2016-28879.xml
+  organization: Office of the Federal Register
+  description: 2017 RFS standards, 81 FR 89746
+  url: https://www.federalregister.gov/documents/full_text/xml/2016/12/12/2016-28879.xml
+  retrieved: '2026-11-24'
+  method: http
+  query: {}
+  sha256: 7b93036071fa213d15068110502e4e6c2d60f8d35bbabf0bed882b2dd8f56072
+  bytes: 545661
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: federal_register/2017-26426.xml
+  organization: Office of the Federal Register
+  description: 2018 RFS standards, 82 FR 58486
+  url: https://www.federalregister.gov/documents/full_text/xml/2017/12/12/2017-26426.xml
+  retrieved: '2026-11-24'
+  method: http
+  query: {}
+  sha256: 0ed366b66be2057a379f33a012c1b6eeab484b8bf215cc061318555f759d11fd
+  bytes: 399807
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: federal_register/2018-26566.xml
+  organization: Office of the Federal Register
+  description: 2019 RFS standards, 83 FR 63704
+  url: https://www.federalregister.gov/documents/full_text/xml/2018/12/11/2018-26566.xml
+  retrieved: '2026-11-24'
+  method: http
+  query: {}
+  sha256: 933c72c2eaf7f94e2c9a79cae742a6ddb4ab8bc039a94580a428794c72ed9d6f
+  bytes: 401706
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: federal_register/2020-00431.xml
+  organization: Office of the Federal Register
+  description: 2020 RFS standards, 85 FR 7016
+  url: https://www.federalregister.gov/documents/full_text/xml/2020/02/06/2020-00431.xml
+  retrieved: '2026-11-24'
+  method: http
+  query: {}
+  sha256: 4bef5f66b3e71d1aad5a21b14ee0ac62f09871d4acf830fd638836f45ead5b1e
+  bytes: 707627
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: federal_register/2022-12376.xml
+  organization: Office of the Federal Register
+  description: 2020-2022 RFS annual rules, 87 FR 39600
+  url: https://www.federalregister.gov/documents/full_text/xml/2022/07/01/2022-12376.xml
+  retrieved: '2026-11-24'
+  method: http
+  query: {}
+  sha256: 5bc5cbd87cc61df5bb54d5904d5f2a12aa19a41827bc6ae9aac87fc6844c6fe7
+  bytes: 783758
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: federal_register/2023-13462.xml
+  organization: Office of the Federal Register
+  description: Set 1 rule (2023-2025 standards), 88 FR 44468
+  url: https://www.federalregister.gov/documents/full_text/xml/2023/07/12/2023-13462.xml
+  retrieved: '2026-11-24'
+  method: http
+  query: {}
+  sha256: 0d15ed35d36ffcba84ff7d8b823646fb1eb192e9f31f4d96c93676d3b4ce72ff
+  bytes: 1258727
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: federal_register/2025-11128.xml
+  organization: Office of the Federal Register
+  description: Set 2 proposed rule, 90 FR 25784
+  url: https://www.federalregister.gov/documents/full_text/xml/2025/06/17/2025-11128.xml
+  retrieved: '2026-11-24'
+  method: http
+  query: {}
+  sha256: 198289a8a95f1c9beb74dc18c284b40acb2de64d34fe352b0e50e6a80ed46a57
+  bytes: 846106
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: federal_register/2025-18111.xml
+  organization: Office of the Federal Register
+  description: Set 2 supplemental proposal, 90 FR 45007
+  url: https://www.federalregister.gov/documents/full_text/xml/2025/09/18/2025-18111.xml
+  retrieved: '2026-11-24'
+  method: http
+  query: {}
+  sha256: ce4b5bd85e378a87ee6a8782a773841f51b250fff8cff56f5764b1b1305a5ad1
+  bytes: 93087
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: federal_register/2026-18132.xml
+  organization: Office of the Federal Register
+  description: Extension of 2025 compliance reporting deadline, 91 FR 56780
+  url: https://www.federalregister.gov/documents/full_text/xml/2026/09/04/2026-18132.xml
+  retrieved: '2026-11-24'
+  method: http
+  query: {}
+  sha256: f1a57f80ba12f95fb19330c9223eab7d0f01e9950dcd4c0586e0786840053b6f
+  bytes: 36033
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: federal_register/2021-26983.xml
+  organization: Office of the Federal Register
+  description: Proposed denial of pending SRE petitions, 86 FR 70999
+  url: https://www.federalregister.gov/documents/full_text/xml/2021/12/14/2021-26983.xml
+  retrieved: '2026-11-24'
+  method: http
+  query: {}
+  sha256: 8b5888bfa85116b5e51dc2fa679d686599c69c0dc4d70638fb56c8330c5a2541
+  bytes: 12403
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: federal_register/2022-08686.xml
+  organization: Office of the Federal Register
+  description: Notice of April 2022 denial of 36 SRE petitions, 87 FR 24300
+  url: https://www.federalregister.gov/documents/full_text/xml/2022/04/25/2022-08686.xml
+  retrieved: '2026-11-24'
+  method: http
+  query: {}
+  sha256: 74b9edb23171fd2ac255c030801e9df20b17b7537183e3bf9d598423ec7299ea
+  bytes: 10806
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: federal_register/2022-08687.xml
+  organization: Office of the Federal Register
+  description: Notice of April 2022 alternative compliance approach, 87 FR 24294
+  url: https://www.federalregister.gov/documents/full_text/xml/2022/04/25/2022-08687.xml
+  retrieved: '2026-11-24'
+  method: http
+  query: {}
+  sha256: 408c3907355094f518daa7409d68d04466dbcb4b296c32999d1ab7d8130cb96a
+  bytes: 9692
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: federal_register/2022-12359.xml
+  organization: Office of the Federal Register
+  description: Notice of June 2022 denial of 69 SRE petitions, 87 FR 34873
+  url: https://www.federalregister.gov/documents/full_text/xml/2022/06/08/2022-12359.xml
+  retrieved: '2026-11-24'
+  method: http
+  query: {}
+  sha256: 7223f8f457977340beefa2da7c6fd5ac6b9da4930f48c1c5b0802aa97e301af6
+  bytes: 10873
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: federal_register/2022-12357.xml
+  organization: Office of the Federal Register
+  description: Notice of June 2022 alternative compliance approach, 87 FR 34872
+  url: https://www.federalregister.gov/documents/full_text/xml/2022/06/08/2022-12357.xml
+  retrieved: '2026-11-24'
+  method: http
+  query: {}
+  sha256: 729b472df355860937e60897ec5498776f9a986737aa5078455e43e08a220cdf
+  bytes: 12672
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: federal_register/2023-15401.xml
+  organization: Office of the Federal Register
+  description: Notice of July 2023 denial of 26 SRE petitions, 88 FR 46795
+  url: https://www.federalregister.gov/documents/full_text/xml/2023/07/20/2023-15401.xml
+  retrieved: '2026-11-24'
+  method: http
+  query: {}
+  sha256: 32270f6f9108cb9857932ee1ea00ac47946ccd5a5c99312ce9d98d3ba9771e0c
+  bytes: 16571
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: federal_register/2025-16390.xml
+  organization: Office of the Federal Register
+  description: Notice of August 2025 SRE decisions, 90 FR 41829
+  url: https://www.federalregister.gov/documents/full_text/xml/2025/08/27/2025-16390.xml
+  retrieved: '2026-11-24'
+  method: http
+  query: {}
+  sha256: 112f9611a6378d2cffdc9b0960cc2e7a4845bafaf02ecc5eeb0664be530cb750
+  bytes: 29062
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: federal_register/2025-20440.xml
+  organization: Office of the Federal Register
+  description: Notice of November 2025 SRE decisions, 90 FR 52385
+  url: https://www.federalregister.gov/documents/full_text/xml/2025/11/20/2025-20440.xml
+  retrieved: '2026-11-24'
+  method: http
+  query: {}
+  sha256: 979f461a1a3e164d00e46482f3e0a32732f2a458d4bce971f91e8a5444589192
+  bytes: 29411
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: federal_register/2026-15905.xml
+  organization: Office of the Federal Register
+  description: Notice of August 3, 2026 SRE decisions, 91 FR 50532
+  url: https://www.federalregister.gov/documents/full_text/xml/2026/08/05/2026-15905.xml
+  retrieved: '2026-11-24'
+  method: http
+  query: {}
+  sha256: 101e96e07567e297dbb514ba86132e5fc0cf415a6f4a23348616dbddeb8b6fec
+  bytes: 29421
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: federal_register/2026-17985.xml
+  organization: Office of the Federal Register
+  description: Notice of August 31, 2026 SRE decisions, 91 FR 56444
+  url: https://www.federalregister.gov/documents/full_text/xml/2026/09/02/2026-17985.xml
+  retrieved: '2026-11-24'
+  method: http
+  query: {}
+  sha256: 30c26af785c1ecc14f31205db02b1a144054527e90e994b6e4b0136fa0f15c82
+  bytes: 32502
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: regulations_gov/EPA-HQ-OAR-2024-0505-0956.pdf
+  organization: U.S. Environmental Protection Agency (docket EPA-HQ-OAR-2024-0505)
+  description: Calculation of Co-Proposed Revised 2026 and 2027 RFS Percentage Standards
+    (memorandum printed from spreadsheet)
+  url: https://downloads.regulations.gov/EPA-HQ-OAR-2024-0505-0956/content.pdf
+  retrieved: '2026-11-24'
+  method: browser (host rejects non-browser clients)
+  query: {}
+  sha256: c297b6cb06c9941e86dd55e1adea95dc0f7791331dcac48985319e82cb61a423
+  bytes: 503369
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: regulations_gov/EPA-HQ-OAR-2024-0505-0790.pdf
+  organization: U.S. Environmental Protection Agency (docket EPA-HQ-OAR-2024-0505)
+  description: Calculation of 2026 and 2027 RFS Percentage Standards Without SRE Reallocation
+    Volumes
+  url: https://downloads.regulations.gov/EPA-HQ-OAR-2024-0505-0790/content.pdf
+  retrieved: '2026-11-24'
+  method: browser (host rejects non-browser clients)
+  query: {}
+  sha256: 78678caac3047b666ed9c522533bb1a5942f9f8371d8d6c52a6000ee75b9d799
+  bytes: 503369
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: regulations_gov/EPA-HQ-OAR-2024-0505-0789.pdf
+  organization: U.S. Environmental Protection Agency (docket EPA-HQ-OAR-2024-0505)
+  description: Calculation of Final 2026 and 2027 RFS Percentage Standards
+  url: https://downloads.regulations.gov/EPA-HQ-OAR-2024-0505-0789/content.pdf
+  retrieved: '2026-11-24'
+  method: browser (host rejects non-browser clients)
+  query: {}
+  sha256: 6351c9c826c90a3b21d88c6a8e1a460eacda0fb9af7d3c96ea9d6515b3c32a9b
+  bytes: 502191
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: regulations_gov/EPA-HQ-OAR-2024-0505-0961.pdf
+  organization: U.S. Environmental Protection Agency (docket EPA-HQ-OAR-2024-0505)
+  description: Fuel Price Impacts for Reallocation of Additional 2025 SREs Proposed
+    Rule (memorandum)
+  url: https://downloads.regulations.gov/EPA-HQ-OAR-2024-0505-0961/content.pdf
+  retrieved: '2026-11-24'
+  method: browser (host rejects non-browser clients)
+  query: {}
+  sha256: 7be795c173b4da70136f431b4f3b92fc49b305274d215a23cd10b3e0328d892c
+  bytes: 286367
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: regulations_gov/EPA-HQ-OAR-2024-0505-0954.pdf
+  organization: U.S. Environmental Protection Agency (docket EPA-HQ-OAR-2024-0505)
+  description: Proposed Regulations for Reallocation of Additional 2025 SREs Rule
+    (amendatory text)
+  url: https://downloads.regulations.gov/EPA-HQ-OAR-2024-0505-0954/content.pdf
+  retrieved: '2026-11-24'
+  method: browser (host rejects non-browser clients)
+  query: {}
+  sha256: 774ed0e0f38b5d0238e6d396d99a88a2def1fd394c069ffd534327356aed8e92
+  bytes: 166343
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: regulations_gov/EPA-HQ-OAR-2024-0505-0953.pdf
+  organization: U.S. Environmental Protection Agency (docket EPA-HQ-OAR-2024-0505)
+  description: August 2025 Decisions on Petitions for RFS Small Refinery Exemptions
+    (EPA-420-R-25-010), docket copy
+  url: https://downloads.regulations.gov/EPA-HQ-OAR-2024-0505-0953/content.pdf
+  retrieved: '2026-11-24'
+  method: browser (host rejects non-browser clients)
+  query: {}
+  sha256: 400b940d1111824dbbe8cd0a44434a12a71691f513a26eb709e800e5c4821f15
+  bytes: 382761
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: epa/420r26017.pdf
+  organization: U.S. Environmental Protection Agency
+  description: August 31, 2026 Decisions on Petitions for RFS Small Refinery Exemptions
+    (EPA-420-R-26-017)
+  url: https://www.epa.gov/system/files/documents/2026-08/420r26017.pdf
+  retrieved: '2026-11-24'
+  method: http
+  query: {}
+  sha256: 7afab956bd0a0a26b0f8c5fa0a131a8d5a532283a462fe97043ff4ad09734744
+  bytes: 866120
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: epa/420r26004-2026-0803-rev.pdf
+  organization: U.S. Environmental Protection Agency
+  description: August 3, 2026 Decisions on Petitions for RFS Small Refinery Exemptions
+    (EPA-420-R-26-004)
+  url: https://www.epa.gov/system/files/documents/2026-08/420r26004-2026-0803-rev.pdf
+  retrieved: '2026-11-24'
+  method: http
+  query: {}
+  sha256: 18025b057d6f3a73ba0052b12c9a1a89ff142e1522d502b75f0ec80ceabfd83b
+  bytes: 1267356
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: epa/420r25010.pdf
+  organization: U.S. Environmental Protection Agency (NEPIS)
+  description: August 2025 Decisions on Petitions for RFS Small Refinery Exemptions
+    (EPA-420-R-25-010)
+  url: https://nepis.epa.gov/Exe/ZyPDF.cgi?Dockey=P101HUDF.pdf
+  retrieved: '2026-11-24'
+  method: http
+  query: {}
+  sha256: 400b940d1111824dbbe8cd0a44434a12a71691f513a26eb709e800e5c4821f15
+  bytes: 382761
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: epa/420r25013.pdf
+  organization: U.S. Environmental Protection Agency (NEPIS)
+  description: November 2025 Decisions on Petitions for RFS Small Refinery Exemptions
+    (EPA-420-R-25-013)
+  url: https://nepis.epa.gov/Exe/ZyPDF.cgi?Dockey=P101HUOJ.pdf
+  retrieved: '2026-11-24'
+  method: http
+  query: {}
+  sha256: 9fda7b766e25c6874039b25bbafc5bc1fe9c37afe97e38c2e90abc4ce2d6efb9
+  bytes: 386699
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: epa/420r26011.pdf
+  organization: U.S. Environmental Protection Agency
+  description: Set 2 Rule Regulatory Impact Analysis (EPA-420-R-26-011), March 2026
+  url: https://www.epa.gov/system/files/documents/2026-03/420r26011.pdf
+  retrieved: '2026-11-24'
+  method: http
+  query: {}
+  sha256: 7f706293b52504625bc706b26abe0aa53122c31c695ded84a37257851dae5c1d
+  bytes: 5434297
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: epa/set-2-detailed-fact-sheet.pdf
+  organization: U.S. Environmental Protection Agency
+  description: Set 2 final rule detailed fact sheet
+  url: https://www.epa.gov/system/files/documents/2026-03/set-2-detailed-fact-sheet.pdf
+  retrieved: '2026-11-24'
+  method: http
+  query: {}
+  sha256: a09a6ee7ff2f4e774e5573cfdb78147fd27ce4bf0c94c59db25586453d8e1c52
+  bytes: 230633
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: epa_dashboard/sre_table1_exempted_volumes.csv
+  organization: U.S. Environmental Protection Agency (RFS public data, Small Refinery
+    Exemptions sheet)
+  description: 'Table SRE-1: exempted volume of gasoline and diesel and exempted RVO
+    by compliance year (dashboard last updated Nov. 19, 2026)'
+  url: https://edap.epa.gov/public/single/?appid=73b2b6a5-70c6-4820-b3fa-186ac094f10d&sheet=7f64db2b-616a-493e-b9ea-8c3d8fc2ab6e&opt=noselections&select=clearall
+  retrieved: '2026-11-24'
+  method: browser (host rejects non-browser clients)
+  query:
+    export: Export Table button, CSV
+    selections: none
+  sha256: 2a8d2c61280c8d8310d7c235114d9d189f46c63483a150857c3ed85915fd2cf4
+  bytes: 653
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: epa_dashboard/sre_table2_petition_decisions.csv
+  organization: U.S. Environmental Protection Agency (RFS public data, Small Refinery
+    Exemptions sheet)
+  description: 'Table SRE-2: small refinery exemption petition decisions by compliance
+    year'
+  url: https://edap.epa.gov/public/single/?appid=73b2b6a5-70c6-4820-b3fa-186ac094f10d&sheet=7f64db2b-616a-493e-b9ea-8c3d8fc2ab6e&opt=noselections&select=clearall
+  retrieved: '2026-11-24'
+  method: browser (host rejects non-browser clients)
+  query:
+    export: Export Table button, CSV
+    selections: none
+  sha256: 1e049f1a8406dc20e266d2598116ee5600a27d267d2d18569222ed9cd997e494
+  bytes: 729
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: epa_dashboard/sre_table3_petitions_since_2022.csv
+  organization: U.S. Environmental Protection Agency (RFS public data, Small Refinery
+    Exemptions sheet)
+  description: 'Table SRE-3: petitions submitted July 1, 2022 or later, with submission
+    and decision dates'
+  url: https://edap.epa.gov/public/single/?appid=73b2b6a5-70c6-4820-b3fa-186ac094f10d&sheet=7f64db2b-616a-493e-b9ea-8c3d8fc2ab6e&opt=noselections&select=clearall
+  retrieved: '2026-11-24'
+  method: browser (host rejects non-browser clients)
+  query:
+    export: Export Table button, CSV
+    selections: none
+  sha256: abfde4f41701eeb2b9b284cf21ec7037b4ed3aa196e68857a25aff04fde867d8
+  bytes: 14988
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: epa_dashboard/rvo_table1_projected_vs_actual_volumes.csv
+  organization: U.S. Environmental Protection Agency (RFS public data, Renewable Volume
+    Obligations sheet)
+  description: 'Table 1: projected versus actual volumes of gasoline and diesel reported
+    by obligated parties (data current as of Nov. 10, 2026)'
+  url: https://edap.epa.gov/public/single/?appid=73b2b6a5-70c6-4820-b3fa-186ac094f10d&sheet=9fea8284-c3bc-45cb-8d99-8d91cff608e6&opt=currsel
+  retrieved: '2026-11-24'
+  method: browser (host rejects non-browser clients)
+  query:
+    export: Export Table button, CSV
+    selections: none
+  sha256: 5823778cab86de385779d303313539d0d64ad9341ebe9681f61746f5a2a4dd31
+  bytes: 1623
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: epa_dashboard/rvo_table2_obligations_by_year.xlsx
+  organization: U.S. Environmental Protection Agency (RFS public data, Renewable Volume
+    Obligations sheet)
+  description: 'Table 2: obligated party RVOs by year (projected volume obligation,
+    reported obligation, prior-year deficit)'
+  url: https://edap.epa.gov/public/single/?appid=73b2b6a5-70c6-4820-b3fa-186ac094f10d&sheet=9fea8284-c3bc-45cb-8d99-8d91cff608e6&opt=currsel
+  retrieved: '2026-11-24'
+  method: browser (host rejects non-browser clients)
+  query:
+    export: table export icon, XLSX with formatting
+    selections: all compliance years (year filter cleared)
+  sha256: e93d892bb93d8e1c5bd6aefc4ece8da9ff89f5e796f0e12db60beb04ab1ff28e
+  bytes: 10450
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: epa_dashboard/rvo_table5_rins_retired_by_year.xlsx
+  organization: U.S. Environmental Protection Agency (RFS public data, Renewable Volume
+    Obligations sheet)
+  description: 'Table 5: RINs used to demonstrate compliance by obligated parties,
+    by category and year'
+  url: https://edap.epa.gov/public/single/?appid=73b2b6a5-70c6-4820-b3fa-186ac094f10d&sheet=9fea8284-c3bc-45cb-8d99-8d91cff608e6&opt=currsel
+  retrieved: '2026-11-24'
+  method: browser (host rejects non-browser clients)
+  query:
+    export: table export icon, XLSX with formatting
+    selections: none
+  sha256: e427230cbb9926738b8fd1111fc59d6d014106422aebf7f0399f180df081e797
+  bytes: 7543
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: epa_dashboard/rvo_table6_deficits_by_year.xlsx
+  organization: U.S. Environmental Protection Agency (RFS public data, Renewable Volume
+    Obligations sheet)
+  description: 'Table 6: total compliance deficits by RVO category and year'
+  url: https://edap.epa.gov/public/single/?appid=73b2b6a5-70c6-4820-b3fa-186ac094f10d&sheet=9fea8284-c3bc-45cb-8d99-8d91cff608e6&opt=currsel
+  retrieved: '2026-11-24'
+  method: browser (host rejects non-browser clients)
+  query:
+    export: table export icon, XLSX with formatting
+    selections: none
+  sha256: ab2502f08af7965dea3d7fcb4052f8d975608db0d1c816cb67ee8d0841f51917
+  bytes: 7442
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: ecfr/80.1405.xml
+  organization: Office of the Federal Register (eCFR)
+  description: 40 CFR 80.1405 as of 2026-11-20 (standards table and percentage-standard
+    equations)
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-11-20/title-40.xml?section=80.1405
+  retrieved: '2026-11-24'
+  method: http
+  query:
+    section: '80.1405'
+    date: '2026-11-20'
+  sha256: 0c8c0c82f099df8d4aecd85fdd516f8b3c653adf901b774e107dd033acace2c0
+  bytes: 11481
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: ecfr/80.1427.xml
+  organization: Office of the Federal Register (eCFR)
+  description: 40 CFR 80.1427 as of 2026-11-20 (carryover RIN cap and deficit carryforward)
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-11-20/title-40.xml?section=80.1427
+  retrieved: '2026-11-24'
+  method: http
+  query:
+    section: '80.1427'
+    date: '2026-11-20'
+  sha256: 1af794c493db86b78b0337f65886617b3febf932e881052dbf8cc1e6d58624d1
+  bytes: 11987
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: ecfr/80.1451.xml
+  organization: Office of the Federal Register (eCFR)
+  description: 40 CFR 80.1451 as of 2026-11-20 (compliance reporting deadlines)
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-11-20/title-40.xml?section=80.1451
+  retrieved: '2026-11-24'
+  method: http
+  query:
+    section: '80.1451'
+    date: '2026-11-20'
+  sha256: 4f92a580d75a3b1764520aa76bc30245031402b22f11868520ee59a50dd4bdbb
+  bytes: 34371
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: ecfr/versions_80.1405.json
+  organization: Office of the Federal Register (eCFR)
+  description: Version history of 40 CFR 80.1405
+  url: https://www.ecfr.gov/api/versioner/v1/versions/title-40.json?section=80.1405
+  retrieved: '2026-11-24'
+  method: http
+  query:
+    section: '80.1405'
+  sha256: a7cd469c220c384036a879989fba5ed6976c0e391db4ec0b3c38e399a94bdc04
+  bytes: 4963
+  license: United States Government work; public domain (17 U.S.C. 105)
+- path: eia/MGFUPUS2a.xls
+  organization: U.S. Energy Information Administration
+  description: U.S. product supplied of finished motor gasoline, annual (thousand
+    barrels per day), series MGFUPUS2
+  url: https://www.eia.gov/dnav/pet/hist_xls/MGFUPUS2a.xls
+  retrieved: '2026-11-24'
+  method: http
+  query: {}
+  sha256: 75fc7c907b8338c61109b8734f2e4b4dc9c26f105bd6f7de638dc351489c2d00
+  bytes: 31232
+  license: U.S. Energy Information Administration; public domain, see https://www.eia.gov/about/copyrights_reuse.php
+- path: eia/MDIUPUS2a.xls
+  organization: U.S. Energy Information Administration
+  description: U.S. product supplied of distillate fuel oil, annual (thousand barrels
+    per day), series MDIUPUS2
+  url: https://www.eia.gov/dnav/pet/hist_xls/MDIUPUS2a.xls
+  retrieved: '2026-11-24'
+  method: http
+  query: {}
+  sha256: 33b791d84d81285ccb877a83603dbbfbe33bcbcb8e1eb833b802a8382cb2a843
+  bytes: 31232
+  license: U.S. Energy Information Administration; public domain, see https://www.eia.gov/about/copyrights_reuse.php
+- path: crossref/10.1086_692071.json
+  organization: Crossref
+  description: Metadata for Knittel, Meiselman and Stock (2017)
+  url: https://api.crossref.org/works/10.1086/692071
+  retrieved: '2026-11-24'
+  method: http
+  query: {}
+  sha256: d6abeee3d4266423ab7547c84d5c69f74be4fe804900fdc2a1b60cd401760ca0
+  bytes: 3149
+  license: Crossref REST API metadata; CC0 (https://www.crossref.org/documentation/retrieve-metadata/rest-api/rest-api-metadata-license-information/)
+- path: crossref/10.1093_ajae_aax097.json
+  organization: Crossref
+  description: Metadata for Lade, Lin Lawell and Smith (2018)
+  url: https://api.crossref.org/works/10.1093/ajae/aax097
+  retrieved: '2026-11-24'
+  method: http
+  query: {}
+  sha256: 94d2c9fac103dc56896a5caa336d0f19e34b2581c071ab0d25f01089087e987f
+  bytes: 18666
+  license: Crossref REST API metadata; CC0 (https://www.crossref.org/documentation/retrieve-metadata/rest-api/rest-api-metadata-license-information/)
+- path: crossref/10.1002_aepp.70083.json
+  organization: Crossref
+  description: Metadata for Gerveni, Hubbs, Irwin and Stock (2026)
+  url: https://api.crossref.org/works/10.1002/aepp.70083
+  retrieved: '2026-11-24'
+  method: http
+  query: {}
+  sha256: 59f288140ba95121d7d794c95c7d6385ec4ad9df7204f04ace1f726fefeb0179
+  bytes: 15761
+  license: Crossref REST API metadata; CC0 (https://www.crossref.org/documentation/retrieve-metadata/rest-api/rest-api-metadata-license-information/)

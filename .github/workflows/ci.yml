@@ -1,0 +1,30 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          version: "0.12.5"
+      - name: Install
+        run: uv sync --frozen --extra dev
+      - name: Lint
+        run: uv run ruff check src tests scripts figures
+      - name: Type check
+        run: uv run mypy --strict src
+      - name: Verify raw-data checksums and build processed tables
+        run: |
+          uv run python scripts/fetch_data.py --verify
+          uv run python -m rfsrealloc.data.build
+      - name: Tests
+        run: uv run pytest
+      - name: Reduced pipeline
+        run: make quick PY="uv run python"
+      - name: Reference check
+        run: uv run python scripts/check_refs.py

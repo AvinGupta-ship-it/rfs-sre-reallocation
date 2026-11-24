@@ -1,0 +1,45 @@
+# Sensitivity: replace the empirical revision distribution by a labelled assumption (+/- 20 percent, uniform).
+name: sensitivity_uniform_revision
+description: As paper.yaml but with a uniform +/- 20 percent revision distribution (assumption, not data).
+output_dir: results
+monte_carlo:
+  n_draws: 100000
+  seed: 20261204
+  n_workers: 4
+  convergence_checkpoints: [100, 300, 1000, 3000, 10000, 30000, 100000]
+  headline_mcse_tolerance: 0.02
+sobol:
+  n_base: 4096
+  bootstrap: 500
+  seed_offset: 1
+timing:
+  w_grid_points: 101
+  first_year: 2026
+  second_year: 2027
+  finalization_scenarios:
+    scenario_hypothetical_early_2027: 2027-02-01
+    scenario_hypothetical_mid_2027: 2027-06-01
+    scenario_hypothetical_late_2027: 2027-10-01
+uncertainty:
+  revision:
+    model: uniform
+    uniform_half_width: 0.20
+    include_later_decisions: true
+  fuel_error:
+    model: empirical
+    lead_time_bins_years: [0.0, 1.0, 2.5]
+    correlation_between_years: 1.0
+    include_retroactive_rules: false
+  decision_lag_years: [2021, 2022, 2023, 2024, 2025]
+carryover:
+  bank_basis: ria_effective_2024
+  additional_2025_rins_to_bank: true
+  hypothetical_bank_scenarios:
+    scenario_hypothetical_low_bank: 3.0
+    scenario_hypothetical_high_bank: 5.0
+backtest:
+  projection_first_year: 2016
+  first_target_year: 2021
+  last_target_year: 2027
+  projection_window_years: 3
+  lead_time_policies_months: [0, 6, 12]

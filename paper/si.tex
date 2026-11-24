@@ -1,0 +1,76 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{hyperref}
+\usepackage[margin=1in]{geometry}
+\usepackage{natbib}
+\input{generated/values.tex}
+\graphicspath{{figures/}}
+\title{Supporting Information for ``Reallocating exempted obligations under the Renewable Fuel Standard: exact reconstruction, uncertainty propagation and the predictability of alternative timing rules''}
+\author{Avin Gupta}
+\date{}
+\begin{document}
+\maketitle
+
+\section{Code-to-equation map}
+
+\begin{tabular}{p{0.42\textwidth}p{0.52\textwidth}}
+\toprule
+Equation or quantity & Implementation \\
+\midrule
+Percentage standard, 40 CFR 80.1405(c) & \texttt{rfsrealloc.standards.standards}, \texttt{obligated\_volume} (exact rationals) \\
+Rounding to two decimals, half-up & \texttt{rfsrealloc.standards.round\_half\_up} \\
+Implied denominator interval & \texttt{rfsrealloc.standards.implied\_denominator\_interval} \\
+Exempted obligation $\mathrm{ERVO}_{X,y}$ & \texttt{rfsrealloc.reallocation.exempted\_rvo}, \texttt{ervo\_table} \\
+Set 2 reallocation volumes (floor 2026, ceiling 2027) & \texttt{rfsrealloc.reallocation.set2\_srerv}, \texttt{round\_to} \\
+Additional 2025 obligation $A_X$ & \texttt{rfsrealloc.reallocation.additional\_ervo} \\
+Timing-rule family $w$ & \texttt{rfsrealloc.reallocation.allocate}; \texttt{uncertainty.TimingModel.standards} \\
+Retroactivity $R(w,t)$ & \texttt{rfsrealloc.reallocation.retroactivity} \\
+Revision ratio samples & \texttt{rfsrealloc.uncertainty.revision\_pairs}, \texttt{draw\_revision\_ratio} \\
+Fuel-use error samples & \texttt{rfsrealloc.uncertainty.fuel\_error\_samples}, \texttt{draw\_fuel\_errors} \\
+Realized obligation $\mathrm{Std}\,V e^{e}/100$ & \texttt{rfsrealloc.uncertainty.evaluate} \\
+Sobol indices & \texttt{rfsrealloc.uncertainty.sobol\_indices} (SALib Saltelli/Jansen) \\
+Projection backtest & \texttt{rfsrealloc.backtest.projection\_backtest} \\
+Timing-rule backtest & \texttt{rfsrealloc.backtest.timing\_rule\_backtest} \\
+Carryover accounting identity & \texttt{rfsrealloc.carryover.account\_year}, \texttt{YearAccount.conserved} \\
+Compliance deadlines, 80.1451(f) & \texttt{rfsrealloc.carryover.compliance\_deadline\_after\_revision} \\
+RIN cost table & \texttt{rfsrealloc.costs.total\_rin\_cost\_cents} \\
+\bottomrule
+\end{tabular}
+
+\section{Verification levels}
+
+\textbf{Numerical correctness.} Unit tests reproduce every published standard, reallocation volume and RIN-cost row; property-based tests check positivity, monotonicity in the numerator and denominator, agreement of exact and floating-point evaluation, the rounding conventions, conservation of the additional volume under the timing rule, bounds and monotonicity of the retroactivity measure, and the carryover accounting identity. \textbf{Model verification.} The hand transcription of Federal Register input tables agrees with values parsed by code from the XML (156 values) and the transcribed standards agree with the eCFR table; the two transcription entries reconcile with \valnDoubleEntryMismatches{} mismatches; the Sobol decomposition is checked against the linearised variance share. \textbf{Empirical validity.} The uncertainty distributions are the historical distributions of EPA's record; no out-of-sample prediction of 2026--2027 outcomes is claimed. \textbf{Regulatory applicability.} Each result is mapped to solicitation C-1 (timing) or C-3 (effects) in the comment.
+
+\section{Monte Carlo convergence}
+
+The headline quantity (standard deviation of the 2027 standard) has a relative Monte Carlo standard error of \valmcseHeadlineRelative{} with \valmcDraws{} draws, below the 2~percent criterion. Figure~\ref{fig:conv} shows running means with 95~percent error bars at the configured checkpoints.
+
+\begin{figure}[htbp]\centering\includegraphics[width=\textwidth]{si_convergence}
+\caption{Running means of the 2027 standard and of the realized-minus-intended 2027 obligation with 95~percent Monte Carlo error bars, for $w=0$ and $w=1/2$.}\label{fig:conv}\end{figure}
+
+\section{Sensitivity indices and empirical distributions}
+
+\begin{figure}[htbp]\centering\includegraphics[width=\textwidth]{si_sobol}
+\caption{Total-order Sobol indices with bootstrap intervals for the 2027 standard and the realized 2027 obligation, for both alternatives.}\end{figure}
+
+\begin{figure}[htbp]\centering\includegraphics[width=\textwidth]{si_distributions}
+\caption{Left: ratio of reported to petition-based exempted obligation by compliance year. Right: reported minus projected non-renewable gasoline-plus-diesel volume against lead time; crosses mark rules set or revised after the year had begun, which are excluded from the prospective sample.}\end{figure}
+
+\section{Cross-check against a secondary analysis}
+
+As an independent check of derived quantities, the obligation that the additional 2025 exempted fuel (\valcrossCheckExtraExemptFuel{} billion gallons above the Set~2 projection) would remove if it were not reallocated is \valcrossCheckBbdReduction{} billion RINs for biomass-based diesel and \valcrossCheckRfReduction{} billion RINs for total renewable fuel at the 2026 standards. The secondary analysis of \citet{hubbs2026farmdoc} states about 0.3 and nearly 1 billion RINs for the same quantities, and quotes the 2025 exempted volume (13.38 billion gallons), the exempted obligation (1.76 billion RINs) and the additional volume (0.77 billion RINs) used here. That analysis is cited only as a cross-check and supplies no parameter.
+
+\section{Sensitivity configurations}
+
+Two additional configurations were run with identical seeds: a uniform $\pm 20$~percent revision distribution (an assumption, not data) and independent fuel-use errors for 2026 and 2027. The uniform assumption raises the standard deviation of the 2027 standard under the 2027 approach from \valstdSdSecondAllSecond{} to about 0.12 points and the expected absolute revision to about 0.10 points; independent fuel-use errors leave the single-year distributions unchanged. Results are in \texttt{results/sensitivity\_uniform\_revision} and \texttt{results/sensitivity\_independent\_fuel\_errors}.
+
+\section{Full transcription}
+
+\input{generated/table_transcription.tex}
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+\end{document}

@@ -1,0 +1,45 @@
+# Reduced configuration for continuous integration (finishes in well under a minute on a laptop).
+name: quick
+description: Reduced Monte Carlo (2,000 draws), Sobol N = 128, 21-point timing grid.
+output_dir: results
+monte_carlo:
+  n_draws: 2000
+  seed: 20261204
+  n_workers: 4
+  convergence_checkpoints: [100, 300, 1000, 2000]
+  headline_mcse_tolerance: 0.05
+sobol:
+  n_base: 128
+  bootstrap: 50
+  seed_offset: 1
+timing:
+  w_grid_points: 21
+  first_year: 2026
+  second_year: 2027
+  finalization_scenarios:
+    scenario_hypothetical_early_2027: 2027-02-01
+    scenario_hypothetical_mid_2027: 2027-06-01
+    scenario_hypothetical_late_2027: 2027-10-01
+uncertainty:
+  revision:
+    model: empirical
+    uniform_half_width: 0.20
+    include_later_decisions: true
+  fuel_error:
+    model: empirical
+    lead_time_bins_years: [0.0, 1.0, 2.5]
+    correlation_between_years: 1.0
+    include_retroactive_rules: false
+  decision_lag_years: [2021, 2022, 2023, 2024, 2025]
+carryover:
+  bank_basis: ria_effective_2024
+  additional_2025_rins_to_bank: true
+  hypothetical_bank_scenarios:
+    scenario_hypothetical_low_bank: 3.0
+    scenario_hypothetical_high_bank: 5.0
+backtest:
+  projection_first_year: 2016
+  first_target_year: 2021
+  last_target_year: 2027
+  projection_window_years: 3
+  lead_time_policies_months: [0, 6, 12]

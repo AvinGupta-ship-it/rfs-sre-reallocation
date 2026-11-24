@@ -1,0 +1,666 @@
+table,year,category,variable,value,unit,source,locator
+set2_inputs,2026,CB,RFV,1.36,billion RINs,docket_0789,p. 1 table
+set2_inputs,2026,BBD,RFV,8.86,billion RINs,docket_0789,p. 1 table
+set2_inputs,2026,AB,RFV,10.82,billion RINs,docket_0789,p. 1 table
+set2_inputs,2026,RF,RFV,25.82,billion RINs,docket_0789,p. 1 table
+set2_inputs,2026,,G,140.07,billion gallons,docket_0789,p. 1 table
+set2_inputs,2026,,D,60.46,billion gallons,docket_0789,p. 1 table
+set2_inputs,2026,,RG,14.85,billion gallons,docket_0789,p. 1 table
+set2_inputs,2026,,RD,5.11,billion gallons,docket_0789,p. 1 table
+set2_inputs,2026,,GE,4.35,billion gallons,docket_0789,p. 1 table
+set2_inputs,2026,,DE,3.20,billion gallons,docket_0789,p. 1 table
+set2_inputs,2027,CB,RFV,1.43,billion RINs,docket_0789,p. 1 table
+set2_inputs,2027,BBD,RFV,8.95,billion RINs,docket_0789,p. 1 table
+set2_inputs,2027,AB,RFV,10.98,billion RINs,docket_0789,p. 1 table
+set2_inputs,2027,RF,RFV,25.98,billion RINs,docket_0789,p. 1 table
+set2_inputs,2027,,G,139.18,billion gallons,docket_0789,p. 1 table
+set2_inputs,2027,,D,59.72,billion gallons,docket_0789,p. 1 table
+set2_inputs,2027,,RG,14.85,billion gallons,docket_0789,p. 1 table
+set2_inputs,2027,,RD,5.26,billion gallons,docket_0789,p. 1 table
+set2_inputs,2027,,GE,4.35,billion gallons,docket_0789,p. 1 table
+set2_inputs,2027,,DE,3.20,billion gallons,docket_0789,p. 1 table
+set2_aeo,2026,,gasoline_mbd,8.94,million barrels per day,docket_0789,p. 2 Gasoline Projections
+set2_aeo,2027,,gasoline_mbd,8.88,million barrels per day,docket_0789,p. 2 Gasoline Projections
+set2_aeo,2026,,ethanol_quad,1.23,quadrillion Btu,docket_0789,p. 2 Gasoline Projections
+set2_aeo,2027,,ethanol_quad,1.23,quadrillion Btu,docket_0789,p. 2 Gasoline Projections
+set2_aeo,,,gasoline_adjustment,0.022,fraction,docket_0789,p. 2 Adjustment Factor
+set2_aeo,2026,,obligated_gasoline,125.22,billion gallons,docket_0789,p. 2 Total Obligated Gasoline
+set2_aeo,2027,,obligated_gasoline,124.33,billion gallons,docket_0789,p. 2 Total Obligated Gasoline
+set2_aeo,2026,,distillate_mbd,4.25,million barrels per day,docket_0789,p. 3 Diesel Projections
+set2_aeo,2027,,distillate_mbd,4.20,million barrels per day,docket_0789,p. 3 Diesel Projections
+set2_aeo,2026,,biodiesel_mbd,0.10,million barrels per day,docket_0789,p. 3 Diesel Projections
+set2_aeo,2027,,biodiesel_mbd,0.10,million barrels per day,docket_0789,p. 3 Diesel Projections
+set2_aeo,2026,,renewable_diesel_mbd,0.25,million barrels per day,docket_0789,p. 3 Diesel Projections
+set2_aeo,2027,,renewable_diesel_mbd,0.24,million barrels per day,docket_0789,p. 3 Diesel Projections
+set2_aeo,2026,,other_biofuels_mbd,0.01,million barrels per day,docket_0789,p. 3 Diesel Projections
+set2_aeo,2027,,other_biofuels_mbd,0.03,million barrels per day,docket_0789,p. 3 Diesel Projections
+set2_aeo,,,diesel_adjustment,-0.073,fraction,docket_0789,p. 3 Adjustment Factor
+set2_aeo,2026,,obligated_diesel,55.35,billion gallons,docket_0789,p. 3 Total Obligated Diesel
+set2_aeo,2027,,obligated_diesel,54.46,billion gallons,docket_0789,p. 3 Total Obligated Diesel
+set2_aeo,,,ethanol_hhv,3.563,million Btu per barrel,docket_0789,p. 4 Energy Content
+srerv,2026,BBD,set2,0.21,billion RINs,fr_2026_21155,Table IV-1
+srerv,2026,AB,set2,0.28,billion RINs,fr_2026_21155,Table IV-1
+srerv,2026,RF,set2,0.99,billion RINs,fr_2026_21155,Table IV-1
+srerv,2027,BBD,set2,0.25,billion RINs,fr_2026_21155,Table IV-1
+srerv,2027,AB,set2,0.34,billion RINs,fr_2026_21155,Table IV-1
+srerv,2027,RF,set2,1.04,billion RINs,fr_2026_21155,Table IV-1
+srerv,2026,BBD,equal,0.30,billion RINs,fr_2026_21155,Table IV-1
+srerv,2026,AB,equal,0.40,billion RINs,fr_2026_21155,Table IV-1
+srerv,2026,RF,equal,1.37,billion RINs,fr_2026_21155,Table IV-1
+srerv,2027,BBD,equal,0.34,billion RINs,fr_2026_21155,Table IV-1
+srerv,2027,AB,equal,0.47,billion RINs,fr_2026_21155,Table IV-1
+srerv,2027,RF,equal,1.43,billion RINs,fr_2026_21155,Table IV-1
+srerv,2026,BBD,all2027,0.21,billion RINs,fr_2026_21155,Table IV-1
+srerv,2026,AB,all2027,0.28,billion RINs,fr_2026_21155,Table IV-1
+srerv,2026,RF,all2027,0.99,billion RINs,fr_2026_21155,Table IV-1
+srerv,2027,BBD,all2027,0.43,billion RINs,fr_2026_21155,Table IV-1
+srerv,2027,AB,all2027,0.59,billion RINs,fr_2026_21155,Table IV-1
+srerv,2027,RF,all2027,1.81,billion RINs,fr_2026_21155,Table IV-1
+srerv_set2_million,2026,BBD,set2,210,million RINs,fr_2026_06275,Table IV.C-3 (91 FR 16440)
+srerv_set2_million,2026,AB,set2,280,million RINs,fr_2026_06275,Table IV.C-3 (91 FR 16440)
+srerv_set2_million,2026,RF,set2,990,million RINs,fr_2026_06275,Table IV.C-3 (91 FR 16440)
+srerv_set2_million,2027,BBD,set2,250,million RINs,fr_2026_06275,Table IV.C-3 (91 FR 16440)
+srerv_set2_million,2027,AB,set2,340,million RINs,fr_2026_06275,Table IV.C-3 (91 FR 16440)
+srerv_set2_million,2027,RF,set2,1040,million RINs,fr_2026_06275,Table IV.C-3 (91 FR 16440)
+standards,2026,CB,set2,0.79,percent,fr_2026_06275,Table V.D-1 (91 FR 16441)
+standards,2026,BBD,set2,5.24,percent,fr_2026_06275,Table V.D-1 (91 FR 16441)
+standards,2026,AB,set2,6.42,percent,fr_2026_06275,Table V.D-1 (91 FR 16441)
+standards,2026,RF,set2,15.50,percent,fr_2026_06275,Table V.D-1 (91 FR 16441)
+standards,2027,CB,set2,0.84,percent,fr_2026_06275,Table V.D-1 (91 FR 16441)
+standards,2027,BBD,set2,5.37,percent,fr_2026_06275,Table V.D-1 (91 FR 16441)
+standards,2027,AB,set2,6.61,percent,fr_2026_06275,Table V.D-1 (91 FR 16441)
+standards,2027,RF,set2,15.78,percent,fr_2026_06275,Table V.D-1 (91 FR 16441)
+standards,2026,CB,equal,0.79,percent,fr_2026_21155,Table VI-1
+standards,2026,BBD,equal,5.29,percent,fr_2026_21155,Table V-1
+standards,2026,AB,equal,6.48,percent,fr_2026_21155,Table V-1
+standards,2026,RF,equal,15.71,percent,fr_2026_21155,Table V-1
+standards,2027,CB,equal,0.84,percent,fr_2026_21155,Table VI-1
+standards,2027,BBD,equal,5.43,percent,fr_2026_21155,Table V-1
+standards,2027,AB,equal,6.69,percent,fr_2026_21155,Table V-1
+standards,2027,RF,equal,16.01,percent,fr_2026_21155,Table V-1
+standards,2026,CB,all2027,0.79,percent,fr_2026_21155,Table VI-1
+standards,2026,BBD,all2027,5.24,percent,fr_2026_21155,Table V-1
+standards,2026,AB,all2027,6.42,percent,fr_2026_21155,Table V-1
+standards,2026,RF,all2027,15.50,percent,fr_2026_21155,Table V-1
+standards,2027,CB,all2027,0.84,percent,fr_2026_21155,Table VI-1
+standards,2027,BBD,all2027,5.48,percent,fr_2026_21155,Table V-1
+standards,2027,AB,all2027,6.76,percent,fr_2026_21155,Table V-1
+standards,2027,RF,all2027,16.23,percent,fr_2026_21155,Table V-1
+standards,2026,CB,no_srerv,0.79,percent,docket_0790,p. 1 table
+standards,2026,BBD,no_srerv,5.12,percent,docket_0790,p. 1 table
+standards,2026,AB,no_srerv,6.25,percent,docket_0790,p. 1 table
+standards,2026,RF,no_srerv,14.92,percent,docket_0790,p. 1 table
+standards,2027,CB,no_srerv,0.84,percent,docket_0790,p. 1 table
+standards,2027,BBD,no_srerv,5.23,percent,docket_0790,p. 1 table
+standards,2027,AB,no_srerv,6.41,percent,docket_0790,p. 1 table
+standards,2027,RF,no_srerv,15.17,percent,docket_0790,p. 1 table
+set2_exempted_fuel,2022,,gasoline,3.97,billion gallons,fr_2026_06275,Table IV.C-1 (91 FR 16439)
+set2_exempted_fuel,2022,,diesel,3.08,billion gallons,fr_2026_06275,Table IV.C-1 (91 FR 16439)
+set2_exempted_fuel,2022,,total,7.06,billion gallons,fr_2026_06275,Table IV.C-1 (91 FR 16439)
+set2_exempted_fuel,2023,,gasoline,4.58,billion gallons,fr_2026_06275,Table IV.C-1 (91 FR 16439)
+set2_exempted_fuel,2023,,diesel,3.22,billion gallons,fr_2026_06275,Table IV.C-1 (91 FR 16439)
+set2_exempted_fuel,2023,,total,7.79,billion gallons,fr_2026_06275,Table IV.C-1 (91 FR 16439)
+set2_exempted_fuel,2024,,gasoline,4.50,billion gallons,fr_2026_06275,Table IV.C-1 (91 FR 16439)
+set2_exempted_fuel,2024,,diesel,3.29,billion gallons,fr_2026_06275,Table IV.C-1 (91 FR 16439)
+set2_exempted_fuel,2024,,total,7.78,billion gallons,fr_2026_06275,Table IV.C-1 (91 FR 16439)
+set2_exempted_fuel,2025,,gasoline,4.35,billion gallons,fr_2026_06275,Table IV.C-1 (91 FR 16439)
+set2_exempted_fuel,2025,,diesel,3.20,billion gallons,fr_2026_06275,Table IV.C-1 (91 FR 16439)
+set2_exempted_fuel,2025,,total,7.55,billion gallons,fr_2026_06275,Table IV.C-1 (91 FR 16439)
+set2_exempted_rvo,2023,CB,standard,0.48,percent,fr_2026_06275,Table IV.C-2 (91 FR 16439)
+set2_exempted_rvo,2023,BBD,standard,2.58,percent,fr_2026_06275,Table IV.C-2 (91 FR 16439)
+set2_exempted_rvo,2023,AB,standard,3.39,percent,fr_2026_06275,Table IV.C-2 (91 FR 16439)
+set2_exempted_rvo,2023,RF,standard,11.96,percent,fr_2026_06275,Table IV.C-2 (91 FR 16439)
+set2_exempted_rvo,2024,CB,standard,0.59,percent,fr_2026_06275,Table IV.C-2 (91 FR 16439)
+set2_exempted_rvo,2024,BBD,standard,2.82,percent,fr_2026_06275,Table IV.C-2 (91 FR 16439)
+set2_exempted_rvo,2024,AB,standard,3.79,percent,fr_2026_06275,Table IV.C-2 (91 FR 16439)
+set2_exempted_rvo,2024,RF,standard,12.50,percent,fr_2026_06275,Table IV.C-2 (91 FR 16439)
+set2_exempted_rvo,2025,CB,standard,0.71,percent,fr_2026_06275,Table IV.C-2 (91 FR 16439)
+set2_exempted_rvo,2025,BBD,standard,3.15,percent,fr_2026_06275,Table IV.C-2 (91 FR 16439)
+set2_exempted_rvo,2025,AB,standard,4.31,percent,fr_2026_06275,Table IV.C-2 (91 FR 16439)
+set2_exempted_rvo,2025,RF,standard,13.13,percent,fr_2026_06275,Table IV.C-2 (91 FR 16439)
+set2_exempted_rvo,2023,CB,ervo,40,million RINs,fr_2026_06275,Table IV.C-2 (91 FR 16439)
+set2_exempted_rvo,2023,BBD,ervo,200,million RINs,fr_2026_06275,Table IV.C-2 (91 FR 16439)
+set2_exempted_rvo,2023,AB,ervo,260,million RINs,fr_2026_06275,Table IV.C-2 (91 FR 16439)
+set2_exempted_rvo,2023,RF,ervo,930,million RINs,fr_2026_06275,Table IV.C-2 (91 FR 16439)
+set2_exempted_rvo,2024,CB,ervo,50,million RINs,fr_2026_06275,Table IV.C-2 (91 FR 16439)
+set2_exempted_rvo,2024,BBD,ervo,220,million RINs,fr_2026_06275,Table IV.C-2 (91 FR 16439)
+set2_exempted_rvo,2024,AB,ervo,300,million RINs,fr_2026_06275,Table IV.C-2 (91 FR 16439)
+set2_exempted_rvo,2024,RF,ervo,970,million RINs,fr_2026_06275,Table IV.C-2 (91 FR 16439)
+set2_exempted_rvo,2025,CB,ervo,50,million RINs,fr_2026_06275,Table IV.C-2 (91 FR 16439)
+set2_exempted_rvo,2025,BBD,ervo,240,million RINs,fr_2026_06275,Table IV.C-2 (91 FR 16439)
+set2_exempted_rvo,2025,AB,ervo,330,million RINs,fr_2026_06275,Table IV.C-2 (91 FR 16439)
+set2_exempted_rvo,2025,RF,ervo,990,million RINs,fr_2026_06275,Table IV.C-2 (91 FR 16439)
+set2_exempted_rvo,,CB,ervo_total,140,million RINs,fr_2026_06275,Table IV.C-2 (91 FR 16439)
+set2_exempted_rvo,,BBD,ervo_total,660,million RINs,fr_2026_06275,Table IV.C-2 (91 FR 16439)
+set2_exempted_rvo,,AB,ervo_total,890,million RINs,fr_2026_06275,Table IV.C-2 (91 FR 16439)
+set2_exempted_rvo,,RF,ervo_total,2890,million RINs,fr_2026_06275,Table IV.C-2 (91 FR 16439)
+set2_total_applicable,2026,CB,total,1.36,billion RINs,fr_2026_06275,Table V.A-1 (91 FR 16440)
+set2_total_applicable,2026,BBD,total,9.07,billion RINs,fr_2026_06275,Table V.A-1 (91 FR 16440)
+set2_total_applicable,2026,AB,total,11.10,billion RINs,fr_2026_06275,Table V.A-1 (91 FR 16440)
+set2_total_applicable,2026,RF,total,26.81,billion RINs,fr_2026_06275,Table V.A-1 (91 FR 16440)
+set2_total_applicable,2027,CB,total,1.43,billion RINs,fr_2026_06275,Table V.A-1 (91 FR 16440)
+set2_total_applicable,2027,BBD,total,9.20,billion RINs,fr_2026_06275,Table V.A-1 (91 FR 16440)
+set2_total_applicable,2027,AB,total,11.32,billion RINs,fr_2026_06275,Table V.A-1 (91 FR 16440)
+set2_total_applicable,2027,RF,total,27.02,billion RINs,fr_2026_06275,Table V.A-1 (91 FR 16440)
+proposal_2025_sre,2025,,exempted_fuel_volume,13.38,billion gallons,fr_2026_21155,Section II
+proposal_2025_sre,2025,,actual_exempted_rvo,1.76,billion RINs,fr_2026_21155,Section I
+proposal_2025_sre,2025,,projected_exempted_rvo,0.99,billion RINs,fr_2026_21155,Section I
+proposal_2025_sre,2025,,additional_exempted_rvo,0.77,billion RINs,fr_2026_21155,Section I
+proposal_2025_sre,2025,,projected_exempted_fuel_volume,7.55,billion gallons,fr_2026_21155,Section II
+proposal_2025_sre,2025,,petitions,34,count,fr_2026_21155,Section II
+proposal_2025_sre,2025,,full_exemptions,18,count,fr_2026_21155,Section II
+proposal_2025_sre,2025,,partial_exemptions,11,count,fr_2026_21155,Section II
+proposal_2025_sre,2025,,denials,3,count,fr_2026_21155,Section II
+proposal_2025_sre,2025,,ineligible,2,count,fr_2026_21155,Section II
+proposal_2025_sre,2025,,reallocation_share_set2,0.70,fraction,fr_2026_21155,Section I
+proposal_2025_sre,2025,,reallocation_share_additional,1.00,fraction,fr_2026_21155,Section I
+proposal_2025_sre,2026,,renewable_fuel_volume,24.02,billion RINs,fr_2026_21155,Section VI
+proposal_2025_sre,2027,,renewable_fuel_volume,24.46,billion RINs,fr_2026_21155,Section VI
+table_vi1,2026,CB,existing,0.79,percent,fr_2026_21155,Table VI-1
+table_vi1,2027,CB,existing,0.84,percent,fr_2026_21155,Table VI-1
+table_vi1,2026,BBD,existing,5.24,percent,fr_2026_21155,Table VI-1
+table_vi1,2027,BBD,existing,5.37,percent,fr_2026_21155,Table VI-1
+table_vi1,2026,OA,existing,0.39,percent,fr_2026_21155,Table VI-1
+table_vi1,2027,OA,existing,0.40,percent,fr_2026_21155,Table VI-1
+table_vi1,2026,CONV,existing,9.08,percent,fr_2026_21155,Table VI-1
+table_vi1,2027,CONV,existing,9.17,percent,fr_2026_21155,Table VI-1
+table_vi1,2026,RINCOST,existing,27.5,cents per gallon,fr_2026_21155,Table VI-1
+table_vi1,2027,RINCOST,existing,28.0,cents per gallon,fr_2026_21155,Table VI-1
+table_vi1,2026,GASOLINE,existing,6.8,cents per gallon,fr_2026_21155,Table VI-1
+table_vi1,2027,GASOLINE,existing,7.3,cents per gallon,fr_2026_21155,Table VI-1
+table_vi1,2026,DIESEL,existing,18.6,cents per gallon,fr_2026_21155,Table VI-1
+table_vi1,2027,DIESEL,existing,21.0,cents per gallon,fr_2026_21155,Table VI-1
+table_vi1,2026,CB,equal,0.79,percent,fr_2026_21155,Table VI-1
+table_vi1,2027,CB,equal,0.84,percent,fr_2026_21155,Table VI-1
+table_vi1,2026,BBD,equal,5.29,percent,fr_2026_21155,Table VI-1
+table_vi1,2027,BBD,equal,5.43,percent,fr_2026_21155,Table VI-1
+table_vi1,2026,OA,equal,0.40,percent,fr_2026_21155,Table VI-1
+table_vi1,2027,OA,equal,0.42,percent,fr_2026_21155,Table VI-1
+table_vi1,2026,CONV,equal,9.23,percent,fr_2026_21155,Table VI-1
+table_vi1,2027,CONV,equal,9.32,percent,fr_2026_21155,Table VI-1
+table_vi1,2026,RINCOST,equal,27.9,cents per gallon,fr_2026_21155,Table VI-1
+table_vi1,2027,RINCOST,equal,28.4,cents per gallon,fr_2026_21155,Table VI-1
+table_vi1,2026,GASOLINE,equal,7.2,cents per gallon,fr_2026_21155,Table VI-1
+table_vi1,2027,GASOLINE,equal,7.6,cents per gallon,fr_2026_21155,Table VI-1
+table_vi1,2026,DIESEL,equal,19.0,cents per gallon,fr_2026_21155,Table VI-1
+table_vi1,2027,DIESEL,equal,21.4,cents per gallon,fr_2026_21155,Table VI-1
+table_vi1,2026,CB,all2027,0.79,percent,fr_2026_21155,Table VI-1
+table_vi1,2027,CB,all2027,0.84,percent,fr_2026_21155,Table VI-1
+table_vi1,2026,BBD,all2027,5.24,percent,fr_2026_21155,Table VI-1
+table_vi1,2027,BBD,all2027,5.48,percent,fr_2026_21155,Table VI-1
+table_vi1,2026,OA,all2027,0.39,percent,fr_2026_21155,Table VI-1
+table_vi1,2027,OA,all2027,0.44,percent,fr_2026_21155,Table VI-1
+table_vi1,2026,CONV,all2027,9.08,percent,fr_2026_21155,Table VI-1
+table_vi1,2027,CONV,all2027,9.47,percent,fr_2026_21155,Table VI-1
+table_vi1,2026,RINCOST,all2027,27.5,cents per gallon,fr_2026_21155,Table VI-1
+table_vi1,2027,RINCOST,all2027,28.8,cents per gallon,fr_2026_21155,Table VI-1
+table_vi1,2026,GASOLINE,all2027,6.8,cents per gallon,fr_2026_21155,Table VI-1
+table_vi1,2027,GASOLINE,all2027,8.0,cents per gallon,fr_2026_21155,Table VI-1
+table_vi1,2026,DIESEL,all2027,18.6,cents per gallon,fr_2026_21155,Table VI-1
+table_vi1,2027,DIESEL,all2027,21.8,cents per gallon,fr_2026_21155,Table VI-1
+price_impact_relative,2026,GASOLINE,equal,0.4,cents per gallon,docket_0961,Table 2
+price_impact_relative,2027,GASOLINE,equal,0.4,cents per gallon,docket_0961,Table 2
+price_impact_relative,2026,DIESEL,equal,0.4,cents per gallon,docket_0961,Table 2
+price_impact_relative,2027,DIESEL,equal,0.4,cents per gallon,docket_0961,Table 2
+price_impact_relative,2026,GASOLINE,all2027,0.0,cents per gallon,docket_0961,Table 2
+price_impact_relative,2027,GASOLINE,all2027,0.8,cents per gallon,docket_0961,Table 2
+price_impact_relative,2026,DIESEL,all2027,0.0,cents per gallon,docket_0961,Table 2
+price_impact_relative,2027,DIESEL,all2027,0.8,cents per gallon,docket_0961,Table 2
+rin_prices,,D3,set2,2.40,dollars per RIN,docket_0961,Table 1
+rin_prices,,D4,set2,0.95,dollars per RIN,docket_0961,Table 1
+rin_prices,,D5,set2,0.99,dollars per RIN,docket_0961,Table 1
+rin_prices,,D6,set2,0.91,dollars per RIN,docket_0961,Table 1
+rin_prices,,D3,proposal,2.45,dollars per RIN,docket_0961,Table 1
+rin_prices,,D4,proposal,1.74,dollars per RIN,docket_0961,Table 1
+rin_prices,,D5,proposal,1.94,dollars per RIN,docket_0961,Table 1
+rin_prices,,D6,proposal,1.73,dollars per RIN,docket_0961,Table 1
+fuel_cost_average,2026,GASOLINE,no_rfs,2.15,dollars per gallon,docket_0961,Table A-9
+fuel_cost_average,2027,GASOLINE,no_rfs,2.09,dollars per gallon,docket_0961,Table A-9
+fuel_cost_average,2026,GASOLINE,existing,2.22,dollars per gallon,docket_0961,Table A-9
+fuel_cost_average,2027,GASOLINE,existing,2.16,dollars per gallon,docket_0961,Table A-9
+fuel_cost_average,2026,GASOLINE,equal,2.22,dollars per gallon,docket_0961,Table A-10
+fuel_cost_average,2027,GASOLINE,equal,2.17,dollars per gallon,docket_0961,Table A-10
+fuel_cost_average,2026,GASOLINE,all2027,2.22,dollars per gallon,docket_0961,Table A-11
+fuel_cost_average,2027,GASOLINE,all2027,2.17,dollars per gallon,docket_0961,Table A-11
+fuel_cost_average,2026,DIESEL,no_rfs,2.67,dollars per gallon,docket_0961,Table B-9
+fuel_cost_average,2027,DIESEL,no_rfs,2.64,dollars per gallon,docket_0961,Table B-9
+fuel_cost_average,2026,DIESEL,existing,2.85,dollars per gallon,docket_0961,Table B-9
+fuel_cost_average,2027,DIESEL,existing,2.85,dollars per gallon,docket_0961,Table B-9
+fuel_cost_average,2026,DIESEL,equal,2.86,dollars per gallon,docket_0961,Table B-10
+fuel_cost_average,2027,DIESEL,equal,2.85,dollars per gallon,docket_0961,Table B-10
+fuel_cost_average,2026,DIESEL,all2027,2.85,dollars per gallon,docket_0961,Table B-11
+fuel_cost_average,2027,DIESEL,all2027,2.85,dollars per gallon,docket_0961,Table B-11
+ria_srerv_share,2026,BBD,standard_share,0.12,percent,ria_420r26011,Table 10.5.4-1 (p. 416)
+ria_srerv_share,2027,BBD,standard_share,0.14,percent,ria_420r26011,Table 10.5.4-1 (p. 416)
+ria_srerv_share,2026,OA,standard_share,0.05,percent,ria_420r26011,Table 10.5.4-1 (p. 416)
+ria_srerv_share,2027,OA,standard_share,0.06,percent,ria_420r26011,Table 10.5.4-1 (p. 416)
+ria_srerv_share,2026,CONV,standard_share,0.41,percent,ria_420r26011,Table 10.5.4-1 (p. 416)
+ria_srerv_share,2027,CONV,standard_share,0.41,percent,ria_420r26011,Table 10.5.4-1 (p. 416)
+ria_srerv_share,2026,RF,price_impact,0.5,cents per gallon,ria_420r26011,Table 10.5.4-1 (p. 416)
+ria_srerv_share,2027,RF,price_impact,0.6,cents per gallon,ria_420r26011,Table 10.5.4-1 (p. 416)
+carryover_2024,,CB,carryover,72428101,RINs,ria_420r26011,Table 1.8.1-4 (p. 36)
+carryover_2024,,NCA,carryover,2513591893,RINs,ria_420r26011,Table 1.8.1-4 (p. 36)
+carryover_2024,,CONV,carryover,1296096353,RINs,ria_420r26011,Table 1.8.1-4 (p. 36)
+carryover_2024,,RF,carryover,3882116347,RINs,ria_420r26011,Table 1.8.1-4 (p. 36)
+carryover_2024,,CB,deficit,55110052,RINs,ria_420r26011,Table 1.8.1-4 (p. 36)
+carryover_2024,,NCA,deficit,0,RINs,ria_420r26011,Table 1.8.1-4 (p. 36)
+carryover_2024,,CONV,deficit,228735586,RINs,ria_420r26011,Table 1.8.1-4 (p. 36)
+carryover_2024,,RF,deficit,280333003,RINs,ria_420r26011,Table 1.8.1-4 (p. 36)
+carryover_2024,,CB,effective,17318049,RINs,ria_420r26011,Table 1.8.1-4 (p. 36)
+carryover_2024,,NCA,effective,2513591893,RINs,ria_420r26011,Table 1.8.1-4 (p. 36)
+carryover_2024,,CONV,effective,1067360767,RINs,ria_420r26011,Table 1.8.1-4 (p. 36)
+carryover_2024,,RF,effective,3601783344,RINs,ria_420r26011,Table 1.8.1-4 (p. 36)
+rins_retired_2024,2023,D3,retired,69969240,RINs,ria_420r26011,Table 1.8.1-1 (p. 34)
+rins_retired_2024,2024,D3,retired,939117670,RINs,ria_420r26011,Table 1.8.1-1 (p. 34)
+rins_retired_2024,2023,D4,retired,1104174020,RINs,ria_420r26011,Table 1.8.1-1 (p. 34)
+rins_retired_2024,2024,D4,retired,6612812357,RINs,ria_420r26011,Table 1.8.1-1 (p. 34)
+rins_retired_2024,2023,D5,retired,18005685,RINs,ria_420r26011,Table 1.8.1-1 (p. 34)
+rins_retired_2024,2024,D5,retired,226676380,RINs,ria_420r26011,Table 1.8.1-1 (p. 34)
+rins_retired_2024,2023,D6,retired,1274536953,RINs,ria_420r26011,Table 1.8.1-1 (p. 34)
+rins_retired_2024,2024,D6,retired,13562182158,RINs,ria_420r26011,Table 1.8.1-1 (p. 34)
+rins_retired_2024,2023,TOTAL,retired,2466685898,RINs,ria_420r26011,Table 1.8.1-1 (p. 34)
+rins_retired_2024,2024,TOTAL,retired,21340788565,RINs,ria_420r26011,Table 1.8.1-1 (p. 34)
+rins_retired_2024,,TOTAL,retired_total,23807474463,RINs,ria_420r26011,Table 1.8.1-1 (p. 34)
+net_rins_2024,2024,D3,net_generated,1011286387,RINs,ria_420r26011,Table 1.8.1-2 (p. 34)
+net_rins_2024,2024,D4,net_generated,9112164207,RINs,ria_420r26011,Table 1.8.1-2 (p. 34)
+net_rins_2024,2024,D5,net_generated,240916423,RINs,ria_420r26011,Table 1.8.1-2 (p. 34)
+net_rins_2024,2024,D6,net_generated,14858278511,RINs,ria_420r26011,Table 1.8.1-2 (p. 34)
+net_rins_2024,2024,D7,net_generated,259384,RINs,ria_420r26011,Table 1.8.1-2 (p. 34)
+net_rins_2024,2024,TOTAL,net_generated,25222904912,RINs,ria_420r26011,Table 1.8.1-2 (p. 34)
+carryover_history,2013,CB,absolute,0,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2013,CB,effective,0,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2013,NCA,absolute,565,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2013,NCA,effective,538,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2013,CONV,absolute,1087,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2013,CONV,effective,1045,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2013,RF,absolute,1652,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2013,RF,effective,1583,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2014,CB,absolute,12,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2014,CB,effective,12,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2014,NCA,absolute,465,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2014,NCA,effective,444,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2014,CONV,absolute,1359,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2014,CONV,effective,1239,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2014,RF,absolute,1836,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2014,RF,effective,1695,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2015,CB,absolute,39,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2015,CB,effective,39,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2015,NCA,absolute,372,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2015,NCA,effective,367,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2015,CONV,absolute,1248,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2015,CONV,effective,1242,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2015,RF,absolute,1659,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2015,RF,effective,1649,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2016,CB,absolute,39,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2016,CB,effective,34,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2016,NCA,absolute,887,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2016,NCA,effective,825,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2016,CONV,absolute,1945,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2016,CONV,effective,1621,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2016,RF,absolute,2871,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2016,RF,effective,2480,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2017,CB,absolute,28,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2017,CB,effective,8,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2017,NCA,absolute,801,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2017,NCA,effective,683,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2017,CONV,absolute,2981,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2017,CONV,effective,2437,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2017,RF,absolute,3810,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2017,RF,effective,3129,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2018,CB,absolute,52,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2018,CB,effective,49,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2018,NCA,absolute,633,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2018,NCA,effective,608,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2018,CONV,absolute,2872,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2018,CONV,effective,2779,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2018,RF,absolute,3557,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2018,RF,effective,3436,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2019,CB,absolute,64,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2019,CB,effective,59,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2019,NCA,absolute,344,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2019,NCA,effective,237,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2019,CONV,absolute,2693,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2019,CONV,effective,2518,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2019,RF,absolute,3102,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2019,RF,effective,2814,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2020,CB,absolute,51,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2020,CB,effective,44,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2020,NCA,absolute,209,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2020,NCA,effective,85,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2020,CONV,absolute,1971,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2020,CONV,effective,1990,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2020,RF,absolute,2231,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2020,RF,effective,2118,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2021,CB,absolute,45,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2021,CB,effective,28,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2021,NCA,absolute,249,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2021,NCA,effective,0,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2021,CONV,absolute,1530,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2021,CONV,effective,1386,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2021,RF,absolute,1824,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2021,RF,effective,1322,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2022,CB,absolute,90,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2022,CB,effective,86,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2022,NCA,absolute,247,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2022,NCA,effective,119,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2022,CONV,absolute,568,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2022,CONV,effective,174,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2022,RF,absolute,904,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2022,RF,effective,378,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2023,CB,absolute,70,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2023,CB,effective,13,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2023,NCA,absolute,1124,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2023,NCA,effective,1012,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2023,CONV,absolute,1278,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2023,CONV,effective,341,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2023,RF,absolute,2472,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2023,RF,effective,1366,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2024,CB,absolute,72,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2024,CB,effective,17,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2024,NCA,absolute,2514,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2024,NCA,effective,2514,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2024,CONV,absolute,1296,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2024,CONV,effective,1067,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2024,RF,absolute,3882,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+carryover_history,2024,RF,effective,3602,million RINs,ria_420r26011,Table 1.8.3-1 (p. 37)
+set2_preamble,,,effective_carryover_after_2024,3.60,billion RINs,fr_2026_06275,Section IV.C (91 FR 16438)
+set2_preamble,,,largest_historical_drawdown,0.94,billion RINs,fr_2026_06275,Section IV.C (91 FR 16438)
+set2_preamble,,,absorbable_drawdown_per_year,1.0,billion RINs,fr_2026_06275,Section IV.C (91 FR 16438)
+set2_preamble,,,absorbable_drawdown_total,2.0,billion RINs,fr_2026_06275,Section IV.C (91 FR 16438)
+set2_preamble,,,total_exempted_rvo_2023_2025,2.89,billion RINs,fr_2026_06275,Section IV.C (91 FR 16438)
+set2_preamble,,,reallocation_share,0.70,fraction,fr_2026_06275,Section IV.C (91 FR 16438)
+set2_preamble,,,non_cellulosic_advanced_carryover,2.5,billion RINs,fr_2026_06275,Section IV.C (91 FR 16439)
+set2_preamble,,,conventional_carryover,1.1,billion RINs,fr_2026_06275,Section IV.C (91 FR 16439)
+past_rule_inputs,2011,CB,RFV,0.006,billion gallons,fr_2010_30296,Table III.B.1-1
+past_rule_inputs,2011,BBD,RFV,0.80,billion gallons,fr_2010_30296,Table III.B.1-1
+past_rule_inputs,2011,AB,RFV,1.35,billion gallons,fr_2010_30296,Table III.B.1-1
+past_rule_inputs,2011,RF,RFV,13.95,billion gallons,fr_2010_30296,Table III.B.1-1
+past_rule_inputs,2011,,G,139.07,billion gallons,fr_2010_30296,Table III.B.1-1
+past_rule_inputs,2011,,D,49.21,billion gallons,fr_2010_30296,Table III.B.1-1
+past_rule_inputs,2011,,RG,13.45,billion gallons,fr_2010_30296,Table III.B.1-1
+past_rule_inputs,2011,,RD,0.71,billion gallons,fr_2010_30296,Table III.B.1-1
+past_rule_inputs,2011,,GE,0,billion gallons,fr_2010_30296,Section III.B.1 (no adjustment for exemptions)
+past_rule_inputs,2011,,DE,0,billion gallons,fr_2010_30296,Section III.B.1 (no adjustment for exemptions)
+past_rule_inputs,2012,CB,RFV,0.01045,billion gallons,fr_2011_33451,Table III.B.3-2
+past_rule_inputs,2012,BBD,RFV,1.0,billion gallons,fr_2011_33451,Table III.B.3-2
+past_rule_inputs,2012,AB,RFV,2.0,billion gallons,fr_2011_33451,Table III.B.3-2
+past_rule_inputs,2012,RF,RFV,15.20,billion gallons,fr_2011_33451,Table III.B.3-2
+past_rule_inputs,2012,,G,135.39,billion gallons,fr_2011_33451,Table III.B.3-2
+past_rule_inputs,2012,,D,50.68,billion gallons,fr_2011_33451,Table III.B.3-2
+past_rule_inputs,2012,,GE,4.87,billion gallons,fr_2011_33451,Table III.B.3-2
+past_rule_inputs,2012,,DE,2.28,billion gallons,fr_2011_33451,Table III.B.3-2
+past_rule_inputs,2012,,RG,13.31,billion gallons,fr_2011_33451,Table III.B.3-2
+past_rule_inputs,2012,,RD,0.93,billion gallons,fr_2011_33451,Table III.B.3-2
+past_rule_inputs,2013,CB,RFV,0.006,billion gallons,fr_2013_19557,Table IV.B.3-1
+past_rule_inputs,2013,BBD,RFV,1.28,billion gallons,fr_2013_19557,Table IV.B.3-1
+past_rule_inputs,2013,AB,RFV,2.75,billion gallons,fr_2013_19557,Table IV.B.3-1
+past_rule_inputs,2013,RF,RFV,16.55,billion gallons,fr_2013_19557,Table IV.B.3-1
+past_rule_inputs,2013,,G,132.80,billion gallons,fr_2013_19557,Table IV.B.3-1
+past_rule_inputs,2013,,D,51.76,billion gallons,fr_2013_19557,Table IV.B.3-1
+past_rule_inputs,2013,,RG,13.31,billion gallons,fr_2013_19557,Table IV.B.3-1
+past_rule_inputs,2013,,RD,1.23,billion gallons,fr_2013_19557,Table IV.B.3-1
+past_rule_inputs,2014,CB,RFV,0.033,billion gallons,fr_2015_30893,Table V.B.3-1
+past_rule_inputs,2014,BBD,RFV,1.66,billion gallons,fr_2015_30893,Table V.B.3-1 (biodiesel-equivalent)
+past_rule_inputs,2014,AB,RFV,2.67,billion gallons,fr_2015_30893,Table V.B.3-1
+past_rule_inputs,2014,RF,RFV,16.28,billion gallons,fr_2015_30893,Table V.B.3-1
+past_rule_inputs,2014,,G,136.48,billion gallons,fr_2015_30893,Table V.B.3-1
+past_rule_inputs,2014,,D,55.67,billion gallons,fr_2015_30893,Table V.B.3-1
+past_rule_inputs,2014,,RG,13.42,billion gallons,fr_2015_30893,Table V.B.3-1
+past_rule_inputs,2014,,RD,1.55,billion gallons,fr_2015_30893,Table V.B.3-1
+past_rule_inputs,2014,,GE,0.01,billion gallons,fr_2015_30893,Table V.B.3-1
+past_rule_inputs,2014,,DE,0.03,billion gallons,fr_2015_30893,Table V.B.3-1
+past_rule_inputs,2015,CB,RFV,0.123,billion gallons,fr_2015_30893,Table V.B.3-1
+past_rule_inputs,2015,BBD,RFV,1.77,billion gallons,fr_2015_30893,Table V.B.3-1 (biodiesel-equivalent)
+past_rule_inputs,2015,AB,RFV,2.88,billion gallons,fr_2015_30893,Table V.B.3-1
+past_rule_inputs,2015,RF,RFV,16.93,billion gallons,fr_2015_30893,Table V.B.3-1
+past_rule_inputs,2015,,G,139.38,billion gallons,fr_2015_30893,Table V.B.3-1
+past_rule_inputs,2015,,D,54.05,billion gallons,fr_2015_30893,Table V.B.3-1
+past_rule_inputs,2015,,RG,13.81,billion gallons,fr_2015_30893,Table V.B.3-1
+past_rule_inputs,2015,,RD,1.76,billion gallons,fr_2015_30893,Table V.B.3-1
+past_rule_inputs,2015,,GE,0.00,billion gallons,fr_2015_30893,Table V.B.3-1
+past_rule_inputs,2015,,DE,0.00,billion gallons,fr_2015_30893,Table V.B.3-1
+past_rule_inputs,2016,CB,RFV,0.230,billion gallons,fr_2015_30893,Table V.B.3-1
+past_rule_inputs,2016,BBD,RFV,1.90,billion gallons,fr_2015_30893,Table V.B.3-1
+past_rule_inputs,2016,AB,RFV,3.61,billion gallons,fr_2015_30893,Table V.B.3-1
+past_rule_inputs,2016,RF,RFV,18.11,billion gallons,fr_2015_30893,Table V.B.3-1
+past_rule_inputs,2016,,G,139.96,billion gallons,fr_2015_30893,Table V.B.3-1
+past_rule_inputs,2016,,D,55.26,billion gallons,fr_2015_30893,Table V.B.3-1
+past_rule_inputs,2016,,RG,13.85,billion gallons,fr_2015_30893,Table V.B.3-1
+past_rule_inputs,2016,,RD,2.05,billion gallons,fr_2015_30893,Table V.B.3-1
+past_rule_inputs,2016,,GE,0.00,billion gallons,fr_2015_30893,Table V.B.3-1
+past_rule_inputs,2016,,DE,0.00,billion gallons,fr_2015_30893,Table V.B.3-1
+past_rule_inputs,2017,CB,RFV,0.311,billion gallons,fr_2016_28879,Table VII.C-1
+past_rule_inputs,2017,BBD,RFV,2.00,billion gallons,fr_2016_28879,Table VII.C-1
+past_rule_inputs,2017,AB,RFV,4.28,billion gallons,fr_2016_28879,Table VII.C-1
+past_rule_inputs,2017,RF,RFV,19.28,billion gallons,fr_2016_28879,Table VII.C-1
+past_rule_inputs,2017,,G,143.61,billion gallons,fr_2016_28879,Table VII.C-1
+past_rule_inputs,2017,,D,53.15,billion gallons,fr_2016_28879,Table VII.C-1
+past_rule_inputs,2017,,RG,14.35,billion gallons,fr_2016_28879,Table VII.C-1
+past_rule_inputs,2017,,RD,2.28,billion gallons,fr_2016_28879,Table VII.C-1
+past_rule_inputs,2017,,GE,0.00,billion gallons,fr_2016_28879,Table VII.C-1
+past_rule_inputs,2017,,DE,0.00,billion gallons,fr_2016_28879,Table VII.C-1
+past_rule_inputs,2018,CB,RFV,0.288,billion gallons,fr_2017_26426,Table VII.C-1
+past_rule_inputs,2018,BBD,RFV,2.10,billion gallons,fr_2017_26426,Table VII.C-1
+past_rule_inputs,2018,AB,RFV,4.29,billion gallons,fr_2017_26426,Table VII.C-1
+past_rule_inputs,2018,RF,RFV,19.29,billion gallons,fr_2017_26426,Table VII.C-1
+past_rule_inputs,2018,,G,143.22,billion gallons,fr_2017_26426,Table VII.C-1
+past_rule_inputs,2018,,D,54.76,billion gallons,fr_2017_26426,Table VII.C-1
+past_rule_inputs,2018,,RG,14.71,billion gallons,fr_2017_26426,Table VII.C-1
+past_rule_inputs,2018,,RD,2.53,billion gallons,fr_2017_26426,Table VII.C-1
+past_rule_inputs,2018,,GE,0.00,billion gallons,fr_2017_26426,Table VII.C-1
+past_rule_inputs,2018,,DE,0.00,billion gallons,fr_2017_26426,Table VII.C-1
+past_rule_inputs,2019,CB,RFV,0.418,billion gallons,fr_2018_26566,Table VII.C-1
+past_rule_inputs,2019,BBD,RFV,2.10,billion gallons,fr_2018_26566,Table VII.C-1
+past_rule_inputs,2019,AB,RFV,4.92,billion gallons,fr_2018_26566,Table VII.C-1
+past_rule_inputs,2019,RF,RFV,19.92,billion gallons,fr_2018_26566,Table VII.C-1
+past_rule_inputs,2019,,G,142.62,billion gallons,fr_2018_26566,Table VII.C-1
+past_rule_inputs,2019,,D,56.31,billion gallons,fr_2018_26566,Table VII.C-1
+past_rule_inputs,2019,,RG,14.53,billion gallons,fr_2018_26566,Table VII.C-1
+past_rule_inputs,2019,,RD,2.75,billion gallons,fr_2018_26566,Table VII.C-1
+past_rule_inputs,2019,,GE,0.00,billion gallons,fr_2018_26566,Table VII.C-1
+past_rule_inputs,2019,,DE,0.00,billion gallons,fr_2018_26566,Table VII.C-1
+past_rule_inputs,2020,CB,RFV,0.59,billion gallons,fr_2020_00431,Table VII.C-1
+past_rule_inputs,2020,BBD,RFV,2.43,billion gallons,fr_2020_00431,Table VII.C-1 (physical gallons)
+past_rule_inputs,2020,AB,RFV,5.09,billion gallons,fr_2020_00431,Table VII.C-1
+past_rule_inputs,2020,RF,RFV,20.09,billion gallons,fr_2020_00431,Table VII.C-1
+past_rule_inputs,2020,,G,142.68,billion gallons,fr_2020_00431,Table VII.C-1
+past_rule_inputs,2020,,D,55.30,billion gallons,fr_2020_00431,Table VII.C-1
+past_rule_inputs,2020,,RG,14.42,billion gallons,fr_2020_00431,Table VII.C-1
+past_rule_inputs,2020,,RD,2.48,billion gallons,fr_2020_00431,Table VII.C-1
+past_rule_inputs,2020,,GE,4.24,billion gallons,fr_2020_00431,Table VII.C-1
+past_rule_inputs,2020,,DE,3.02,billion gallons,fr_2020_00431,Table VII.C-1
+past_rule_inputs_revised,2020,CB,RFV,0.51,billion gallons,fr_2022_12376,Table VII.C-1
+past_rule_inputs_revised,2020,BBD,RFV,2.43,billion gallons,fr_2022_12376,Table VII.C-1 (physical gallons)
+past_rule_inputs_revised,2020,AB,RFV,4.63,billion gallons,fr_2022_12376,Table VII.C-1
+past_rule_inputs_revised,2020,RF,RFV,17.13,billion gallons,fr_2022_12376,Table VII.C-1
+past_rule_inputs_revised,2020,,G,123.11,billion gallons,fr_2022_12376,Table VII.C-1
+past_rule_inputs_revised,2020,,D,49.96,billion gallons,fr_2022_12376,Table VII.C-1
+past_rule_inputs_revised,2020,,RG,12.64,billion gallons,fr_2022_12376,Table VII.C-1
+past_rule_inputs_revised,2020,,RD,2.16,billion gallons,fr_2022_12376,Table VII.C-1
+past_rule_inputs_revised,2020,,GE,0.00,billion gallons,fr_2022_12376,Table VII.C-1
+past_rule_inputs_revised,2020,,DE,0.00,billion gallons,fr_2022_12376,Table VII.C-1
+past_rule_inputs,2021,CB,RFV,0.56,billion gallons,fr_2022_12376,Table VII.C-1
+past_rule_inputs,2021,BBD,RFV,2.43,billion gallons,fr_2022_12376,Table VII.C-1 (physical gallons)
+past_rule_inputs,2021,AB,RFV,5.05,billion gallons,fr_2022_12376,Table VII.C-1
+past_rule_inputs,2021,RF,RFV,18.84,billion gallons,fr_2022_12376,Table VII.C-1
+past_rule_inputs,2021,,G,134.50,billion gallons,fr_2022_12376,Table VII.C-1
+past_rule_inputs,2021,,D,49.92,billion gallons,fr_2022_12376,Table VII.C-1
+past_rule_inputs,2021,,RG,13.96,billion gallons,fr_2022_12376,Table VII.C-1
+past_rule_inputs,2021,,RD,2.08,billion gallons,fr_2022_12376,Table VII.C-1
+past_rule_inputs,2021,,GE,0.00,billion gallons,fr_2022_12376,Table VII.C-1
+past_rule_inputs,2021,,DE,0.00,billion gallons,fr_2022_12376,Table VII.C-1
+past_rule_inputs,2022,CB,RFV,0.63,billion gallons,fr_2022_12376,Table VII.C-1
+past_rule_inputs,2022,BBD,RFV,2.76,billion gallons,fr_2022_12376,Table VII.C-1 (physical gallons)
+past_rule_inputs,2022,AB,RFV,5.63,billion gallons,fr_2022_12376,Table VII.C-1
+past_rule_inputs,2022,RF,RFV,20.63,billion gallons,fr_2022_12376,Table VII.C-1
+past_rule_inputs,2022,SUPP,RFV,0.25,billion gallons,fr_2022_12376,Table VII.C-1 (supplemental standard)
+past_rule_inputs,2022,,G,138.61,billion gallons,fr_2022_12376,Table VII.C-1
+past_rule_inputs,2022,,D,56.15,billion gallons,fr_2022_12376,Table VII.C-1
+past_rule_inputs,2022,,RG,14.31,billion gallons,fr_2022_12376,Table VII.C-1
+past_rule_inputs,2022,,RD,2.45,billion gallons,fr_2022_12376,Table VII.C-1
+past_rule_inputs,2022,,GE,0.00,billion gallons,fr_2022_12376,Table VII.C-1
+past_rule_inputs,2022,,DE,0.00,billion gallons,fr_2022_12376,Table VII.C-1
+past_rule_inputs,2023,CB,RFV,0.84,billion gallons,fr_2023_13462,Table VII.C-1
+past_rule_inputs,2023,BBD,RFV,2.82,billion gallons,fr_2023_13462,Table VII.C-1 (physical gallons)
+past_rule_inputs,2023,AB,RFV,5.94,billion gallons,fr_2023_13462,Table VII.C-1
+past_rule_inputs,2023,RF,RFV,20.94,billion gallons,fr_2023_13462,Table VII.C-1
+past_rule_inputs,2023,SUPP,RFV,0.25,billion gallons,fr_2023_13462,Table VII.C-1 (supplemental standard)
+past_rule_inputs,2023,,G,138.62,billion gallons,fr_2023_13462,Table VII.C-1
+past_rule_inputs,2023,,D,55.44,billion gallons,fr_2023_13462,Table VII.C-1
+past_rule_inputs,2023,,RG,14.48,billion gallons,fr_2023_13462,Table VII.C-1
+past_rule_inputs,2023,,RD,4.48,billion gallons,fr_2023_13462,Table VII.C-1
+past_rule_inputs,2023,,GE,0.00,billion gallons,fr_2023_13462,Table VII.C-1
+past_rule_inputs,2023,,DE,0.00,billion gallons,fr_2023_13462,Table VII.C-1
+past_rule_inputs,2024,CB,RFV,1.09,billion gallons,fr_2023_13462,Table VII.C-1
+past_rule_inputs,2024,BBD,RFV,3.04,billion gallons,fr_2023_13462,Table VII.C-1 (physical gallons)
+past_rule_inputs,2024,AB,RFV,6.54,billion gallons,fr_2023_13462,Table VII.C-1
+past_rule_inputs,2024,RF,RFV,21.54,billion gallons,fr_2023_13462,Table VII.C-1
+past_rule_inputs,2024,,G,139.57,billion gallons,fr_2023_13462,Table VII.C-1
+past_rule_inputs,2024,,D,52.59,billion gallons,fr_2023_13462,Table VII.C-1
+past_rule_inputs,2024,,RG,14.89,billion gallons,fr_2023_13462,Table VII.C-1
+past_rule_inputs,2024,,RD,4.93,billion gallons,fr_2023_13462,Table VII.C-1
+past_rule_inputs,2024,,GE,0.00,billion gallons,fr_2023_13462,Table VII.C-1
+past_rule_inputs,2024,,DE,0.00,billion gallons,fr_2023_13462,Table VII.C-1
+past_rule_inputs,2025,CB,RFV,1.38,billion gallons,fr_2023_13462,Table VII.C-1
+past_rule_inputs,2025,BBD,RFV,3.35,billion gallons,fr_2023_13462,Table VII.C-1 (physical gallons)
+past_rule_inputs,2025,AB,RFV,7.33,billion gallons,fr_2023_13462,Table VII.C-1
+past_rule_inputs,2025,RF,RFV,22.33,billion gallons,fr_2023_13462,Table VII.C-1
+past_rule_inputs,2025,,G,137.49,billion gallons,fr_2023_13462,Table VII.C-1
+past_rule_inputs,2025,,D,52.04,billion gallons,fr_2023_13462,Table VII.C-1
+past_rule_inputs,2025,,RG,14.77,billion gallons,fr_2023_13462,Table VII.C-1
+past_rule_inputs,2025,,RD,4.73,billion gallons,fr_2023_13462,Table VII.C-1
+past_rule_inputs,2025,,GE,0.00,billion gallons,fr_2023_13462,Table VII.C-1
+past_rule_inputs,2025,,DE,0.00,billion gallons,fr_2023_13462,Table VII.C-1
+historical_exemption_projection,2016,,gasoline,2450,million gallons,fr_2020_00431,Table VII.B-1
+historical_exemption_projection,2016,,diesel,1930,million gallons,fr_2020_00431,Table VII.B-1
+historical_exemption_projection,2016,,rvo,440,million RINs,fr_2020_00431,Table VII.B-1
+historical_exemption_projection,2017,,gasoline,5650,million gallons,fr_2020_00431,Table VII.B-1
+historical_exemption_projection,2017,,diesel,3870,million gallons,fr_2020_00431,Table VII.B-1
+historical_exemption_projection,2017,,rvo,1020,million RINs,fr_2020_00431,Table VII.B-1
+historical_exemption_projection,2018,,gasoline,4620,million gallons,fr_2020_00431,Table VII.B-1
+historical_exemption_projection,2018,,diesel,3270,million gallons,fr_2020_00431,Table VII.B-1
+historical_exemption_projection,2018,,rvo,840,million RINs,fr_2020_00431,Table VII.B-1
+historical_exemption_projection,2020,,average_rvo_2016_2018,770,million RINs,fr_2020_00431,Section VII.B
+sre_decisions,2016,aug2025,exempted_rvo,0,million RINs,epa_420r25013,corrected summary table (p. 25)
+sre_decisions,2017,aug2025,exempted_rvo,0,million RINs,epa_420r25013,corrected summary table (p. 25)
+sre_decisions,2018,aug2025,exempted_rvo,60,million RINs,epa_420r25013,corrected summary table (p. 25)
+sre_decisions,2019,aug2025,exempted_rvo,1460,million RINs,epa_420r25013,corrected summary table (p. 25)
+sre_decisions,2020,aug2025,exempted_rvo,820,million RINs,epa_420r25013,corrected summary table (p. 25)
+sre_decisions,2021,aug2025,exempted_rvo,910,million RINs,epa_420r25013,corrected summary table (p. 25)
+sre_decisions,2022,aug2025,exempted_rvo,760,million RINs,epa_420r25013,corrected summary table (p. 25)
+sre_decisions,2023,aug2025,exempted_rvo,680,million RINs,epa_420r25013,corrected summary table (p. 25)
+sre_decisions,2024,aug2025,exempted_rvo,730,million RINs,epa_420r25013,corrected summary table (p. 25)
+sre_decisions,2016,aug2025,petitions,1,count,epa_420r25013,corrected summary table (p. 25)
+sre_decisions,2017,aug2025,petitions,1,count,epa_420r25013,corrected summary table (p. 25)
+sre_decisions,2018,aug2025,petitions,10,count,epa_420r25013,corrected summary table (p. 25)
+sre_decisions,2019,aug2025,petitions,29,count,epa_420r25013,corrected summary table (p. 25)
+sre_decisions,2020,aug2025,petitions,30,count,epa_420r25013,corrected summary table (p. 25)
+sre_decisions,2021,aug2025,petitions,24,count,epa_420r25013,corrected summary table (p. 25)
+sre_decisions,2022,aug2025,petitions,24,count,epa_420r25013,corrected summary table (p. 25)
+sre_decisions,2023,aug2025,petitions,26,count,epa_420r25013,corrected summary table (p. 25)
+sre_decisions,2024,aug2025,petitions,30,count,epa_420r25013,corrected summary table (p. 25)
+sre_decisions,,aug2025,total_exempted_rvo,5400,million RINs,epa_420r25013,corrected summary table (p. 25)
+sre_decisions,,aug2025,total_petitions,175,count,epa_420r25013,corrected summary table (p. 25)
+sre_decisions,2020,aug2025_original,exempted_rvo,770,million RINs,epa_420r25010,summary table (p. 1)
+sre_decisions,2024,aug2025_original,exempted_rvo,710,million RINs,epa_420r25010,summary table (p. 1)
+sre_decisions,2021,nov2025,exempted_rvo,150,million RINs,epa_420r25013,summary table (p. 1)
+sre_decisions,2022,nov2025,exempted_rvo,70,million RINs,epa_420r25013,summary table (p. 1)
+sre_decisions,2023,nov2025,exempted_rvo,250,million RINs,epa_420r25013,summary table (p. 1)
+sre_decisions,2024,nov2025,exempted_rvo,260,million RINs,epa_420r25013,summary table (p. 1)
+sre_decisions,2021,nov2025,petitions,4,count,epa_420r25013,summary table (p. 1)
+sre_decisions,2022,nov2025,petitions,2,count,epa_420r25013,summary table (p. 1)
+sre_decisions,2023,nov2025,petitions,6,count,epa_420r25013,summary table (p. 1)
+sre_decisions,2024,nov2025,petitions,4,count,epa_420r25013,summary table (p. 1)
+sre_decisions,,nov2025,total_exempted_rvo,740,million RINs,epa_420r25013,summary table (p. 1)
+sre_decisions,2023,aug3_2026,exempted_rvo,0,million RINs,epa_420r26004,summary table (p. 1)
+sre_decisions,2024,aug3_2026,exempted_rvo,160,million RINs,epa_420r26004,summary table (p. 1)
+sre_decisions,2023,aug3_2026,petitions,2,count,epa_420r26004,summary table (p. 1)
+sre_decisions,2024,aug3_2026,petitions,4,count,epa_420r26004,summary table (p. 1)
+sre_decisions,2025,aug31_2026,exempted_rvo,1760,million RINs,epa_420r26017,summary table (p. 1)
+sre_decisions,2025,aug31_2026,petitions,34,count,epa_420r26017,summary table (p. 1)
+sre_decisions,2025,aug31_2026,full,18,count,epa_420r26017,summary table (p. 1)
+sre_decisions,2025,aug31_2026,partial,11,count,epa_420r26017,summary table (p. 1)
+sre_decisions,2025,aug31_2026,denied,3,count,epa_420r26017,summary table (p. 1)
+sre_decisions,2025,aug31_2026,ineligible,2,count,epa_420r26017,summary table (p. 1)
+sre_decision_dates,,aug2025,decision_date,2025-08-22,date,fr_2025_16390,SUMMARY
+sre_decision_dates,,nov2025,decision_date,2025-11-07,date,fr_2025_20440,SUMMARY
+sre_decision_dates,,aug3_2026,decision_date,2026-08-03,date,fr_2026_15905,SUMMARY
+sre_decision_dates,,aug31_2026,decision_date,2026-08-31,date,fr_2026_17985,SUMMARY
+sre_decision_dates,,apr2022_denial,decision_date,2022-04-07,date,fr_2022_08686,SUMMARY
+sre_decision_dates,,jun2022_denial,decision_date,2022-06-03,date,fr_2022_12359,SUMMARY
+sre_decision_dates,,jul2023_denial,decision_date,2023-07-14,date,fr_2023_15401,SUMMARY
+sre_denials,,apr2022_denial,petitions_denied,36,count,fr_2022_08686,SUMMARY
+sre_denials,,jun2022_denial,petitions_denied,69,count,fr_2022_12359,SUMMARY
+sre_denials,,jul2023_denial,petitions_denied,26,count,fr_2023_15401,SUMMARY
+supplemental_2025,2022,,gasoline,3.55,billion gallons,fr_2025_18111,Table IV-1
+supplemental_2025,2022,,diesel,2.90,billion gallons,fr_2025_18111,Table IV-1
+supplemental_2025,2022,,total,6.45,billion gallons,fr_2025_18111,Table IV-1
+supplemental_2025,2023,,gasoline,3.20,billion gallons,fr_2025_18111,Table IV-1
+supplemental_2025,2023,,diesel,2.40,billion gallons,fr_2025_18111,Table IV-1
+supplemental_2025,2023,,total,5.60,billion gallons,fr_2025_18111,Table IV-1
+supplemental_2025,2024,,gasoline,3.25,billion gallons,fr_2025_18111,Table IV-1
+supplemental_2025,2024,,diesel,2.57,billion gallons,fr_2025_18111,Table IV-1
+supplemental_2025,2024,,total,5.82,billion gallons,fr_2025_18111,Table IV-1
+supplemental_2025,2025,,gasoline,3.33,billion gallons,fr_2025_18111,Table IV-1 (projected)
+supplemental_2025,2025,,diesel,2.62,billion gallons,fr_2025_18111,Table IV-1 (projected)
+supplemental_2025,2025,,total,5.95,billion gallons,fr_2025_18111,Table IV-1 (projected)
+supplemental_2025_rvo,2023,CB,ervo,30,million RINs,fr_2025_18111,Table IV-2
+supplemental_2025_rvo,2023,BBD,ervo,140,million RINs,fr_2025_18111,Table IV-2
+supplemental_2025_rvo,2023,AB,ervo,190,million RINs,fr_2025_18111,Table IV-2
+supplemental_2025_rvo,2023,RF,ervo,670,million RINs,fr_2025_18111,Table IV-2
+supplemental_2025_rvo,2024,CB,ervo,30,million RINs,fr_2025_18111,Table IV-2
+supplemental_2025_rvo,2024,BBD,ervo,160,million RINs,fr_2025_18111,Table IV-2
+supplemental_2025_rvo,2024,AB,ervo,220,million RINs,fr_2025_18111,Table IV-2
+supplemental_2025_rvo,2024,RF,ervo,730,million RINs,fr_2025_18111,Table IV-2
+supplemental_2025_rvo,2025,CB,ervo,40,million RINs,fr_2025_18111,Table IV-2
+supplemental_2025_rvo,2025,BBD,ervo,190,million RINs,fr_2025_18111,Table IV-2
+supplemental_2025_rvo,2025,AB,ervo,260,million RINs,fr_2025_18111,Table IV-2
+supplemental_2025_rvo,2025,RF,ervo,780,million RINs,fr_2025_18111,Table IV-2
+supplemental_2025_rvo,2025,CB,standard,0.70,percent,fr_2025_18111,Table IV-2 (proposed partial waiver)
+supplemental_2025_srerv,2026,CB,r100,40,million RINs,fr_2025_18111,Table IV-3
+supplemental_2025_srerv,2027,CB,r100,60,million RINs,fr_2025_18111,Table IV-3
+supplemental_2025_srerv,2026,BBD,r100,220,million RINs,fr_2025_18111,Table IV-3
+supplemental_2025_srerv,2027,BBD,r100,270,million RINs,fr_2025_18111,Table IV-3
+supplemental_2025_srerv,2026,AB,r100,300,million RINs,fr_2025_18111,Table IV-3
+supplemental_2025_srerv,2027,AB,r100,370,million RINs,fr_2025_18111,Table IV-3
+supplemental_2025_srerv,2026,RF,r100,1030,million RINs,fr_2025_18111,Table IV-3
+supplemental_2025_srerv,2027,RF,r100,1150,million RINs,fr_2025_18111,Table IV-3
+supplemental_2025_srerv,2026,CB,r50,20,million RINs,fr_2025_18111,Table IV-3
+supplemental_2025_srerv,2027,CB,r50,30,million RINs,fr_2025_18111,Table IV-3
+supplemental_2025_srerv,2026,BBD,r50,110,million RINs,fr_2025_18111,Table IV-3
+supplemental_2025_srerv,2027,BBD,r50,140,million RINs,fr_2025_18111,Table IV-3
+supplemental_2025_srerv,2026,AB,r50,150,million RINs,fr_2025_18111,Table IV-3
+supplemental_2025_srerv,2027,AB,r50,190,million RINs,fr_2025_18111,Table IV-3
+supplemental_2025_srerv,2026,RF,r50,510,million RINs,fr_2025_18111,Table IV-3
+supplemental_2025_srerv,2027,RF,r50,580,million RINs,fr_2025_18111,Table IV-3
+deadlines,2025,,compliance_deadline_original,2026-09-01,date,fr_2026_18132,Section I
+deadlines,2025,,compliance_deadline_extended,2026-10-01,date,fr_2026_18132,SUMMARY
+deadlines,2026,,compliance_deadline_current,2027-03-31,date,fr_2026_21155,Section I
+deadlines,2027,,compliance_deadline_earliest,2028-03-31,date,fr_2026_21155,Section I
+deadlines,,,proposal_publication_date,2026-10-16,date,fr_2026_21155,heading
+deadlines,,,comment_deadline,2026-12-04,date,fr_2026_21155,DATES
+regulatory_parameters,,,carryover_cap,0.20,fraction,ecfr_80_1427,paragraph (a)(5)
+regulatory_parameters,,,deficit_carryforward_years,1,years,ecfr_80_1427,paragraph (b)(1)
+regulatory_parameters,,,quarter1_deadline,06-01,month-day,ecfr_80_1451,Table 1 to paragraph (f)(2)
+regulatory_parameters,,,quarter2_deadline,09-01,month-day,ecfr_80_1451,Table 1 to paragraph (f)(2)
+regulatory_parameters,,,quarter3_deadline,12-01,month-day,ecfr_80_1451,Table 1 to paragraph (f)(2)
+regulatory_parameters,,,quarter4_deadline,03-31,month-day,ecfr_80_1451,Table 1 to paragraph (f)(2)
+rule_dates,2011,,publication_date,2010-12-09,date,fr_2010_30296,heading
+rule_dates,2012,,publication_date,2012-01-09,date,fr_2011_33451,heading
+rule_dates,2013,,publication_date,2013-08-15,date,fr_2013_19557,heading
+rule_dates,2014,,publication_date,2015-12-14,date,fr_2015_30893,heading
+rule_dates,2015,,publication_date,2015-12-14,date,fr_2015_30893,heading
+rule_dates,2016,,publication_date,2015-12-14,date,fr_2015_30893,heading
+rule_dates,2017,,publication_date,2016-12-12,date,fr_2016_28879,heading
+rule_dates,2018,,publication_date,2017-12-12,date,fr_2017_26426,heading
+rule_dates,2019,,publication_date,2018-12-11,date,fr_2018_26566,heading
+rule_dates,2020,,publication_date,2020-02-06,date,fr_2020_00431,heading
+rule_dates,2020,,revision_publication_date,2022-07-01,date,fr_2022_12376,heading
+rule_dates,2021,,publication_date,2022-07-01,date,fr_2022_12376,heading
+rule_dates,2022,,publication_date,2022-07-01,date,fr_2022_12376,heading
+rule_dates,2023,,publication_date,2023-07-12,date,fr_2023_13462,heading
+rule_dates,2024,,publication_date,2023-07-12,date,fr_2023_13462,heading
+rule_dates,2025,,publication_date,2023-07-12,date,fr_2023_13462,heading
+rule_dates,2026,,publication_date,2026-04-01,date,fr_2026_06275,heading
+rule_dates,2027,,publication_date,2026-04-01,date,fr_2026_06275,heading
+rule_dates,2026,,effective_date,2026-06-15,date,fr_2026_06275,DATES

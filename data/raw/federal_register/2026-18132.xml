@@ -1,0 +1,401 @@
+<RULE>
+            <PREAMB>
+                <AGENCY TYPE="N">ENVIRONMENTAL PROTECTION AGENCY</AGENCY>
+                <CFR>40 CFR Part 80</CFR>
+                <DEPDOC>[EPA-HQ-OAR-2026-7195; FRL-11947.1-01-OAR]</DEPDOC>
+                <RIN>RIN 2060-AX06</RIN>
+                <SUBJECT>Renewable Fuel Standard (RFS) Program: Extension of 2025 Compliance Reporting Deadline</SUBJECT>
+                <AGY>
+                    <HD SOURCE="HED">AGENCY:</HD>
+                    <P>Environmental Protection Agency (EPA).</P>
+                </AGY>
+                <ACT>
+                    <HD SOURCE="HED">ACTION:</HD>
+                    <P>Final rule.</P>
+                </ACT>
+                <SUM>
+                    <HD SOURCE="HED">SUMMARY:</HD>
+                    <P>The U.S. Environmental Protection Agency (EPA) is extending the Renewable Fuel Standard (RFS) compliance reporting deadline for the 2025 compliance year from September 1, 2026, to October 1, 2026.</P>
+                </SUM>
+                <DATES>
+                    <HD SOURCE="HED">DATES:</HD>
+                    <P/>
+                    <P>
+                        <E T="03">Effective date.</E>
+                         This rule is effective on September 4, 2026.
+                    </P>
+                    <P>
+                        <E T="03">Operational date.</E>
+                         For operational purposes under the Clean Air Act (CAA), this final rule is effective as of September 1, 2026.
+                    </P>
+                </DATES>
+                <ADD>
+                    <HD SOURCE="HED">ADDRESSES:</HD>
+                    <P>
+                        The EPA has established a docket for this action under Docket ID No. EPA-HQ-OAR-2026-7195. All documents in the docket are listed on the 
+                        <E T="03">https://www.regulations.gov</E>
+                         website. Although listed in the index, some information is not publicly available, 
+                        <E T="03">e.g.,</E>
+                         confidential business information (CBI) or other information the disclosure of which is restricted by statute. Certain other material is not available on the internet and will be publicly available only in hard copy form. Publicly available docket materials are available electronically through 
+                        <E T="03">https://www.regulations.gov.</E>
+                    </P>
+                </ADD>
+                <FURINF>
+                    <HD SOURCE="HED">FOR FURTHER INFORMATION CONTACT:</HD>
+                    <P>
+                        For questions regarding this final rule, contact Nick Parsons, Office of Transportation and Air Quality, Transportation Sector Impacts and Standards Division, Environmental Protection Agency, 2000 Traverwood Drive, Ann Arbor, MI 48105; telephone number: (734) 214-4479; email address: 
+                        <E T="03">RFS-Rulemakings@epa.gov.</E>
+                    </P>
+                </FURINF>
+            </PREAMB>
+            <SUPLINF>
+                <HD SOURCE="HED">SUPPLEMENTARY INFORMATION:</HD>
+                <HD SOURCE="HD1">Does this action apply to me?</HD>
+                <P>
+                    Entities potentially affected by this action are those involved with the production, distribution, and sale of transportation fuels (
+                    <E T="03">e.g.,</E>
+                     gasoline and diesel fuel) and renewable fuels (
+                    <E T="03">e.g.,</E>
+                     ethanol, biodiesel, renewable diesel, and biogas). Potentially affected categories include:
+                </P>
+                <GPOTABLE COLS="3" OPTS="L2,nj,tp0,i1" CDEF="s50,12,r100">
+                    <TTITLE> </TTITLE>
+                    <BOXHD>
+                        <CHED H="1">Category</CHED>
+                        <CHED H="1">NAICS * code</CHED>
+                        <CHED H="1">Examples of potentially affected entities</CHED>
+                    </BOXHD>
+                    <ROW>
+                        <ENT I="01">Industry</ENT>
+                        <ENT>211130</ENT>
+                        <ENT>Natural gas liquids extraction and fractionation.</ENT>
+                    </ROW>
+                    <ROW>
+                        <ENT I="01">Industry</ENT>
+                        <ENT>221210</ENT>
+                        <ENT>Natural gas production and distribution.</ENT>
+                    </ROW>
+                    <ROW>
+                        <ENT I="01">Industry</ENT>
+                        <ENT>324110</ENT>
+                        <ENT>Petroleum refineries (including importers).</ENT>
+                    </ROW>
+                    <ROW>
+                        <ENT I="01">Industry</ENT>
+                        <ENT>325120</ENT>
+                        <ENT>
+                            Biogases, industrial (
+                            <E T="03">i.e.,</E>
+                             compressed, liquified, solid), manufacturing.
+                        </ENT>
+                    </ROW>
+                    <ROW>
+                        <ENT I="01">Industry</ENT>
+                        <ENT>325193</ENT>
+                        <ENT>Ethyl alcohol manufacturing.</ENT>
+                    </ROW>
+                    <ROW>
+                        <ENT I="01">Industry</ENT>
+                        <ENT>325199</ENT>
+                        <ENT>Other basic organic chemical manufacturing.</ENT>
+                    </ROW>
+                    <ROW>
+                        <ENT I="01">Industry</ENT>
+                        <ENT>424690</ENT>
+                        <ENT>Chemical and allied products merchant wholesalers.</ENT>
+                    </ROW>
+                    <ROW>
+                        <ENT I="01">Industry</ENT>
+                        <ENT>424710</ENT>
+                        <ENT>Petroleum bulk stations and terminals.</ENT>
+                    </ROW>
+                    <ROW>
+                        <ENT I="01">Industry</ENT>
+                        <ENT>424720</ENT>
+                        <ENT>Petroleum and petroleum products wholesalers.</ENT>
+                    </ROW>
+                    <ROW>
+                        <ENT I="01">Industry</ENT>
+                        <ENT>457210</ENT>
+                        <ENT>Fuel dealers.</ENT>
+                    </ROW>
+                    <ROW>
+                        <ENT I="01">Industry</ENT>
+                        <ENT>562212</ENT>
+                        <ENT>Landfills.</ENT>
+                    </ROW>
+                    <TNOTE>* North American Industry Classification System (NAICS).</TNOTE>
+                </GPOTABLE>
+                <P>
+                    This table is not intended to be exhaustive, but rather provides a guide for readers regarding entities potentially affected by this action. This table lists the types of entities that the EPA is now aware could potentially be affected by this action. Other types of entities not listed in the table could also be affected. To determine whether your entity would be affected by this action, you should carefully examine the applicability criteria in 40 CFR part 80. If you have any questions regarding the applicability of this action to a particular entity, consult the person listed in the 
+                    <E T="02">FOR FURTHER INFORMATION CONTACT</E>
+                     section.
+                </P>
+                <HD SOURCE="HD1">Preamble Acronyms and Abbreviations</HD>
+                <P>Throughout this document, the use of “we,” “us,” or “our” is intended to refer to the EPA. We use multiple acronyms and terms in this preamble. While this list may not be exhaustive, to ease the reading of this preamble and for reference purposes, the EPA defines the following terms and acronyms here:</P>
+                <EXTRACT>
+                    <FP SOURCE="FP-1">CAA Clean Air Act</FP>
+                    <FP SOURCE="FP-1">RFS Renewable Fuel Standard</FP>
+                    <FP SOURCE="FP-1">RIN Renewable Identification Number</FP>
+                    <FP SOURCE="FP-1">RVO Renewable Volume Obligation</FP>
+                    <FP SOURCE="FP-1">SRE Small Refinery Exemption</FP>
+                </EXTRACT>
+                <HD SOURCE="HD1">Outline of This Preamble</HD>
+                <EXTRACT>
+                    <FP SOURCE="FP-2">I. Background and Extension of 2025 RFS Compliance Reporting Deadline</FP>
+                    <FP SOURCE="FP-2">II. Rulemaking Procedures</FP>
+                    <FP SOURCE="FP-2">III. Statutory and Executive Order Reviews</FP>
+                    <FP SOURCE="FP1-2">A. Executive Order 12866: Regulatory Planning and Review</FP>
+                    <FP SOURCE="FP1-2">B. Executive Order 14192: Unleashing Prosperity Through Deregulation</FP>
+                    <FP SOURCE="FP1-2">C. Paperwork Reduction Act (PRA)</FP>
+                    <FP SOURCE="FP1-2">D. Regulatory Flexibility Act (RFA)</FP>
+                    <FP SOURCE="FP1-2">E. Unfunded Mandates Reform Act (UMRA)</FP>
+                    <FP SOURCE="FP1-2">
+                        F. Executive Order 13132: Federalism
+                        <PRTPAGE P="56781"/>
+                    </FP>
+                    <FP SOURCE="FP1-2">G. Executive Order 13175: Consultation and Coordination With Indian Tribal Governments</FP>
+                    <FP SOURCE="FP1-2">H. Executive Order 13045: Protection of Children From Environmental Health Risks and Safety Risks</FP>
+                    <FP SOURCE="FP1-2">I. Executive Order 13211: Actions Concerning Regulations That Significantly Affect Energy Supply, Distribution, or Use</FP>
+                    <FP SOURCE="FP1-2">J. National Technology Transfer and Advancement Act (NTTAA) and 1 CFR Part 51</FP>
+                    <FP SOURCE="FP1-2">K. Congressional Review Act (CRA)</FP>
+                    <FP SOURCE="FP-2">IV. Statutory Authority and Judicial Review</FP>
+                </EXTRACT>
+                <HD SOURCE="HD1">I. Background and Extension of 2025 RFS Compliance Reporting Deadline</HD>
+                <P>Under existing RFS regulations at 40 CFR 80.1451(f)(1)(i)(A), obligated parties, including refiners and importers of transportation fuel, with renewable volume obligations (RVOs) must retire credits (Renewable Identification Numbers (RINs)) and submit annual compliance demonstration reports to the EPA for each calendar year by the latest of:</P>
+                <P>• March 31 of the subsequent calendar year.</P>
+                <P>• The next quarterly reporting deadline after the date the subsequent compliance year's renewable fuel standards become effective.</P>
+                <P>• The next quarterly reporting deadline after the annual compliance reporting deadline for the prior compliance year.</P>
+                <P>
+                    For the 2025 compliance year, this deadline was originally established as September 1, 2026, which is the next quarterly reporting deadline after the 2026 RFS standards became effective.
+                    <SU>1</SU>
+                    <FTREF/>
+                     In this final rule, the EPA is extending the 2025 RFS compliance reporting deadline to October 1, 2026, for the reasons discussed herein.
+                </P>
+                <FTNT>
+                    <P>
+                        <SU>1</SU>
+                         40 CFR 80.1451(f)(1)(i)(A)(
+                        <E T="03">2</E>
+                        ). The 2026 RFS standards were established in the Set 2 Rule, which had an effective date of June 15, 2026. 91 FR 16388 (Apr. 1, 2026).
+                    </P>
+                </FTNT>
+                <P>
+                    The EPA is extending the compliance deadline to allow obligated parties and market participants additional time to comply with the 2025 RFS compliance reporting deadline, particularly in light of the recent issuance of small refinery exemption (SRE) decisions for the 2025 compliance year. The EPA first announced and applied the Agency's current approach to evaluating SRE petitions on August 22, 2025, when the Agency issued decisions on 175 SRE petitions from 38 refineries spanning the 2016-2024 compliance years.
+                    <SU>2</SU>
+                    <FTREF/>
+                     On November 7, 2025,
+                    <SU>3</SU>
+                    <FTREF/>
+                     and August 3, 2026,
+                    <SU>4</SU>
+                    <FTREF/>
+                     the EPA again applied the Agency's current approach to evaluating SRE petitions when the Agency issued decisions on 22 SRE petitions from 12 refineries spanning the 2021-2024 compliance years. On August 31, 2026, the EPA issued decisions on 34 SRE petitions for the 2025 compliance year.
+                    <SU>5</SU>
+                    <FTREF/>
+                     In this final rule, the EPA is providing additional time for these small refineries, other obligated parties, and other market participants to carry out and adjust their compliance strategies upon issuance of the Agency's decisions on the 2025 SRE petitions ahead of the otherwise imminent 2025 RFS compliance reporting deadline of September 1, 2026. The EPA is extending the 2025 RFS compliance reporting deadline from September 1, 2026, to October 1, 2026, to provide the necessary time to RFS program participants due to the issuance of the 2025 SRE decisions. Note that this extension will not affect the 2025 attestation engagement deadline (June 1, 2027) or the 2026 compliance reporting deadline (March 31, 2027).
+                </P>
+                <FTNT>
+                    <P>
+                        <SU>2</SU>
+                         U.S. Environmental Protection Agency. (Aug. 2025). August 2025 Decisions on Petitions for RFS Small Refinery Exemptions. EPA-420-R-25-010.
+                    </P>
+                </FTNT>
+                <FTNT>
+                    <P>
+                        <SU>3</SU>
+                         U.S. Environmental Protection Agency. (Nov. 2025). November 2025 Decisions on Petitions for RFS Small Refinery Exemptions. EPA-420-R-25-013.
+                    </P>
+                </FTNT>
+                <FTNT>
+                    <P>
+                        <SU>4</SU>
+                         U.S. Environmental Protection Agency. (Aug. 2026). August 3, 2026 Decisions on Petitions for RFS Small Refinery Exemptions. EPA-420-R-26-004.
+                    </P>
+                </FTNT>
+                <FTNT>
+                    <P>
+                        <SU>5</SU>
+                         U.S. Environmental Protection Agency. (Aug. 2026). August 31, 2026 Decisions on Petitions for RFS Small Refinery Exemptions. EPA-420-R-26-017.
+                    </P>
+                </FTNT>
+                <P>
+                    This extension of the 2025 RFS compliance reporting deadline ensures that all small refineries are informed as to their ultimate 2025 RFS obligations and provides obligated parties with sufficient time to carry out and adjust their compliance strategies, taking into account the EPA's decisions on the 2025 SRE petitions, thereby preventing unnecessary burden on obligated parties to prepare, submit, and then possibly retract and revise their 2025 RFS compliance reports. The EPA is extending the deadline for all obligated parties because the Agency's decisions on SRE petitions impact the price and availability of RINs for all obligated parties, not just small refineries. This approach is consistent with the EPA's prior rules extending RFS compliance reporting deadlines 
+                    <SU>6</SU>
+                    <FTREF/>
+                     and consistent with case law of the U.S. Court of Appeals for the District of Columbia Circuit.
+                    <SU>7</SU>
+                    <FTREF/>
+                </P>
+                <FTNT>
+                    <P>
+                        <SU>6</SU>
+                         86 FR 17073 (Apr. 1, 2021); 87 FR 5696 (Feb. 2, 2022).
+                    </P>
+                </FTNT>
+                <FTNT>
+                    <P>
+                        <SU>7</SU>
+                         
+                        <E T="03">Wynnewood Refining Co., LLC, et al.</E>
+                         v. 
+                        <E T="03">EPA,</E>
+                         77 F.4th 767, 779 (D.C. Cir. 2023) (“Thus, rather than task EPA with overseeing a fixed compliance schedule, the Act gives EPA flexibility to craft and adjust a compliance regime in service of the Act's core mandate: to ensure the Act's annual renewable fuel volumes are met.”). 
+                        <E T="03">See also Americans for Clean Energy</E>
+                         v. 
+                        <E T="03">EPA,</E>
+                         864 F.3d 691, 718-21 (D.C. Cir. 2017); 
+                        <E T="03">Monroe Energy, LLC</E>
+                         v. 
+                        <E T="03">EPA,</E>
+                         750 F.3d 909, 919-20 (D.C. Cir. 2014); 
+                        <E T="03">Nat'l Petrochemical &amp; Refiners Ass'n</E>
+                         v. 
+                        <E T="03">EPA,</E>
+                         630 F.3d 145, 154-58 (D.C. Cir. 2010).
+                    </P>
+                </FTNT>
+                <P>Absent this EPA action to extend the 2025 RFS compliance reporting deadline, all obligated parties—including small refineries—would be required to comply with their 2025 RVOs by September 1, 2026. The EPA finds that there is insufficient time for small refineries, and other obligated parties, to adjust their compliance strategies, and for the RIN market to react to these SRE decisions, prior to the otherwise imminent 2025 RFS compliance reporting deadline of September 1, 2026. Thus, the extension of the 2025 RFS compliance reporting deadline finalized in this action will provide all obligated parties—including small refineries—with more time to develop their compliance strategies than they would otherwise be afforded.</P>
+                <P>Finally, the EPA notes that this action cannot impact the amount of renewable fuel that is produced and used in 2025 as that year is entirely in the past, and all renewable fuel production and use has already occurred. Thus, the EPA does not anticipate any negative impacts on the renewable fuel industry as a result of this action.</P>
+                <HD SOURCE="HD1">II. Rulemaking Procedures</HD>
+                <P>The EPA is issuing this final rule without prior proposal and public comment because the Agency finds that the good cause exemption from the notice and comment rulemaking requirement of the Administrative Procedure Act (APA) applies in this action. APA section 553(b)(B), 5 U.S.C. 553(b)(B), provides that, when an agency for good cause finds (and incorporates the finding and a brief statement of reasons thereof in the rule issued) that notice and comment public procedures are impracticable, unnecessary, or contrary to the public interest, the agency may issue a rule without providing notice and an opportunity for public comment.</P>
+                <P>
+                    The EPA has determined that there is good cause for promulgating this final rule without prior proposal and opportunity for comment. Notice and comment procedures are impracticable and contrary to the public interest, as they would not allow for implementation of this action prior to the existing 2025 RFS compliance reporting deadline of September 1, 2026, which would negatively impact small refineries that only recently received SRE decisions for the 2025 compliance year, as well as other obligated parties that might adjust their 
+                    <PRTPAGE P="56782"/>
+                    compliance strategies as a result of additional RINs becoming available in the market. As described in section I of this preamble, the EPA has only recently issued decisions on the SRE petitions for the 2025 compliance year, just prior to the otherwise imminent 2025 RFS compliance reporting deadline of September 1, 2026. Without this final rule, small refineries and other obligated parties would be required to comply with their 2025 RFS obligations without time to adjust compliance strategies, which could result in unnecessary RIN purchases, retirements, trades, or sales. Therefore, the EPA is promulgating this final rule without prior proposal and opportunity for comment to expeditiously change the 2025 RFS compliance reporting deadline before small refineries and other obligated parties would otherwise have to retire RINs to comply with their 2025 RFS obligations.
+                </P>
+                <P>
+                    The EPA also finds that prior notice and comment is unnecessary because the Agency is making only targeted changes to a compliance date in response to immediate concerns raised by stakeholders, including obligated parties subject to the 2025 RFS standards.
+                    <SU>8</SU>
+                    <FTREF/>
+                     The EPA is modifying the 2025 RFS compliance reporting deadline in a manner that does not disrupt the 2026 RFS compliance reporting deadline and thus provides sufficient time between compliance deadlines for both the Agency and obligated parties to manage compliance obligations. This action also avoids risking interim noncompliance proceedings that could occur without promulgation of this action. This action will also not impact the use of renewable fuel under the RFS program, as 2025 is in the past and the amount of renewable fuel used in that year cannot be changed. Thus, the EPA does not anticipate any impact on renewable fuel producers or the 2025 volumes overall. This targeted action provides obligated parties with the additional time needed to conduct the necessary RIN transactions and compliance decisions prior to the modified 2025 RFS compliance reporting deadline.
+                </P>
+                <FTNT>
+                    <P>
+                        <SU>8</SU>
+                         The EPA has also received both written and verbal requests from stakeholders to extend the 2025 RFS compliance reporting deadline.
+                    </P>
+                </FTNT>
+                <P>In addition, the EPA finds that prior notice and comment would be impracticable given the applicable compliance deadlines and the timeline involved in completing such procedures. The EPA has determined through ongoing communications with stakeholders and review of the relevant regulatory language, that there are legitimate barriers to compliance with the September 1, 2026, deadline. As a result, the EPA is making only targeted changes to the 2025 RFS compliance reporting deadline in this action to provide the immediate relief necessary to avoid unnecessary and problematic situations of obligated parties expending time and resources attempting to comply in short amounts of time. Prior notice and comment would be impracticable given the purpose of this targeted action, which is to provide the immediate extension required to address the problems identified above.</P>
+                <P>The EPA is also determining there is good cause to make this final rule immediately operational upon signature. When an agency grants or recognizes an exemption or relieves a restriction, affected parties do not need a reasonable time to adjust because the effect is not adverse. Here, the regulatory amendments to 40 CFR part 80 relieve a restriction by extending the 2025 RFS compliance reporting deadline ahead of the otherwise imminent deadline of September 1, 2026, thus providing obligated parties with additional time to demonstrate compliance with their 2025 RFS obligations. Because the rule revisions relieve a restriction and advance notice is not needed, this final rule is immediately operational upon signature.</P>
+                <P>
+                    Additionally, APA section 553(d), 5 U.S.C. 553(d), generally provides that rules may not take effect until 30 days after they are published in the 
+                    <E T="04">Federal Register</E>
+                    . The purpose of this provision is to “give affected parties a reasonable time to adjust their behavior before the final rule takes effect.” 
+                    <SU>9</SU>
+                    <FTREF/>
+                     However, when an agency grants or recognizes an exemption or relieves a restriction, affected parties do not need a reasonable time to adjust because the effect is not adverse. Thus, APA section 553(d)(1) allows for an effective date less than 30 days after publication for any rule that “grants or recognizes an exemption or relieves a restriction.” 
+                    <SU>10</SU>
+                    <FTREF/>
+                     Here, as discussed above, the regulatory amendments to 40 CFR part 80 relieve a restriction by extending the 2025 RFS compliance reporting deadline ahead of the otherwise imminent deadline of September 1, 2026, thus providing obligated parties with additional time to demonstrate compliance with their 2025 RFS obligations.
+                </P>
+                <FTNT>
+                    <P>
+                        <SU>9</SU>
+                         
+                        <E T="03">Omnipoint Corp.</E>
+                         v. 
+                        <E T="03">Fed. Commc'n Comm'n,</E>
+                         78 F.3d 620, 630 (D.C. Cir. 1996); see also 
+                        <E T="03">United States</E>
+                         v. 
+                        <E T="03">Gavrilovic,</E>
+                         551 F.2d 1099, 1104 (8th Cir. 1977) (quoting legislative history).
+                    </P>
+                </FTNT>
+                <FTNT>
+                    <P>
+                        <SU>10</SU>
+                         
+                        <E T="03">See</E>
+                         5 U.S.C. 553(d)(1).
+                    </P>
+                </FTNT>
+                <HD SOURCE="HD1">III. Statutory and Executive Order Reviews</HD>
+                <P>
+                    Additional information about these statutes and Executive orders can be found at 
+                    <E T="03">https://www.epa.gov/laws-regulations/laws-and-executive-orders.</E>
+                </P>
+                <HD SOURCE="HD2">A. Executive Order 12866: Regulatory Planning and Review</HD>
+                <P>This action is a significant regulatory action that was submitted to the Office of Management and Budget (OMB) for review. Any changes made in response to OMB recommendations have been documented in the docket.</P>
+                <HD SOURCE="HD2">B. Executive Order 14192: Unleashing Prosperity Through Deregulation</HD>
+                <P>This action is considered an Executive Order 14192 deregulatory action. This final rule provides burden reduction by extending the 2025 RFS compliance reporting deadline, thereby preventing unnecessary burden on obligated parties to prepare, submit, and then possibly retract and revise their 2025 RFS compliance reports.</P>
+                <HD SOURCE="HD2">C. Paperwork Reduction Act (PRA)</HD>
+                <P>This action does not impose an information collection burden under the PRA. The Office of Management and Budget (OMB) has previously approved the information collection activities related to this final rule and has assigned the following OMB control numbers 2060-0725, 2060-0740, and 2060-0749. This action extends the 2025 RFS compliance reporting deadline and would not impose new or different reporting requirements on regulated parties than already exist for the RFS program.</P>
+                <HD SOURCE="HD2">D. Regulatory Flexibility Act (RFA)</HD>
+                <P>
+                    This action is not subject to the RFA. The RFA applies only to rules subject to notice and comment rulemaking requirements under the APA, 5 U.S.C. 553, or any other statute. This rule is not subject to notice and comment requirements because the EPA has invoked the APA “good cause” exemption under 5 U.S.C. 553(b). The EPA's discussion of the good cause finding for this rule, including the basis for that finding, is discussed in the 
+                    <E T="02">SUPPLEMENTARY INFORMATION</E>
+                     section.
+                </P>
+                <HD SOURCE="HD2">E. Unfunded Mandates Reform Act (UMRA)</HD>
+                <P>
+                    This action does not contain an unfunded mandate as described in UMRA, 2 U.S.C. 1531-1538, and does not significantly or uniquely affect small governments. This action imposes no enforceable duty on any State, local, or Tribal governments. Requirements for 
+                    <PRTPAGE P="56783"/>
+                    the private sector do not exceed $100 million in any one year.
+                </P>
+                <HD SOURCE="HD2">F. Executive Order 13132: Federalism</HD>
+                <P>This action does not have federalism implications. It will not have substantial direct effects on the States, on the relationship between the national government and the States, or on the distribution of power and responsibilities among the various levels of government.</P>
+                <HD SOURCE="HD2">G. Executive Order 13175: Consultation and Coordination With Indian Tribal Governments</HD>
+                <P>This action does not have Tribal implications as specified in Executive Order 13175. This action will be implemented at the Federal level and affects transportation fuel refiners, blenders, marketers, distributors, importers, exporters, and renewable fuel producers and importers. Tribal governments would be affected only to the extent they produce, purchase, and use regulated fuels. Thus, Executive Order 13175 does not apply to this action.</P>
+                <HD SOURCE="HD2">H. Executive Order 13045: Protection of Children From Environmental Health Risks and Safety Risks</HD>
+                <P>The EPA interprets Executive Order 13045 as applying only to those regulatory actions that concern environmental health or safety risks that the Agency has reason to believe may disproportionately affect children, per the definition of “covered regulatory action” in section 2-202 of the Executive Order. Therefore, this action is not subject to Executive Order 13045 because it extends the 2025 RFS compliance reporting deadline and does not concern an environmental health risk or safety risk. Since this action does not concern human health, the EPA's Policy on Children's Health also does not apply.</P>
+                <HD SOURCE="HD2">I. Executive Order 13211: Actions Concerning Regulations That Significantly Affect Energy Supply, Distribution, or Use</HD>
+                <P>This action is not subject to Executive Order 13211, because it is not a significant regulatory action under Executive Order 12866.</P>
+                <HD SOURCE="HD2">J. National Technology Transfer and Advancement Act (NTTAA) and 1 CFR Part 51</HD>
+                <P>This action does not involve technical standards.</P>
+                <HD SOURCE="HD2">K. Congressional Review Act (CRA)</HD>
+                <P>This action is subject to the CRA, and the EPA will submit a rule report to each House of Congress and to the Comptroller General of the United States. This action is not a “major rule” as defined by 5 U.S.C. 804(2).</P>
+                <HD SOURCE="HD1">IV. Statutory Authority and Judicial Review</HD>
+                <P>Statutory authority for this action comes from sections 114, 203-05, 208, 211, and 301 of the CAA, 42 U.S.C. 7414, 7522-24, 7542, 7545, and 7601.</P>
+                <P>Statutory authority for the rulemaking procedures followed in this action is provided by APA section 553(b)(B), 5 U.S.C. 53(b)(B) (good cause exception to notice-and-comment rulemaking), and statutory authority for making this action immediately effective is provided by 5 U.S.C. 553(d)(1). As explained in section II of this preamble, the EPA finds good cause to forgo prior notice and comment because such procedures are unnecessary and impracticable under the circumstances detailed in section II of this preamble.</P>
+                <P>CAA section 307(b)(1) governs judicial review of final actions by the EPA. This section generally provides that petitions for review of final actions that are nationally applicable must be filed in the U.S. Court of Appeals for the District of Columbia Circuit, and petitions for judicial review of actions that are locally or regionally applicable must be filed in the appropriate regional circuit. However, CAA section 307(b)(1) also provides that petitions for judicial review of a final action that is locally or regionally applicable must be filed in the D.C. Circuit when “such action is based on a determination of nationwide scope or effect and if in taking such action the Administrator finds and publishes that such action is based on such a determination.”</P>
+                <P>This action is nationally applicable because it amends nationally applicable regulations promulgated by the Administrator and codified at 40 CFR part 80. Under CAA section 307(b)(1), judicial review of this final action is available only by filing a petition for review in the U.S. Court of Appeals for the District of Columbia Circuit by November 3, 2026. Under CAA section 307(b)(2), the requirements established by this final action may not be challenged separately in any civil or criminal proceedings brought by the EPA to enforce the requirements.</P>
+                <LSTSUB>
+                    <HD SOURCE="HED">List of Subjects in 40 CFR Part 80</HD>
+                    <P>Environmental protection, Administrative practice and procedure, Air pollution control, Diesel fuel, Fuel additives, Gasoline, Imports, Oil imports, Petroleum, Renewable fuel.</P>
+                </LSTSUB>
+                <SIG>
+                    <NAME>Lee Zeldin,</NAME>
+                    <TITLE>Administrator.</TITLE>
+                </SIG>
+                <P>For the reasons set forth in the preamble, the EPA amends 40 CFR part 80 as follows:</P>
+                <PART>
+                    <HD SOURCE="HED">PART 80—REGULATION OF FUELS AND FUEL ADDITIVES</HD>
+                </PART>
+                <REGTEXT TITLE="40" PART="80">
+                    <AMDPAR>1. The authority citation for part 80 continues to read as follows:</AMDPAR>
+                    <AUTH>
+                        <HD SOURCE="HED">Authority:</HD>
+                        <P> 42 U.S.C. 7414, 7521, 7542, 7545, and 7601(a).</P>
+                    </AUTH>
+                </REGTEXT>
+                <SUBPART>
+                    <HD SOURCE="HED">Subpart M—Renewable Fuel Standard </HD>
+                </SUBPART>
+                <REGTEXT TITLE="40" PART="80">
+                    <AMDPAR>
+                        2. Amend § 80.1451 by adding paragraph (f)(1)(i)(B)(
+                        <E T="03">6</E>
+                        ) to read as follows:
+                    </AMDPAR>
+                    <SECTION>
+                        <SECTNO>§ 80.1451 </SECTNO>
+                        <SUBJECT>What are the reporting requirements under the RFS program?</SUBJECT>
+                        <STARS/>
+                        <P>(f) * * *</P>
+                        <P>(1) * * *</P>
+                        <P>(i) * * *</P>
+                        <P>(B) * * *</P>
+                        <P>
+                            (
+                            <E T="03">6</E>
+                            ) For the 2025 compliance year, annual compliance reports must be submitted by October 1, 2026.
+                        </P>
+                        <STARS/>
+                    </SECTION>
+                </REGTEXT>
+            </SUPLINF>
+            <FRDOC>[FR Doc. 2026-18132 Filed 9-3-26; 8:45 am]</FRDOC>
+            <BILCOD>BILLING CODE 6560-50-P</BILCOD>
+        </RULE>

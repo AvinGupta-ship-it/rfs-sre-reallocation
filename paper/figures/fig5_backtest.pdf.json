@@ -1,0 +1,8 @@
+{
+  "sources": [
+    "e5_projection_backtest.csv",
+    "e5_timing_rule_backtest.csv",
+    "e5_decision_lags.csv"
+  ],
+  "basis": "observed EPA record"
+}

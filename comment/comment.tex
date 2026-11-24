@@ -1,0 +1,72 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[margin=1in]{geometry}
+\usepackage{natbib}
+\input{../paper/generated/values.tex}
+\graphicspath{{../paper/figures/}}
+\newcommand{\commentdate}{November 24, 2026}
+\title{Comment on ``Renewable Fuel Standard (RFS) Program: Reallocation of Additional 2025 Small Refinery Exemptions'' (Proposed Rule, 91 FR 65699; Docket ID No. EPA-HQ-OAR-2024-0505; Document EPA-HQ-OAR-2024-0505-0951)}
+\author{Avin Gupta \\ Individual researcher \\ \texttt{iamavingupta@gmail.com}}
+\date{\commentdate}
+\begin{document}
+\maketitle
+
+\section{Identification}
+
+This comment is submitted by Avin Gupta, an individual researcher with no institutional affiliation, no funding and no competing interests, in response to the proposed rule published at 91~FR~65699 on October~16, 2026 (FR Doc. 2026-21155, RIN 2060-AX09), Docket ID No. EPA-HQ-OAR-2024-0505, document EPA-HQ-OAR-2024-0505-0951. Comments are due December~4, 2026. The comment addresses solicitation C-1 (how to reallocate the additional SRE reallocation volume between 2026 and 2027) and, where the findings are quantitative, C-3 (effects of the reallocation proposals). It does not address legal authority (C-2). A technical attachment contains the methods, reproduced tables and figures; the analysis is fully reproducible from the public record with the code and data described in the attachment.
+
+\section{Summary of recommendations}
+
+\begin{enumerate}
+\item \textbf{C-1, timing.} Measured on the magnitude of the standards and on exposure to revision of the exemption estimate, the two co-proposed approaches are nearly equivalent: the equal split raises the 2026 and 2027 total renewable fuel standards by \valstepFirstEqual{} and \valstepSecondEqual{} percentage points, the 2027 approach raises the 2027 standard by \valstepSecondAllSecond{} points, and the expected revision of any standard if the exemption estimate is updated is at most \valrevisionMeanAbsSecondAllSecond{} points. Both figures are an order of magnitude smaller than the uncertainty in the obligation that any standard delivers, which comes from the fuel-use projection (historical standard deviation \valfuelErrorSdPct{}~percent of volume, about \valrealizedMinusIntendedSdSecondEqual{} billion RINs) and is the same under both approaches. The approaches differ materially in retroactivity: for hypothetical effective dates of February~1, June~1 and October~1, 2027, the equal split would impose \valretroEqualScenarioHypotheticalEarlyTwoZeroTwoSeven{}, \valretroEqualScenarioHypotheticalMidTwoZeroTwoSeven{} and \valretroEqualScenarioHypotheticalLateTwoZeroTwoSeven{} of the additional obligation for compliance periods already elapsed, against \valretroAllSecondScenarioHypotheticalEarlyTwoZeroTwoSeven{}, \valretroAllSecondScenarioHypotheticalMidTwoZeroTwoSeven{} and \valretroAllSecondScenarioHypotheticalLateTwoZeroTwoSeven{} for the 2027 approach. On this evidence the 2027 reallocation approach better serves predictability and implementability, and the equal split offers in exchange only a halving of the single-year step. If EPA nonetheless adopts the equal split, the evidence supports doing so only with an effective date that triggers the automatic extension of the 2026 compliance deadline under 40~CFR~80.1451(f)(1)(i)(C) (Attachment, Section~4.4).
+\item \textbf{C-1, update to reported data.} The dashboard already reports a 2025 exempted obligation of \valreportedTwoZeroTwoFiveExemptedRvo{} million RINs against the petition-based 1,760; recomputing the alternatives on that basis lowers the 2027 standard by one hundredth of a point under either approach. EPA should state in the final rule the reported-data figures it uses, how any 2025 petitions decided after the proposal (\valnPendingTwoZeroTwoFive{} were pending at the data cut-off) are treated, and whether later decisions will be reallocated or left in the carryover bank.
+\item \textbf{C-3, transparency of the calculation.} Reproducing the published standards and reallocation volumes required two conventions the documents do not state: reallocation volumes are rounded down to 10~million RINs for 2026 and up for 2027 (nearest rounding reproduces only \valnSrervNearestMatched{} of the six Set~2 volumes), and one exempted-obligation cell (2024 advanced biofuel) requires an unrounded exempted volume not printed in the rule. The docket calculation memoranda are PDF prints of spreadsheets. EPA should publish, with the final rule, the calculation inputs and the exempted-volume figures at full precision in machine-readable form and state the rounding conventions.
+\item \textbf{C-3, carryover drawdown.} Under either approach the carryover bank falls by about \valdrawdownTwoYearsEqual{} billion RINs over 2026--2027 under the stated assumptions, against \valdrawdownTwoYearsSetTwo{} under the existing standards and the \valabsorbableDrawdown{} billion RINs the Set~2 rule judged absorbable; the 20~percent cap never binds. This is a property of reallocating 100~percent of the additional volume rather than of its timing, and it is sensitive to the size of the 2025 bank, which EPA should report with the final rule.
+\end{enumerate}
+
+\section{The question in the proposal}
+
+EPA co-proposes two revisions of the 2026 and 2027 SRE reallocation volumes established in the Set~2 rule (91~FR~16388): reallocating the additional 2025 exempted RVO of 770~million RINs equally between 2026 and 2027 (Table~IV-1: 1.37 and 1.43 billion RINs of total renewable fuel) or entirely to 2027 (0.99 and 1.81 billion RINs), with the resulting standards in Table~V-1 (15.71/16.01~percent and 15.50/16.23~percent). Section~IX asks how the additional volume should be reallocated between the two years (C-1). The proposal notes that the petition-based estimate will be replaced by reported compliance data and that further 2025 decisions may be incorporated in the final rule (91~FR~65701, footnote~20), and that the equal split would require obligated parties to acquire RINs for 2026 after the compliance year is over (91~FR~65702). The question is therefore one of predictability and implementability under an estimate that will be revised.
+
+\section{Reconstruction and verification}
+
+All \valnStandardsChecked{} published percentage standards (Set~2 rule, both alternatives and the no-reallocation case, 40~CFR~80.1405(c)) were reproduced to the published two decimals from the docket calculation memoranda (EPA-HQ-OAR-2024-0505-0789, -0790 and -0956) in exact arithmetic; the largest residual is \valmaxAbsResidualPoints{} percentage points. The obligated volumes are \valdenominatorFirst{} and \valdenominatorSecond{} billion gallons. The additional obligation of \valadditionalBBD{}, \valadditionalAB{} and \valadditionalRF{} million RINs by category and all \valnTableIVOneChecked{} reallocation volumes of Table~IV-1 are reproduced, as are the RIN-cost rows of Table~VI-1 (\valnCostMatched{} of \valnCostChecked). The inputs were transcribed twice independently (\valnDoubleEntryMismatches{} mismatches) and checked against values parsed by code from the Federal Register XML (Attachment, Tables~1--2).
+
+\section{Findings}
+
+\subsection{Sensitivity and revision exposure (Attachment Figures 3 and 4)}
+Each 100~million RINs of reallocated volume changes a standard by \valdStdPerOneZeroZeroMRinsFirst{} points in 2026 and \valdStdPerOneZeroZeroMRinsSecond{} in 2027. Reported exempted obligations have differed from EPA's petition-based figures by ratios of \valrevisionRatioMin{} to \valrevisionRatioMax{} over \valnRevisionPairs{} compliance years. Propagated through the alternatives, the standard deviation of the 2027 standard is \valstdSdSecondEqual{} points under the equal split and \valstdSdSecondAllSecond{} under the 2027 approach; the 5--95~percent band under the 2027 approach is \valstdQZeroFiveSecondAllSecond{}--\valstdQNineFiveSecondAllSecond{}~percent. The expected absolute revision is \valrevisionMeanAbsFirstEqual{} points per year (equal split) or \valrevisionMeanAbsSecondAllSecond{} points in 2027 (2027 approach).
+
+\subsection{Fuel-use projection error (Attachment Figure 3 and Table 3)}
+For the \valnFuelErrorsProspective{} compliance years whose standards were set before the year began, reported non-renewable gasoline-plus-diesel volume exceeded EPA's projection by \valfuelErrorMeanPct{}~percent on average (standard deviation \valfuelErrorSdPct{}~percent). This error, not the exemption estimate, dominates the variance of the obligation realized from a standard (Sobol total-order index \valsobolFuelRealizedSecondEqual{}) and is identical under both approaches.
+
+\subsection{Retroactivity and deadlines (Attachment Figure 4)}
+The share of the additional obligation imposed for an elapsed compliance period is given in the summary. The 2026 compliance deadline of March~31, 2027 is unchanged for an effective date before that day; it moves to \valdeadlineScenarioHypotheticalMidTwoZeroTwoSeven{} for a June~1, 2027 effective date and to \valdeadlineScenarioHypotheticalLateTwoZeroTwoSeven{} for an October~1, 2027 effective date, or to \valdeadlineNotFinalized{} if the proposal is neither finalized nor withdrawn within twelve months. An equal split finalized before March~31, 2027 would therefore require obligated parties to acquire \valstepFirstEqual{} points of additional 2026 obligation within \valdeadlineDaysScenarioHypotheticalEarlyTwoZeroTwoSeven{} days of the effective date.
+
+\subsection{Historical predictability (Attachment Figure 5)}
+A three-year average of prior exempted obligations, the method used to project 2025 in the Set~2 rule, had a mean absolute error of \valprojMaeHindsight{} million RINs (\valprojMaeHindsightPct{}~percent) over \valnProjYears{} years. Decisions on petitions for 2021--2025 came a median of \vallagMedianYears{} years after the end of the compliance year. For every receiving year from \valbtFirstTargetYear{} to 2025, the amount that a fixed timing rule would have reallocated was entirely undecided when the receiving year's standard was set; for 2027 it is undecided under either approach. Predictability therefore depends on sequencing reallocation after decisions, as the proposal does, and not on the split between years.
+
+\subsection{Compliance timing under the carryover cap (Attachment Figure 6 and Table 4)}
+With EPA's effective 2024 carryover of \valbankRia{} billion RINs plus the 0.77~billion RINs freed by the 2025 exemptions, new RINs required in 2026 rise from \valnewRinsFirstSetTwo{} to \valnewRinsFirstEqual{} billion under the equal split and are unchanged under the 2027 approach; the bank at the end of 2027 is \valbankOutSecondEqual{} billion RINs under the equal split and \valbankOutSecondAllTwoZeroTwoSeven{} under the 2027 approach. The cap on prior-year RINs (\valcapFirstSetTwo{} billion in 2026) exceeds the bank throughout, so it does not constrain either approach.
+
+\section{Recommendations}
+
+\begin{enumerate}
+\item On C-1, adopt the 2027 reallocation approach, or, if the equal split is adopted, set the effective date so that the automatic extension of the 2026 compliance reporting deadline under 40~CFR~80.1451(f)(1)(i)(C)(1) applies. Evidence: Attachment Figure~4 and Section~4.4 (numerical correctness and deterministic computation from the regulation's deadline rule). Authority: the same CAA section~211(o)(2)(B)(ii) authority EPA invokes for the revision, and 40~CFR~80.1451(f).
+\item On C-1 and C-3, state in the final rule the reported-data 2025 exempted volume and obligation used, the treatment of 2025 petitions decided after the proposal, and whether any further revision will be reallocated. Evidence: Attachment Section~4.1 (reported basis lowers the 2027 standards by 0.01~points) and the record of later decisions (16~percent of the 2024 obligation known at the Set~2 rule was decided afterwards).
+\item On C-3, publish the percentage-standard inputs, exempted volumes and reallocation volumes at full precision in machine-readable form with the final rule and state the rounding convention for reallocation volumes. Evidence: Attachment Section~4.1 and Tables~1--2 (model verification: reproduction required unstated conventions).
+\item On C-3, report the carryover bank available for 2026 compliance from 2025 compliance data and compare the implied 2026--2027 drawdown with the absorbable drawdown identified in the Set~2 rule. Evidence: Attachment Table~4 and Figure~6 (accounting under stated assumptions).
+\end{enumerate}
+
+\section{Limitations}
+
+The revision distribution rests on \valnRevisionPairs{} year-pairs and the fuel-use error on \valnFuelErrorsProspective{} prospective rules. Decision lags are known per petition only since July~2022. The carryover accounting assumes new RIN generation equal to the volume requirement and a bank that rolls forward unchanged apart from the 2025 exemptions; 2025 compliance data were not published at the time of writing, and bank sizes other than the baseline are hypothetical scenarios. The finalization dates used for the retroactivity and deadline calculations are hypothetical scenarios, not predictions. No price or market inference is made; EPA's cost table is reproduced, not extended. No claim is made about any individual refinery.
+
+\section{References}
+
+Primary sources: 91~FR~65699 (FR Doc. 2026-21155); 91~FR~16388 (FR Doc. 2026-06275); docket documents EPA-HQ-OAR-2024-0505-0789, -0790, -0956 and -0961; EPA-420-R-26-011 (Set~2 RIA); EPA-420-R-25-010, -25-013, -26-004 and -26-017 (SRE decisions); 40~CFR~80.1405, 80.1427 and 80.1451 (eCFR, current as of November~20, 2026); EPA RFS public data (Small Refinery Exemptions and Renewable Volume Obligations tables, exported November~24, 2026). The full bibliography with source ranks is in the technical attachment.
+
+\end{document}

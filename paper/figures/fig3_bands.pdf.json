@@ -1,0 +1,7 @@
+{
+  "sources": [
+    "e2e4_monte_carlo_summary.csv",
+    "e1_standards_reproduction.csv"
+  ],
+  "basis": "Monte Carlo on empirical revision ratios; fuel-use error does not enter the standard"
+}
