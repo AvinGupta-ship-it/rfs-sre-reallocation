@@ -5,10 +5,13 @@ type: software
 version: 1.0.2
 date-released: 2026-11-24
 license: BSD-3-Clause
+license-url: "https://github.com/AvinGupta-ship-it/rfs-sre-reallocation/blob/main/LICENSE"
+abstract: "Exact reconstruction of EPA's 2026-2027 Renewable Fuel Standard percentage standards and of both co-proposed alternatives for reallocating the additional 2025 small refinery exemption volume (91 FR 65699, docket EPA-HQ-OAR-2024-0505), with an uncertainty model built from EPA's published record, a family of timing rules, a historical backtest and carryover-RIN accounting. Code (src/, scripts/, figures/, tests/) is licensed under the BSD 3-Clause License; text, figures and derived data (paper/, comment/, docs/, data/transcribed/, data/processed/, results/) are licensed under CC BY 4.0."
 authors:
   - family-names: Gupta
     given-names: Avin
     email: iamavingupta@gmail.com
+    affiliation: "Independent researcher"
 repository-code: "https://github.com/AvinGupta-ship-it/rfs-sre-reallocation"
 keywords:
   - Renewable Fuel Standard

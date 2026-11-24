@@ -1,0 +1,36 @@
+{
+  "title": "rfs-sre-reallocation: exact reconstruction of Renewable Fuel Standard percentage standards and evaluation of exemption-reallocation timing rules",
+  "upload_type": "software",
+  "version": "1.0.2",
+  "publication_date": "2026-11-24",
+  "language": "eng",
+  "access_right": "open",
+  "license": "BSD-3-Clause",
+  "creators": [
+    {
+      "name": "Gupta, Avin",
+      "affiliation": "Independent researcher"
+    }
+  ],
+  "description": "<p>Exact reconstruction of EPA's 2026-2027 Renewable Fuel Standard percentage standards and of both co-proposed alternatives for reallocating the additional 2025 small refinery exemption volume (91 FR 65699, docket EPA-HQ-OAR-2024-0505), with an uncertainty model built from EPA's published record, a family of timing rules, a historical backtest and carryover-RIN accounting. The repository regenerates every number, table and figure of the manuscript, the supporting information, the regulatory comment and its technical attachment with a single command.</p><p>Licensing: code (src/, scripts/, figures/, tests/) is released under the BSD 3-Clause License; text, figures and derived data (paper/, comment/, docs/, data/transcribed/, data/processed/, results/) are released under the Creative Commons Attribution 4.0 International License (CC BY 4.0). Raw files under data/raw/ are U.S. Government works reproduced for verification.</p>",
+  "keywords": [
+    "Renewable Fuel Standard",
+    "small refinery exemptions",
+    "percentage standards",
+    "uncertainty propagation",
+    "regulatory analysis"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/AvinGupta-ship-it/rfs-sre-reallocation",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://www.regulations.gov/document/EPA-HQ-OAR-2024-0505-0951",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}
