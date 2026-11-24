@@ -71,3 +71,44 @@ def test_evaluate_identities() -> None:
         out["realized_minus_intended_second"], 0.0
     )
     assert Fraction(1, 2) == Fraction(0.5)
+
+
+def test_sobol_indices_match_linearized_variance_shares() -> None:
+    """Total-order indices agree with the variance shares of a first-order expansion of the
+    model around the center of the Sobol sampling box (factors uniform over their bounds)."""
+    from rfsrealloc.inputs import ENTRY_A, load_transcribed, set2_inputs
+
+    cfg = load_config(ROOT / "configs" / "quick.yaml")
+    cfg = cfg.model_copy(deep=True)
+    cfg.sobol.n_base = 512
+    cfg.sobol.bootstrap = 10
+    inp = set2_inputs(load_transcribed(ENTRY_A))
+    model = un.TimingModel(
+        inp,
+        {2026: {"BBD": 210.0, "AB": 280.0, "RF": 990.0}, 2027: {"BBD": 250.0, "AB": 340.0, "RF": 1040.0}},
+        {"BBD": 420.0, "AB": 580.0, "RF": 1760.0},
+        {"BBD": 240.0, "AB": 330.0, "RF": 990.0},
+    )
+    u = _inputs()
+    sob = un.sobol_indices(cfg, model, u, 0.0, "RF")
+    # bounds used by the sampler (same construction as in sobol_indices)
+    x = u.revision_log_ratios
+    r_lo, r_hi = float(np.exp(x.min() - 0.02)), float(np.exp(x.max() + 0.02))
+    e2 = u.fuel_log_errors_by_bin[u.lead_bin_second]
+    e_lo, e_hi = float(e2.min()), float(e2.max())
+    var_r, var_e = (r_hi - r_lo) ** 2 / 12, (e_hi - e_lo) ** 2 / 12
+    r0, e0 = (r_lo + r_hi) / 2, (e_lo + e_hi) / 2
+
+    def realized(r: float, e: float) -> float:
+        s = model.standards(np.array([r]), 0.0, "RF")[1]
+        return float(model.realized_rins(s, 2027, np.array([e]))[0])
+
+    h = 1e-4
+    d_r = (realized(r0 + h, e0) - realized(r0 - h, e0)) / (2 * h)
+    d_e = (realized(r0, e0 + h) - realized(r0, e0 - h)) / (2 * h)
+    share_fuel = d_e**2 * var_e / (d_r**2 * var_r + d_e**2 * var_e)
+    sub = sob[sob["output"] == "realized_rins_second"].set_index("factor")
+    assert abs(float(sub.loc["fuel_error_second", "ST"]) - share_fuel) < 0.05
+    assert abs(float(sub.loc["revision_ratio", "ST"]) - (1 - share_fuel)) < 0.05
+    std = sob[sob["output"] == "std_second"].set_index("factor")
+    assert abs(float(std.loc["revision_ratio", "ST"]) - 1.0) < 1e-3

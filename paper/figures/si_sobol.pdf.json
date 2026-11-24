@@ -1,5 +1,9 @@
 {
   "sources": [
     "sobol_indices.csv"
-  ]
+  ],
+  "panels": {
+    "a": "w = 1/2",
+    "b": "w = 0"
+  }
 }

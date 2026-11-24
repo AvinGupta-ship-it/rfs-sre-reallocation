@@ -1,5 +1,18 @@
 # Changelog
 
+## v1.0.2
+
+Presentation and accuracy pass on the manuscript, comment and technical attachment: every
+cross-reference in the comment points to the attachment as filed and is checked by a test;
+the share-of-obligation measure is described as the share falling on fuel already produced
+at the effective date, separating the completed 2026 year from the elapsed part of 2027;
+40 CFR 80.1451(f)(1)(i)(C) is cited uniformly and described as the provision in force;
+figures use the serif body font, panel labels, consistent colors and legends outside the
+axes; tables and figures sit at first mention; references carry protected capitals, URLs
+and access dates; dates, minus signs and decimals are formatted uniformly; the comment
+includes the timing trade-off figure; the Sobol decomposition is checked against a
+linearized variance share; Table 3 reports medians.
+
 ## v1.0.1
 
 Review of every claim against the code outputs and primary sources. Corrected the page

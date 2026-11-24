@@ -4,6 +4,7 @@
 \usepackage{graphicx}
 \usepackage{longtable}
 \usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
 \usepackage[margin=1in]{geometry}
 \usepackage{natbib}
 \input{generated/values.tex}
@@ -42,11 +43,11 @@ RIN cost table & \texttt{rfsrealloc.costs.total\_rin\_cost\_cents} \\
 
 \section{Verification levels}
 
-\textbf{Numerical correctness.} Unit tests reproduce every published standard, reallocation volume and RIN-cost row; property-based tests check positivity, monotonicity in the numerator and denominator, agreement of exact and floating-point evaluation, the rounding conventions, conservation of the additional volume under the timing rule, bounds and monotonicity of the retroactivity measure, and the carryover accounting identity. \textbf{Model verification.} The hand transcription of Federal Register input tables agrees with values parsed by code from the XML (\valnFrParsedValuesCompared{} values, \valnFrParsedValuesMismatched{} mismatches) and the transcribed standards agree with the eCFR table; the two transcription entries reconcile with \valnDoubleEntryMismatches{} mismatches; the Sobol decomposition is checked against the linearised variance share. \textbf{Empirical validity.} The uncertainty distributions are the historical distributions of EPA's record; no out-of-sample prediction of 2026--2027 outcomes is claimed. \textbf{Regulatory applicability.} Each result is mapped to solicitation C-1 (timing) or C-3 (effects) in the comment.
+\textbf{Numerical correctness.} Unit tests reproduce every published standard, reallocation volume and RIN-cost row; property-based tests check positivity, monotonicity in the numerator and denominator, agreement of exact and floating-point evaluation, the rounding conventions, conservation of the additional volume under the timing rule, bounds and monotonicity of the retroactivity measure, and the carryover accounting identity. \textbf{Model verification.} The hand transcription of Federal Register input tables agrees with values parsed by code from the XML (\valnFrParsedValuesCompared{} values, \valnFrParsedValuesMismatched{} mismatches) and the transcribed standards agree with the eCFR table; the two transcription entries reconcile with \valnDoubleEntryMismatches{} mismatches; the Sobol decomposition is checked against the linearized variance share. \textbf{Empirical validity.} The uncertainty distributions are the historical distributions of EPA's record; no out-of-sample prediction of 2026--2027 outcomes is claimed. \textbf{Regulatory applicability.} Each result is mapped to solicitation C-1 (timing) or C-3 (effects) in the comment.
 
 \section{Monte Carlo convergence}
 
-The headline quantity (standard deviation of the 2027 standard) has a relative Monte Carlo standard error of \valmcseHeadlineRelative{} with \valmcDraws{} draws, below the 2~percent criterion. Figure~\ref{fig:conv} shows running means with 95~percent error bars at the configured checkpoints.
+The headline quantity (standard deviation of the 2027 standard) has a relative Monte Carlo standard error of \valmcseHeadlineRelative{} with \valmcDraws{} draws, below the 2~percent criterion. Figure~\ref{fig:conv} shows running means with 95~percent error bars at the configured checkpoints: (a)~the 2027 standard, (b)~the realized-minus-intended 2027 obligation.
 
 \begin{figure}[htbp]\centering\includegraphics[width=\textwidth]{si_convergence}
 \caption{Running means of the 2027 standard and of the realized-minus-intended 2027 obligation with 95~percent Monte Carlo error bars, for $w=0$ and $w=1/2$.}\label{fig:conv}\end{figure}
@@ -54,10 +55,10 @@ The headline quantity (standard deviation of the 2027 standard) has a relative M
 \section{Sensitivity indices and empirical distributions}
 
 \begin{figure}[htbp]\centering\includegraphics[width=\textwidth]{si_sobol}
-\caption{Total-order Sobol indices with bootstrap intervals for the 2027 standard and the realized 2027 obligation, for both alternatives.}\end{figure}
+\caption{Total-order Sobol indices with bootstrap intervals for the 2027 standard and the realized 2027 obligation: (a)~equal split ($w = 1/2$), (b)~2027 approach ($w = 0$).}\end{figure}
 
 \begin{figure}[htbp]\centering\includegraphics[width=\textwidth]{si_distributions}
-\caption{Left: ratio of reported to petition-based exempted obligation by compliance year. Right: reported minus projected non-renewable gasoline-plus-diesel volume against lead time; crosses mark rules published after the middle of the compliance year or later revised, which are excluded.}\end{figure}
+\caption{(a)~Ratio of reported to petition-based exempted obligation by compliance year. (b)~Reported minus projected non-renewable gasoline-plus-diesel volume against lead time; crosses mark rules published after the middle of the compliance year or later revised, which are excluded.}\end{figure}
 
 \section{Cross-check against a secondary analysis}
 

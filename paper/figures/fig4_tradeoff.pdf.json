@@ -1,6 +1,7 @@
 {
   "sources": [
-    "e4_timing_tradeoff.csv"
+    "e4_timing_tradeoff.csv",
+    "e6_compliance_deadlines.csv"
   ],
   "basis": "deterministic steps; Monte Carlo revisions; hypothetical finalization scenarios"
 }

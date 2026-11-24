@@ -36,6 +36,44 @@ def _macro_name(key: str) -> str:
     return "val" + "".join(out)
 
 
+# Minimum printed decimals by macro family; a value with more decimals keeps them.
+_THREE_DECIMALS = re.compile(
+    r"(Share|^retro|^stdQ|^stdMean|^realizedMinusIntended|^revisionRatio|^sobol|^reported2025Ratio|^share|^step(First|Second))"
+)
+_FOUR_DECIMALS = re.compile(r"^(stdSd|revisionMeanAbs|dStdPer)")
+_ONE_DECIMAL = re.compile(r"Pct$")
+_MONTHS = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+]
+
+
+def _decimals(v: float, key: str) -> int:
+    text = repr(v)
+    present = len(text.split(".")[1]) if "." in text and "e" not in text else 0
+    if _ONE_DECIMAL.search(key) and not key.startswith("fuelError"):
+        floor = 1
+    elif "BRins" in key:
+        floor = 2
+    elif _FOUR_DECIMALS.search(key):
+        floor = 4
+    elif _THREE_DECIMALS.search(key):
+        floor = 3
+    else:
+        floor = 2
+    return max(present, floor)
+
+
 def _fmt(v: Any, key: str = "") -> str:
     if isinstance(v, bool):
         return "yes" if v else "no"
@@ -45,9 +83,13 @@ def _fmt(v: Any, key: str = "") -> str:
     if isinstance(v, float):
         if v == int(v) and abs(v) >= 100:
             return f"{int(v):,}"
-        return f"{v:,}"
-    s = str(v).replace("_", r"\_").replace("%", r"\%").replace("&", r"\&")
-    return s
+        out = f"{v:,.{_decimals(v, key)}f}"
+        return "$-$" + out[1:] if out.startswith("-") else out
+    s = str(v)
+    m = re.fullmatch(r"(\d{4})-(\d{2})-(\d{2})", s)
+    if m:
+        return f"{_MONTHS[int(m.group(2)) - 1]} {int(m.group(3))}, {m.group(1)}"
+    return s.replace("_", r"\_").replace("%", r"\%").replace("&", r"\&")
 
 
 def write_values(values: dict[str, Any], path: Path) -> None:
@@ -86,7 +128,7 @@ def _tex_table(
             r"\centering",
             r"\caption{" + caption + "}",
             r"\label{" + label + "}",
-            r"\footnotesize",
+            r"\footnotesize\setlength{\tabcolsep}{4pt}",
             r"\begin{tabular}{" + spec + "}",
             r"\toprule",
             header,
@@ -172,9 +214,10 @@ def write_tables(results: Path, out: Path) -> None:
     rows = []
     rows.append(
         {
-            "parameter": "Exemption revision ratio (reported / petition-based)",
+            "parameter": "Revision ratio (reported / petition-based)",
             "n": len(pairs),
             "mean": pairs["ratio"].mean(),
+            "median": pairs["ratio"].median(),
             "sd": pairs["ratio"].std(ddof=1),
             "min": pairs["ratio"].min(),
             "max": pairs["ratio"].max(),
@@ -184,9 +227,10 @@ def write_tables(results: Path, out: Path) -> None:
     nr = fuel[~fuel["retroactive"]]
     rows.append(
         {
-            "parameter": "Fuel-use ratio (reported / projected), prospective rules",
+            "parameter": "Fuel-use ratio (reported / projected)",
             "n": len(nr),
             "mean": nr["ratio"].mean(),
+            "median": nr["ratio"].median(),
             "sd": nr["ratio"].std(ddof=1),
             "min": nr["ratio"].min(),
             "max": nr["ratio"].max(),
@@ -197,13 +241,14 @@ def write_tables(results: Path, out: Path) -> None:
     vals = json.loads((results / "values.json").read_text())
     y0, y1 = int(vals.get("lagYearsFirst", 2021)), int(vals.get("lagYearsLast", 2025))
     lags = lags[(lags["year"] >= y0) & (lags["year"] <= y1)]
-    rows[0]["basis"] = "decisions; SRE-1"
-    rows[1]["basis"] = "RVO Table 1"
+    rows[0]["basis"] = "SRE-1"
+    rows[1]["basis"] = "RVO 1"
     rows.append(
         {
             "parameter": f"Decision lag after year end (years), {y0}--{y1} petitions",
             "n": len(lags),
             "mean": lags["lag_years"].mean(),
+            "median": lags["lag_years"].median(),
             "sd": lags["lag_years"].std(ddof=1),
             "min": lags["lag_years"].min(),
             "max": lags["lag_years"].max(),
@@ -213,18 +258,19 @@ def write_tables(results: Path, out: Path) -> None:
     (out / "table_uncertainty.tex").write_text(
         _tex_table(
             pd.DataFrame(rows),
-            "Empirical distributions used in the uncertainty model (EPA decision documents and public data tables).",
+            "Empirical distributions used in the uncertainty model. The fuel-use ratio covers rules in place by the middle of the compliance year and not later revised. Basis: EPA decision documents and public data tables SRE-1, RVO Table 1 and SRE-3.",
             "tab:uncertainty",
             {
                 "parameter": "Quantity",
                 "n": "n",
                 "mean": "Mean",
+                "median": "Median",
                 "sd": "SD",
                 "min": "Min",
                 "max": "Max",
                 "basis": "Basis",
             },
-            {"mean": ".3f", "sd": ".3f", "min": ".3f", "max": ".3f"},
+            {"mean": ".3f", "median": ".3f", "sd": ".3f", "min": ".3f", "max": ".3f"},
         )
     )
     # Full transcription (supporting information), long table
