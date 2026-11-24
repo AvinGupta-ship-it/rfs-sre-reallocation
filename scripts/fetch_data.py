@@ -292,6 +292,13 @@ SOURCES: list[Source] = [
         license=EIA_TERMS,
     ),
     Source(
+        "datacite/10.5281_zenodo.24514815.json",
+        "https://api.datacite.org/dois/10.5281/zenodo.24514815",
+        "DataCite",
+        "Metadata for the Zenodo concept DOI of this repository",
+        license="DataCite REST API metadata; CC0 (https://support.datacite.org/docs/api)",
+    ),
+    Source(
         "crossref/10.1086_692071.json",
         "https://api.crossref.org/works/10.1086/692071",
         "Crossref",

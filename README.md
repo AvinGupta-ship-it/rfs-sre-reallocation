@@ -1,5 +1,7 @@
 # Reallocating exempted obligations under the Renewable Fuel Standard
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24514815.svg)](https://doi.org/10.5281/zenodo.24514815)
+
 Exact reconstruction of the 2026–2027 Renewable Fuel Standard (RFS) percentage standards,
 propagation of small-refinery-exemption (SRE) uncertainty, and evaluation of the timing
 rules for reallocating the additional 2025 exempted volume co-proposed by EPA in
@@ -45,4 +47,13 @@ comment/      regulatory comment source, technical attachment, final PDFs
 
 ## Citation
 
-See `CITATION.cff`. Code is BSD-3-Clause; text, figures and derived data are CC BY 4.0.
+The code, data and figures are archived on Zenodo under the concept DOI
+[10.5281/zenodo.24514815](https://doi.org/10.5281/zenodo.24514815), which resolves to all
+versions. Please cite:
+
+> Gupta, A. (2026). rfs-sre-reallocation: exact reconstruction of Renewable Fuel Standard
+> percentage standards and evaluation of exemption-reallocation timing rules (v1.0.1).
+> Zenodo. https://doi.org/10.5281/zenodo.24514815
+
+Machine-readable metadata are in `CITATION.cff`. Code is BSD-3-Clause; text, figures and
+derived data are CC BY 4.0.

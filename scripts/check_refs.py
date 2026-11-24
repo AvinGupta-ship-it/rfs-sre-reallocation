@@ -1,4 +1,4 @@
-"""Check every DOI in ``paper/references.bib`` against Crossref metadata.
+"""Check every DOI in ``paper/references.bib`` against Crossref (or DataCite for Zenodo) metadata.
 
 For each entry with a ``doi`` field the resolved title, first author family name,
 year and container title are compared with the BibTeX fields.  Entries without a DOI
@@ -43,6 +43,24 @@ def crossref(doi: str) -> dict[str, object]:
     return dict(data["message"])
 
 
+DATACITE_CACHE = ROOT / "data" / "raw" / "datacite"
+
+
+def datacite(doi: str) -> dict[str, object]:
+    """DataCite metadata for DOIs registered outside Crossref (Zenodo, prefix 10.5281)."""
+    cached = DATACITE_CACHE / (doi.replace("/", "_") + ".json")
+    if cached.exists():
+        return dict(json.loads(cached.read_text())["data"]["attributes"])
+    req = urllib.request.Request(
+        f"https://api.datacite.org/dois/{doi}", headers={"User-Agent": "rfsrealloc-check-refs/1.0"}
+    )
+    with urllib.request.urlopen(req, timeout=60) as r:
+        data = json.load(r)
+    DATACITE_CACHE.mkdir(parents=True, exist_ok=True)
+    cached.write_text(json.dumps(data))
+    return dict(data["data"]["attributes"])
+
+
 def norm(s: str) -> str:
     s = re.sub(r"[{}\\]", "", s)
     s = s.replace("‐", "-").replace("–", "-")
@@ -53,6 +71,27 @@ def main() -> int:
     entries = parse_bib(BIB.read_text())
     failures: list[str] = []
     for e in entries:
+        if "doi" in e and e["doi"].startswith("10.5281/"):
+            try:
+                attrs = datacite(e["doi"])
+            except Exception as exc:  # network or resolution failure
+                failures.append(f"{e['key']}: DOI {e['doi']} could not be resolved via DataCite ({exc})")
+                continue
+            titles = attrs.get("titles", [])
+            title = norm(str(titles[0].get("title", ""))) if isinstance(titles, list) and titles else ""
+            if norm(e.get("title", "")) != title:
+                failures.append(f"{e['key']}: title mismatch\n  bib: {e.get('title')}\n  doi: {title}")
+            creators = attrs.get("creators", [])
+            fam = (
+                norm(str(creators[0].get("name", "")).split(",")[0]) if isinstance(creators, list) and creators else ""
+            )
+            if fam and fam not in norm(e.get("author", "")):
+                failures.append(f"{e['key']}: first creator {fam!r} not in bib author field")
+            if str(attrs.get("publicationYear", "")) != e.get("year", ""):
+                failures.append(
+                    f"{e['key']}: year {e.get('year')} differs from DataCite {attrs.get('publicationYear')}"
+                )
+            continue
         if "doi" in e:
             try:
                 msg = crossref(e["doi"])

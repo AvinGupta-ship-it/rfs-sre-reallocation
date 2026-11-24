@@ -591,6 +591,16 @@ files:
   sha256: 33b791d84d81285ccb877a83603dbbfbe33bcbcb8e1eb833b802a8382cb2a843
   bytes: 31232
   license: U.S. Energy Information Administration; public domain, see https://www.eia.gov/about/copyrights_reuse.php
+- path: datacite/10.5281_zenodo.24514815.json
+  organization: DataCite
+  description: Metadata for the Zenodo concept DOI of this repository
+  url: https://api.datacite.org/dois/10.5281/zenodo.24514815
+  retrieved: '2026-11-24'
+  method: http
+  query: {}
+  sha256: 9cadf98811fd2ecdbdced5390e4627a6a4e90b9dc61ea137adc2ec9d2b098add
+  bytes: 5510
+  license: DataCite REST API metadata; CC0 (https://support.datacite.org/docs/api)
 - path: crossref/10.1086_692071.json
   organization: Crossref
   description: Metadata for Knittel, Meiselman and Stock (2017)

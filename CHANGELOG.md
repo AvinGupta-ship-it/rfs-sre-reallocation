@@ -1,6 +1,6 @@
 # Changelog
 
-## v1.0.2
+## v1.0.1
 
 Presentation and accuracy pass on the manuscript, comment and technical attachment: every
 cross-reference in the comment points to the attachment as filed and is checked by a test;
@@ -11,9 +11,8 @@ figures use the serif body font, panel labels, consistent colors and legends out
 axes; tables and figures sit at first mention; references carry protected capitals, URLs
 and access dates; dates, minus signs and decimals are formatted uniformly; the comment
 includes the timing trade-off figure; the Sobol decomposition is checked against a
-linearized variance share; Table 3 reports medians.
-
-## v1.0.1
+linearized variance share; Table 3 reports medians. The archive is cited by its Zenodo concept
+DOI 10.5281/zenodo.24514815.
 
 Review of every claim against the code outputs and primary sources. Corrected the page
 citations for the proposal (footnote 20, the timing passage and Table IV-1), the description
