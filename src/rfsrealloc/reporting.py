@@ -245,7 +245,7 @@ def write_tables(results: Path, out: Path) -> None:
     rows[1]["basis"] = "RVO 1"
     rows.append(
         {
-            "parameter": f"Decision lag after year end (years), {y0}--{y1} petitions",
+            "parameter": f"Decision lag after year end (years), {y0}--{y1}",
             "n": len(lags),
             "mean": lags["lag_years"].mean(),
             "median": lags["lag_years"].median(),
@@ -258,7 +258,7 @@ def write_tables(results: Path, out: Path) -> None:
     (out / "table_uncertainty.tex").write_text(
         _tex_table(
             pd.DataFrame(rows),
-            "Empirical distributions used in the uncertainty model. The fuel-use ratio covers rules in place by the middle of the compliance year and not later revised. Basis: EPA decision documents and public data tables SRE-1, RVO Table 1 and SRE-3.",
+            "Empirical distributions used in the uncertainty model. The fuel-use ratio covers rules in place by the middle of the compliance year and not later revised; the decision lag covers petitions for the compliance years shown. Basis: EPA decision documents and public data tables SRE-1, RVO Table 1 and SRE-3.",
             "tab:uncertainty",
             {
                 "parameter": "Quantity",
@@ -324,7 +324,7 @@ def write_tables(results: Path, out: Path) -> None:
                     "bank_out_brins",
                 ]
             ],
-            "Carryover-RIN accounting (billion RINs) under each alternative, assuming new RIN generation equal to the volume requirement and the baseline bank.",
+            "Carryover-RIN accounting (billion RINs) under each alternative, assuming new RIN generation equal to the volume requirement and the baseline bank; New RINs is the new-RIN requirement after carryover use.",
             "tab:accounting",
             {
                 "alternative": "Alternative",
@@ -333,7 +333,7 @@ def write_tables(results: Path, out: Path) -> None:
                 "bank_in_brins": "Bank in",
                 "cap_brins": "20\\% cap",
                 "carryover_used_brins": "Carryover used",
-                "new_rins_required_brins": "New RINs required",
+                "new_rins_required_brins": "New RINs",
                 "bank_out_brins": "Bank out",
             },
         )

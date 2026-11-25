@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this repository, please cite it as below."
 title: "rfs-sre-reallocation: exact reconstruction of Renewable Fuel Standard percentage standards and evaluation of exemption-reallocation timing rules"
 type: software
-version: 1.0.1
+version: 1.0.2
 date-released: 2026-11-24
 license: BSD-3-Clause
 license-url: "https://github.com/AvinGupta-ship-it/rfs-sre-reallocation/blob/main/LICENSE"

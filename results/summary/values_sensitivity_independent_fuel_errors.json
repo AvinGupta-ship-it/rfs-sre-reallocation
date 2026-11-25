@@ -34,6 +34,8 @@
   "reported2025ExemptedVolume": 13326.0,
   "reported2025Ratio": 0.9943,
   "laterShare2024Pct": 16.2,
+  "laterKnown2024Mrins": 990.0,
+  "laterAdded2024Mrins": 160.0,
   "nFuelErrorsAll": 15,
   "nFuelErrorsProspective": 9,
   "fuelErrorMeanPct": 2.19,

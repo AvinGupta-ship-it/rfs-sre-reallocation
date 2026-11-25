@@ -265,6 +265,8 @@ class Pipeline:
         self.save("e2_later_decisions", later)
         l24 = later[later["year"] == 2024]
         self.values["laterShare2024Pct"] = round(100 * float(l24["later_share"].iloc[0]), 1) if len(l24) else 0.0
+        self.values["laterKnown2024Mrins"] = float(l24["known_mrins"].iloc[0]) if len(l24) else 0.0
+        self.values["laterAdded2024Mrins"] = float(l24["later_mrins"].iloc[0]) if len(l24) else 0.0
 
         rvo1 = dash.rvo_table1()
         rule_dates = {

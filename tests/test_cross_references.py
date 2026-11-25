@@ -66,6 +66,7 @@ def test_comment_attachment_references_match() -> None:
         "SecReconstruction": numbers["sec:recon"],
         "SecUncertainty": numbers["sec:uncertainty"],
         "SecDeadlines": numbers["sec:deadlines"],
+        "SecBacktest": numbers["sec:backtest"],
         "SecCarryover": numbers["sec:carryover"],
     }
     for key, value in expected.items():

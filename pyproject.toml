@@ -1,6 +1,6 @@
 [project]
 name = "rfsrealloc"
-version = "1.0.1"
+version = "1.0.2"
 description = "Exact reconstruction of Renewable Fuel Standard percentage standards, propagation of small-refinery-exemption uncertainty, and evaluation of reallocation timing rules"
 readme = "README.md"
 requires-python = ">=3.11"

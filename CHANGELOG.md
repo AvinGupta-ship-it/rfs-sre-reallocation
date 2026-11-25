@@ -1,5 +1,19 @@
 # Changelog
 
+## v1.0.2
+
+Final presentation pass before submission. Figure text prints at 8 points or larger, every
+figure is 6.5 inches wide, and each alternative keeps one color across all figures (years,
+effective dates and other series use other hues). The carryover figure compares carryover
+RINs used with the 20 percent cap; the empirical-distribution figure uses a dot plot with a
+reference line and non-overlapping year labels; the share-of-obligation axis reads "already
+produced or imported". Floats stay with the text, reference lists are ragged right, the
+attachment uses the manuscript's author-year reference style, URLs break at the margin, and
+the Fuel Price Impacts memorandum is listed under its agency. The attachment states the
+later-decision share for 2024 with its basis, lists pending petitions by compliance year,
+and describes validation in prose; decision-batch dates are listed in the backtest captions.
+The manuscript title page carries the version and date.
+
 ## v1.0.1
 
 Presentation and accuracy pass on the manuscript, comment and technical attachment: every

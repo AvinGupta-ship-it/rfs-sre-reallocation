@@ -5,14 +5,28 @@
 \usepackage{longtable}
 \usepackage{hyperref}
 \hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+\usepackage{xurl}
+\usepackage{etoolbox}
 \usepackage[margin=1in]{geometry}
 \usepackage{natbib}
+\setlength{\bibsep}{3pt}
+\apptocmd{\thebibliography}{\raggedright}{}{}
+% Floats: keep figures and tables with the text rather than on pages of their own.
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.9}
+\renewcommand{\textfraction}{0.05}
+\renewcommand{\floatpagefraction}{0.85}
+\setcounter{topnumber}{3}
+\setcounter{totalnumber}{4}
+\usepackage{placeins}
+\makeatletter\@secpenalty=0\makeatother % fill each page before a section heading starts a new one
+\newcommand{\releaseversion}{1.0.2}
 \input{../paper/generated/values.tex}
 \graphicspath{{../paper/figures/}}
 \newcommand{\commentdate}{November 24, 2026}
 \title{Technical Attachment to the Comment of Avin Gupta on Docket ID No. EPA-HQ-OAR-2024-0505 (Document EPA-HQ-OAR-2024-0505-0951)\\[0.5em]\large Exact reconstruction of the 2026--2027 percentage standards, uncertainty propagation and evaluation of reallocation timing rules}
 \author{Avin Gupta, independent researcher (\texttt{iamavingupta@gmail.com})}
-\date{\commentdate}
+\date{\commentdate\\[0.3em]\normalsize Version \releaseversion}
 \begin{document}
 \maketitle
 
@@ -25,11 +39,13 @@ Inputs were transcribed from the docket calculation memoranda \citep{docket_0789
 \input{../paper/generated/table_inputs.tex}
 
 \section{Methods}
-\paragraph{Percentage standards.} 40~CFR~80.1405(c) (91~FR~16488):
-$\mathrm{Std}_{X,i} = 100\,(\mathrm{RFV}_{X,i} + \mathrm{SRERV}_{X,i}) / [(G_i - RG_i) - GE_i + (D_i - RD_i) - DE_i]$, with no cellulosic reallocation volume; evaluated in exact rational arithmetic and rounded half-up to two decimals.
+\paragraph{Percentage standards.} 40~CFR~80.1405(c) (91~FR~16488), with no cellulosic reallocation volume, evaluated in exact rational arithmetic and rounded half-up to two decimals:
+\[
+\mathrm{Std}_{X,i} = 100\,\frac{\mathrm{RFV}_{X,i} + \mathrm{SRERV}_{X,i}}{(G_i - RG_i) - GE_i + (D_i - RD_i) - DE_i}.
+\]
 \paragraph{Reallocation volumes.} $\mathrm{ERVO}_{X,y} = \mathrm{Std}_{X,y}F_y/100$ to 10~million RINs; Set~2 volumes are 0.7 times (all of 2023 plus half of 2024) for 2026, rounded down, and 0.7 times (half of 2024 plus all of 2025) for 2027, rounded up. The additional 2025 obligation is the rounded actual obligation (13.38 billion gallons times the 2025 standards) minus the projected obligation. A share $w$ goes to 2026 and $1-w$ to 2027; $w=1/2$ and $w=0$ are the two co-proposed approaches.
 \paragraph{Uncertainty.} Revision ratio $r$ (reported over petition-based obligation) from \valnRevisionPairs{} compliance years; fuel-use error (log of reported over projected non-renewable gasoline-plus-diesel volume) from \valnFuelErrorsProspective{} rules in place by the middle of the compliance year and not later revised, by lead time; decision lags from \valnLagPetitions{} petitions. Monte Carlo with \valmcDraws{} draws (seeded, worker-independent); Sobol indices by Saltelli sampling with bootstrap intervals. The relative Monte Carlo standard error of the headline quantity is \valmcseHeadlineRelative{}.
-\paragraph{Timing metrics.} Step size, standard deviation, expected absolute revision, and the share $R(w,t) = w f_{2026}(t) + (1-w) f_{2027}(t)$ of the additional obligation that falls on fuel already produced or imported when a final rule takes effect on date $t$, where $f_i(t)$ is the fraction of compliance year $i$ elapsed at $t$ (one for a completed year) and production is taken as uniform over the year. For hypothetical effective dates in 2027 the 2026 part is a completed compliance year and the 2027 part is pro rata to the elapsed fraction of 2027.
+\paragraph{Timing metrics.} Step size, standard deviation, expected absolute revision, and the share of the additional obligation that falls on fuel already produced or imported when a final rule takes effect on date $t$, $R(w,t) = w f_{2026}(t) + (1-w) f_{2027}(t)$, where $f_i(t)$ is the fraction of compliance year $i$ elapsed at $t$ (one for a completed year) and production is taken as uniform over the year. For hypothetical effective dates in 2027 the 2026 part is a completed compliance year and the 2027 part is pro rata to the elapsed fraction of 2027.
 \paragraph{Backtest.} Error of the three-year-average projection by year; share of the amount a fixed rule would reallocate to a receiving year that was undecided when that year's standard was set.
 \paragraph{Carryover accounting.} 40~CFR~80.1427 cap of 20~percent and one-year deficit carryforward; generation assumed equal to the volume requirement; bank entering 2026 equal to EPA's effective 2024 carryover (\valbankRia{} billion RINs) plus 0.77 billion RINs; accounting identity checked each year; deadlines from 40~CFR~80.1451(f)(1)(i)(C), the provision in force that the proposal identifies as triggered by a proposed revision of a standard (91~FR~65701).
 
@@ -52,7 +68,7 @@ Sensitivity \valdStdPerOneZeroZeroMRinsFirst{} (2026) and \valdStdPerOneZeroZero
 \begin{figure}[htbp]\centering\includegraphics[width=\textwidth]{si_distributions}\caption{Empirical distributions. (a)~Ratio of reported to petition-based exempted obligation by compliance year. (b)~Reported minus projected non-renewable gasoline-plus-diesel volume against lead time; crosses mark rules published after the middle of the compliance year or later revised, which are excluded. Observed EPA record.}\label{fig:distributions}\end{figure}
 
 \subsection{Timing trade-offs}\label{sec:timing}
-Steps: equal split \valstepFirstEqual{} (2026) and \valstepSecondEqual{} (2027) points; 2027 approach \valstepSecondAllSecond{} (2027) (Figure~\ref{fig:tradeoff}). Share of the additional obligation falling on fuel already produced for hypothetical effective dates February~1, June~1 and October~1, 2027: equal split \valretroEqualScenarioHypotheticalEarlyTwoZeroTwoSeven{}, \valretroEqualScenarioHypotheticalMidTwoZeroTwoSeven{}, \valretroEqualScenarioHypotheticalLateTwoZeroTwoSeven{} (one half of which is the completed 2026 compliance year); 2027 approach \valretroAllSecondScenarioHypotheticalEarlyTwoZeroTwoSeven{}, \valretroAllSecondScenarioHypotheticalMidTwoZeroTwoSeven{}, \valretroAllSecondScenarioHypotheticalLateTwoZeroTwoSeven{} (all of it the elapsed part of 2027).
+Steps: equal split \valstepFirstEqual{} (2026) and \valstepSecondEqual{} (2027) points; 2027 approach \valstepSecondAllSecond{} (2027) (Figure~\ref{fig:tradeoff}). Share of the additional obligation falling on fuel already produced or imported for hypothetical effective dates February~1, June~1 and October~1, 2027: equal split \valretroEqualScenarioHypotheticalEarlyTwoZeroTwoSeven{}, \valretroEqualScenarioHypotheticalMidTwoZeroTwoSeven{}, \valretroEqualScenarioHypotheticalLateTwoZeroTwoSeven{} (one half of which is the completed 2026 compliance year); 2027 approach \valretroAllSecondScenarioHypotheticalEarlyTwoZeroTwoSeven{}, \valretroAllSecondScenarioHypotheticalMidTwoZeroTwoSeven{}, \valretroAllSecondScenarioHypotheticalLateTwoZeroTwoSeven{} (all of it the elapsed part of 2027).
 
 \begin{figure}[htbp]\centering\includegraphics[width=\textwidth]{fig4_tradeoff}\caption{Timing trade-offs. (a)~Step size relative to the Set~2 standards. (b)~Expected absolute revision of each standard. (c)~Share of the additional obligation that falls on fuel already produced or imported when a final rule takes effect on February~1, June~1 or October~1, 2027 (hypothetical scenarios); the 2026 part is a completed compliance year and the 2027 part is pro rata to the elapsed fraction of 2027.}\label{fig:tradeoff}\end{figure}
 
@@ -60,26 +76,27 @@ Steps: equal split \valstepFirstEqual{} (2026) and \valstepSecondEqual{} (2027) 
 2026 compliance reporting deadline under 40~CFR~80.1451(f)(1)(i)(C): \valdeadlineScenarioHypotheticalEarlyTwoZeroTwoSeven{} (effective February~1, 2027; \valdeadlineDaysScenarioHypotheticalEarlyTwoZeroTwoSeven{} days after the effective date), \valdeadlineScenarioHypotheticalMidTwoZeroTwoSeven{} (effective June~1, 2027; \valdeadlineDaysScenarioHypotheticalMidTwoZeroTwoSeven{} days), \valdeadlineScenarioHypotheticalLateTwoZeroTwoSeven{} (effective October~1, 2027; \valdeadlineDaysScenarioHypotheticalLateTwoZeroTwoSeven{} days); \valdeadlineNotFinalized{} if neither finalized nor withdrawn within twelve months.
 
 \subsection{Backtest}\label{sec:backtest}
-Three-year-average projection: mean absolute error \valprojMaeHindsight{} million RINs (\valprojMaeHindsightPct{}~percent), maximum \valprojMaxAbsHindsight{}, over \valnProjYears{} years (Figure~\ref{fig:backtest}). Decision lags (2021--2025 petitions, $n=\valnLagPetitions$): median \vallagMedianYears{} years, range \vallagMinYears{}--\vallagMaxYears{}; 2025 petitions \vallagTwoZeroTwoFiveMedianYears{} years. Undecided share of reallocated amounts at the time the receiving year's standard was set: one in \valbtNYearsFullyUnknownEqual{} of \valbtNTargetYears{} receiving years (\valbtFirstTargetYear{}--\valbtLastTargetYear); for 2026, \valbtUnknownShareEqualFirst{} ($w=1/2$) and \valbtUnknownShareAllSecondFirst{} ($w=0$). Pending petitions at the data cut-off: \valnPendingTwoZeroTwoFive{} (2025), \valnPendingTwoZeroTwoSix{} (2026), \valnPendingTwoZeroTwoSeven{} (2027).
+Three-year-average projection: mean absolute error \valprojMaeHindsight{} million RINs (\valprojMaeHindsightPct{}~percent), maximum \valprojMaxAbsHindsight{}, over \valnProjYears{} years (Figure~\ref{fig:backtest}). Decision lags (2021--2025 petitions, $n=\valnLagPetitions$): median \vallagMedianYears{} years, range \vallagMinYears{}--\vallagMaxYears{}; 2025 petitions \vallagTwoZeroTwoFiveMedianYears{} years. Of the amount a fixed timing rule would have reallocated to each receiving year, the entire amount was undecided when that year's standard was set in \valbtNYearsFullyUnknownEqual{} of \valbtNTargetYears{} receiving years (\valbtFirstTargetYear{}--\valbtLastTargetYear); for 2026 the undecided share was \valbtUnknownShareEqualFirst{} ($w=1/2$) and \valbtUnknownShareAllSecondFirst{} ($w=0$). Decisions issued after a rule has relied on a year's obligation: of the 2024 exempted obligation known when the Set~2 rule was published on April~1, 2026 (\vallaterKnownTwoZeroTwoFourMrins{} million RINs, the sum of EPA's decision actions to that date), \vallaterShareTwoZeroTwoFourPct{}~percent (\vallaterAddedTwoZeroTwoFourMrins{} million RINs) was added by the August~3 and August~31, 2026 decisions on 2024 petitions \citep{epa_420r26004,epa_420r26017}; no earlier year gained from later decisions. Petitions pending at the data cut-off, by the compliance year listed in Table~SRE-3: \valnPendingTwoZeroTwoFive{} for 2025, \valnPendingTwoZeroTwoSix{} for 2026 and \valnPendingTwoZeroTwoSeven{} for 2027.
 
-\begin{figure}[htbp]\centering\includegraphics[width=\textwidth]{fig5_backtest}\caption{Historical backtest. (a)~Realized exempted obligations and three-year-average projections. (b)~Undecided share of reallocated amounts by receiving year. (c)~Decision lags in half-year bins; decisions were issued in batches, so lags cluster at yearly intervals. Observed EPA record.}\label{fig:backtest}\end{figure}
+\begin{figure}[htbp]\centering\includegraphics[width=\textwidth]{fig5_backtest}\caption{Historical backtest. (a)~Realized exempted obligations and three-year-average projections. (b)~Undecided share of reallocated amounts by receiving year. (c)~Decision lags in half-year bins; decisions were issued in batches, with decision dates in Table~SRE-3 of August~22, 2025, November~7, 2025, August~3, 2026 and August~28, 2026 (the last batch is the one published as the August~31, 2026 decisions), so lags cluster at yearly intervals. Observed EPA record.}\label{fig:backtest}\end{figure}
 
 \subsection{Carryover accounting}\label{sec:carryover}
 Baseline bank \valbankBaseline{} billion RINs. Obligations: 2026 \valrvoFirstSetTwo{} (existing), \valrvoFirstEqual{} (equal split); 2027 \valrvoSecondSetTwo{}, \valrvoSecondEqual{}, \valrvoSecondAllTwoZeroTwoSeven{}. New RINs required: 2026 \valnewRinsFirstSetTwo{}/\valnewRinsFirstEqual{}/\valnewRinsFirstAllTwoZeroTwoSeven{}; 2027 \valnewRinsSecondSetTwo{}/\valnewRinsSecondEqual{}/\valnewRinsSecondAllTwoZeroTwoSeven{}. Bank at end of 2027: \valbankOutSecondSetTwo{}/\valbankOutSecondEqual{}/\valbankOutSecondAllTwoZeroTwoSeven{}; two-year drawdown \valdrawdownTwoYearsSetTwo{}/\valdrawdownTwoYearsEqual{}/\valdrawdownTwoYearsAllSecond{} against \valabsorbableDrawdown{} judged absorbable in the Set~2 rule. Cap binds: \valcapBindsAnywhere{}. Table~\ref{tab:accounting} and Figure~\ref{fig:carryover} give the full accounting.
 
 \input{../paper/generated/table_accounting.tex}
 
-\begin{figure}[htbp]\centering\includegraphics[width=\textwidth]{fig6_carryover}\caption{Carryover accounting under stated assumptions. (a)~New RINs required with the baseline bank; the green line marks the 20~percent cap on prior-year RINs. (b)~Bank at year end; color identifies the alternative and line style the bank scenario; non-baseline bank sizes are hypothetical scenarios.}\label{fig:carryover}\end{figure}
+\begin{figure}[htbp]\centering\includegraphics[width=\textwidth]{fig6_carryover}\caption{Carryover accounting under stated assumptions. (a)~Obligation met by new RINs (solid) and by carryover RINs (hatched) with the baseline bank; the black marks show where the carryover segment would end if prior-year RINs were used up to the 20~percent cap, which the bank never reaches. (b)~Bank at year end; color identifies the alternative and line style the bank scenario; non-baseline bank sizes are hypothetical scenarios.}\label{fig:carryover}\end{figure}
 
 \subsection{RIN-cost reproduction}
 Table~VI-1 RIN costs reproduce (\valnCostMatched{} of \valnCostChecked); impact relative to existing standards \valcostRelFirstEqual{}/\valcostRelSecondEqual{} cents per gallon (equal split, 2026/2027) and \valcostRelFirstAllTwoZeroTwoSeven{}/\valcostRelSecondAllTwoZeroTwoSeven{} (2027 approach), matching the docket memorandum \citep{docket_0961}.
 
 \section{Validation}
-Numerical correctness: unit and property-based tests (reproduction of every published value; positivity, monotonicity, exact-versus-float agreement, rounding, conservation, accounting identity). Model verification: double entry, code-parsed Federal Register tables, eCFR table, linearized variance check. Empirical validity: distributions are historical; no prediction claimed. Regulatory applicability: mapped to C-1 and C-3 in the comment.
+The repository's test suite reproduces every published value used here and checks the properties the calculation must have: standards are positive and increase with the reallocated volume, the exact rational evaluation agrees with floating-point evaluation, rounding follows the stated conventions, reallocated volumes are conserved across the timing family, and the carryover accounting identity holds in every year. The inputs were verified by independent double entry, by comparison with the Federal Register tables parsed by code from the XML, and against the eCFR text of the regulations; the Sobol decomposition is checked against a linearized variance share. The empirical distributions are the historical record of EPA's own revisions, projection errors and decision dates, and the results are stated as consequences of those records and of the assumptions set out in Section~3 rather than as predictions. The comment maps each result to solicitation C-1 or C-3 of the proposal.
 
 \section{Repository}
-Code (BSD 3-Clause), transcribed data (CC~BY~4.0) and raw downloads with SHA-256 checksums are in the repository \texttt{rfs-sre-reallocation} (\url{https://github.com/AvinGupta-ship-it/rfs-sre-reallocation}, release v1.0.1); a single command regenerates all results, figures and tables. The code, data and figures are archived on Zenodo under the concept DOI \href{https://doi.org/10.5281/zenodo.24514815}{10.5281/zenodo.24514815}, which resolves to all versions \citep{gupta2026repository}.
+Code (BSD 3-Clause), transcribed data (CC~BY~4.0) and raw downloads with SHA-256 checksums are in the repository \texttt{rfs-sre-reallocation} (\url{https://github.com/AvinGupta-ship-it/rfs-sre-reallocation}, release v\releaseversion); a single command regenerates all results, figures and tables. The code, data and figures are archived on Zenodo under the concept DOI \href{https://doi.org/10.5281/zenodo.24514815}{10.5281/zenodo.24514815}, which resolves to all versions \citep{gupta2026repository}.
 
-\bibliographystyle{plainnat}
+\FloatBarrier
+\bibliographystyle{elsarticle-harv}
 \bibliography{../paper/references}
 \end{document}
