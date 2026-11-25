@@ -3,7 +3,7 @@ small-refinery-exemption reallocation timing rules."""
 
 from __future__ import annotations
 
-__version__ = "1.0.2"
+__version__ = "1.0.3"
 
 CATEGORIES: tuple[str, ...] = ("CB", "BBD", "AB", "RF")
 """Statutory categories: cellulosic biofuel, biomass-based diesel, advanced biofuel,

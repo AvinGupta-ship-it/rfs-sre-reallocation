@@ -1,6 +1,6 @@
 # Changelog
 
-## v1.0.2
+## v1.0.3
 
 Final presentation pass before submission. Figure text prints at 8 points or larger, every
 figure is 6.5 inches wide, and each alternative keeps one color across all figures (years,

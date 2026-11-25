@@ -52,7 +52,7 @@ The code, data and figures are archived on Zenodo under the concept DOI
 versions. Please cite:
 
 > Gupta, A. (2026). rfs-sre-reallocation: exact reconstruction of Renewable Fuel Standard
-> percentage standards and evaluation of exemption-reallocation timing rules (v1.0.2).
+> percentage standards and evaluation of exemption-reallocation timing rules (v1.0.3).
 > Zenodo. https://doi.org/10.5281/zenodo.24514815
 
 Machine-readable metadata are in `CITATION.cff`. Code is BSD-3-Clause; text, figures and
